@@ -1,10 +1,6 @@
 # Plataforma Mãos Unidas
 
-<<<<<<< HEAD
-Tem como objetivo principal promover a solidariedade e canalizar recursos alimentares para que os alimentos arrecadados cheguem de maneira rápida e segura às ONGs parceiras. 
-=======
 A **Plataforma Mãos Unidas** visa promover a solidariedade e otimizar a distribuição eficiente de recursos alimentares, conectando empresas dispostas a doar alimentos a ONGs parceiras de maneira rápida e segura.
->>>>>>> developer
 
 ## 🚀 Começando - Visão Geral
 
@@ -14,33 +10,6 @@ Consulte **[Implantação](#-implanta%C3%A7%C3%A3o)** para saber como implantar 
 
 ### Mapeamento de Doações de Alimentos no Brasil
 Este projeto tem como objetivo mapear áreas em todo o Brasil onde a fome é um problema e facilitar a doação de alimentos para combater essa situação. Seguindo o Objetivo 3 de Desenvolvimento Sustentável, que visa garantir uma vida saudável e promover o bem-estar para todos, estamos focados em reduzir a insegurança alimentar e minimizar o desperdício de alimentos.
-<<<<<<< HEAD
-
-### Funcionalidades
-Mapeamento Geográfico: O site permitirá visualizar áreas no mapa onde a fome é mais prevalente. Usaremos dados de organizações sem fins lucrativos, bancos de alimentos e outras fontes para identificar essas regiões.
-
-### POSSIVEIS GAMEFICAÇÃO
-
-Para incentivar as empresas a doarem regularmente e de forma consistente, iremos criar uma plataforma de gamificação específica para esse propósito. Aqui estão algumas ideias sobre como implementar isso:
-- Pontuação pelo tipo de alimento doado. 
-    Ex: 1 kg de arroz = 10 pts
-        1 kg de feijão = 10 pts
-        1 kg de carne = 15 pts
-
-- Divulgação pelo total de pontos
-    Ex: 1000 pts: divulgação em site de 2 dias
-        2000 pts: divulgação em site de 4 dias
-        5000 pts: divulgação em site e rede sociais
-
-- Obtenção de selo "Empresa Solidária"
-    Ex: 06 meses consecutivos contribuindo, caso passe 02 meses consecutivos sem doar pede o selo 
-
-
-Pontos e Badges: As empresas ganhariam pontos e distintivos (badges) com base em suas doações. Quanto mais frequentes e substanciais as doações, maior a pontuação e os distintivos conquistados.
-
-### 📋 Pré-requisitos
-=======
->>>>>>> developer
 
 ### Funcionalidades
 **Mapeamento Geográfico:** O site permite visualizar áreas no mapa onde a fome é mais prevalente, utilizando dados de organizações sem fins lucrativos, bancos de alimentos e outras fontes para identificar essas regiões.
