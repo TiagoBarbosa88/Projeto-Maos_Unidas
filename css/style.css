@@ -47,16 +47,9 @@ header {
   color: #7CC92A;
 }
 
-.menu #active {
-  color: #EA167B;
-}
-
-.menu #active-2 {
-  color: #7CEF01;
-}
-
 .menu a:hover {
   opacity: 0.7;
+  color: #EA167B;
 }
 
 /* Fim do Css do Header */
