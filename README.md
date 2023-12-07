@@ -105,7 +105,7 @@ Nós usamos [SemVer](http://semver.org/) para controle de versão. Para as vers�
 
 ## ✒️ Autores
 
-* **Josy Gonçalvesr** - [Github](https://github.com/JcG8Dev)
+* * **Josy Gonçalvesr** - [Github](https://github.com/JcG8Dev)
 * * **Marcela Bino** - [Github](https://github.com/marcelabino)
 * * **Tiago Barbosa** - [Github](https://github.com/TiagoBarbosa88)
 * * **Wesley Gusmãor** - [Github](https://github.com/wesley-gusmao)
