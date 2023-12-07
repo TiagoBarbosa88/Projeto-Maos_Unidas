@@ -8,23 +8,49 @@
   <title>Projeto Mãos Unidas</title>
 </head>
 <body>
-  <header>
-    <img id="logo" src="./imagens/Banner_capa_1/logo-projeto-social.webp" alt="logo mãos unidas">
-   
-    <div class="menu-container">
-      <ul class="menu">
-        <li><a href="#">Fome <br>no Brasil</a></li>
-        <li><a href="#">Nosso<br>Trabalho</a></li>
-        <li><a href="#">Cadastro de <br> Doadores</a></li>
-        <li><a href="#">Cadastro para <br>receber alimentos</a></li>
-      </ul>     
-    </div>
-  </header>
-  <hr>
-  <!------- Fim do Header --------->
-
-  
-  
+  <div class="container">
+    <header>
+      <img id="logo" src="./imagens/Banner_capa_1/logo-projeto-social.webp" alt="logo mãos unidas">
+     
+      <div class="menu-container">
+        <ul class="menu">
+          <li><a href="#">Fome <br>no Brasil</a></li>
+          <li><a href="#">Nosso<br>Trabalho</a></li>
+          <li><a href="#">Cadastro de <br> Doadores</a></li>
+          <li><a href="#">Cadastro para <br>receber alimentos</a></li>
+        </ul>     
+      </div>
+    </header>    
+    <!------- Fim do Header --------->
+    <main>
+      <section class="container-banner">
+        <div class="banner">
+          <img src="./imagens/Banner_capa_1/1.png" alt="">
+        </div>
+        <div class="container-info">
+          <div class="card-info">
+            <p>suas doações podem apoiar a luta da mãos unidas contra a fome.</p>
+            <a href="#">Saiba mais ></a>
+          </div>
+          <div class="card-info">
+            <p>Ajude-nos a conectar nosso projeto a grandes empresas que querem doar alimentos</p>
+            <a href="#">Clique agora ></a>
+          </div>
+          <div class="card-info">
+            <p>Encontre seu Banco de Alimentos Local</p>
+            <div class="cep">
+              <form>
+                <label for="cep">Digite o CEP:</label>
+                <input type="text" id="cep" name="cep" placeholder="Digite o CEP" />
+                <button type="submit">Buscar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div> 
   <script defer src="./js/script.js"></script>
 </body>
 </html>
+
