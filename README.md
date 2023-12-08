@@ -9,9 +9,11 @@ Bem-vindo à nossa iniciativa dedicada a reduzir o desperdício de alimentos e f
 Consulte **[Implantação](#-implanta%C3%A7%C3%A3o)** para saber como implantar o projeto.
 
 ### Mapeamento de Doações de Alimentos no Brasil
+
 Este projeto tem como objetivo mapear áreas em todo o Brasil onde a fome é um problema e facilitar a doação de alimentos para combater essa situação. Seguindo o Objetivo 3 de Desenvolvimento Sustentável, que visa garantir uma vida saudável e promover o bem-estar para todos, estamos focados em reduzir a insegurança alimentar e minimizar o desperdício de alimentos.
 
 ### Funcionalidades
+
 **Mapeamento Geográfico:** O site permite visualizar áreas no mapa onde a fome é mais prevalente, utilizando dados de organizações sem fins lucrativos, bancos de alimentos e outras fontes para identificar essas regiões.
 
 ### POSSÍVEIS ELEMENTOS DE GAMEFICAÇÃO
@@ -105,10 +107,10 @@ Nós usamos [SemVer](http://semver.org/) para controle de versão. Para as vers�
 
 ## ✒️ Autores
 
-* * **Josy Gonçalvesr** - [Github](https://github.com/JcG8Dev)
+* * **Josy Gonçalves** - [Github](https://github.com/JcG8Dev)
 * * **Marcela Bino** - [Github](https://github.com/marcelabino)
 * * **Tiago Barbosa** - [Github](https://github.com/TiagoBarbosa88)
-* * **Wesley Gusmãor** - [Github](https://github.com/wesley-gusmao)
+* * **Wesley Gusmão** - [Github](https://github.com/wesley-gusmao)
 * * **Osmar Filho** - [Github](https://github.com/OPSFilho)
 
 Você também pode ver a lista de todos os [colaboradores](https://github.com/TiagoBarbosa88/Projeto-Maos_Unidas/settings/access) que participaram deste projeto.
