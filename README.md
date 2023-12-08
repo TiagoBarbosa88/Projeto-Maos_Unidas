@@ -4,7 +4,7 @@ A **Plataforma Mãos Unidas** visa promover a solidariedade e otimizar a distrib
 
 ## 🚀 Começando - Visão Geral
 
-Bem-vindo à nossa iniciativa dedicada a reduzir o desperdício de alimentos e fortalecer a colaboração entre empresas dispostas a doar alimentos e Bem-vindo à nossa iniciativa dedicada a reduzir o desperdício de alimentos e fortalecer a colaboração entre empresas doadoras e organizações não governamentais (ONGs) que necessitam desses recursos. Esta plataforma inovadora visa criar uma rede eficiente para conectar doadores a beneficiários, promovendo ações altruístas e impacto social positivo.
+Bem-vindo à nossa iniciativa dedicada a reduzir o desperdício de alimentos e fortalecer a colaboração entre empresas dispostas a doar alimentos e organizações não governamentais (ONGs) que necessitam desses recursos. Esta plataforma inovadora visa criar uma rede eficiente para conectar doadores a beneficiários, promovendo ações altruístas e impacto social positivo.
 
 Consulte **[Implantação](#-implanta%C3%A7%C3%A3o)** para saber como implantar o projeto.
 
