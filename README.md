@@ -88,7 +88,7 @@ Esses pré-requisitos ajudam a garantir a integridade e eficácia da Plataforma 
 Ferramentas que utilizamos para criar nosso projeto.
 
 * Html 
-* CSS
+* Css
 * Javascript
 * Canvas
 * Vscode

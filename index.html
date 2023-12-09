@@ -1,56 +1,84 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;1,600&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/7b6cffeae5.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./css/style.css">
   <title>Projeto Mãos Unidas</title>
 </head>
+
 <body>
+  <header>
+    <img id="logo" src="./imagens/Banner_capa_1/logo-projeto-social.webp" alt="logo mãos unidas">
+
+    <div class="menu-container">
+      <ul class="menu">
+        <li><a href="#">Fome <br>no Brasil</a></li>
+        <li><a href="#">Nosso<br>Trabalho</a></li>
+        <li><a href="#">Cadastro de <br> Doadores</a></li>
+        <li><a href="#">Cadastro para <br>receber alimentos</a></li>
+      </ul>
+    </div>
+  </header>
+  <!------- Fim do Header --------->
   <div class="container">
-    <header>
-      <img id="logo" src="./imagens/Banner_capa_1/logo-projeto-social.webp" alt="logo mãos unidas">
-     
-      <div class="menu-container">
-        <ul class="menu">
-          <li><a href="#">Fome <br>no Brasil</a></li>
-          <li><a href="#">Nosso<br>Trabalho</a></li>
-          <li><a href="#">Cadastro de <br> Doadores</a></li>
-          <li><a href="#">Cadastro para <br>receber alimentos</a></li>
-        </ul>     
-      </div>
-    </header>    
-    <!------- Fim do Header --------->
+
     <main>
       <section class="container-banner">
         <div class="banner">
           <img src="./imagens/Banner_capa_1/1.png" alt="">
         </div>
+      </section>
+      <section class="container-card">
         <div class="container-info">
           <div class="card-info">
-            <p>suas doações podem apoiar a luta da mãos unidas contra a fome.</p>
-            <a href="#">Saiba mais ></a>
+            <span>125.2milhões</span>
+            <p>DE BRASILEIROS ESTÃO EM SITUAÇÃO DE INSEGURANÇA
+              ALIMENTAR</p>
           </div>
           <div class="card-info">
-            <p>Ajude-nos a conectar nosso projeto a grandes empresas que querem doar alimentos</p>
-            <a href="#">Clique agora ></a>
+            <span>60kg</span>
+            <p>DE COMIDA SÃO DESPERDIÇADAS
+              POR CADA BRASILEIRO
+              POR ANO</p>
           </div>
           <div class="card-info">
-            <p>Encontre seu Banco de Alimentos Local</p>
-            <div class="cep">
-              <form>
-                <label for="cep">Digite o CEP:</label>
-                <input type="text" id="cep" name="cep" placeholder="Digite o CEP" />
-                <button type="submit">Buscar</button>
-              </form>
-            </div>
+            <span>12.58 milhões</span>
+            <p>TONELADAS DE ALIMENTOS
+              SÃO DESPERDIÇADOS POR ANO NO BRASIL</p>
           </div>
         </div>
       </section>
+      <section>
+        <h4>* Dados do relatório FAO de 2021 e Rede Brasileira de Pesquisa em Soberania e Segurança Alimentar e Nutricional (Rede PENSSAN)</h4>
+      </section>
+      <section class="container-card">
+        <div class="container-info">
+          <div class="card-info">
+            <p>Suas doações podem apoiar a luta da mãos unidas contra a fome.</p>
+          </div>
+          <div class="card-info">
+            <p>Ajude-nos a conectar nosso projeto a grandes empresas que querem doar alimentos</p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="info-left">
+          <p>Nossa Visão: Um Brasil sem Fome
+            A Mãos Unidas é a maior instituição que liga doadores a Ongs que trabalham para acabar com a fome no Brasil. Fazemos a conexão de Empresas Doadoras e Bancos de alimentos, despensas de alimentos e programas locais de alimentos para levar alimentos a pessoas que enfrentam a fome. Defendemos políticas que criem soluções de longo prazo para a fome.</p>
+        </div>
+        <div class="info-right">
+          
+        </div>
+      </section>
     </main>
-  </div> 
+    <!------- Fim do MAIN --------->
+  </div>
   <script defer src="./js/script.js"></script>
 </body>
-</html>
 
+</html>
