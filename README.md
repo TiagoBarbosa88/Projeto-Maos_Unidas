@@ -1,6 +1,6 @@
 # Plataforma Mãos Unidas
 
-Tem como objetivo principal promover a solidariedade e canalizar recursos alimentares para que os alimentos arrecadados cheguem de maneira rápida e segura às ONGs parceiras. 
+A **Plataforma Mãos Unidas** visa promover a solidariedade e otimizar a distribuição eficiente de recursos alimentares, conectando empresas dispostas a doar alimentos a ONGs parceiras de maneira rápida e segura.
 
 ## 🚀 Começando - Visão Geral
 
@@ -9,73 +9,93 @@ Bem-vindo à nossa iniciativa dedicada a reduzir o desperdício de alimentos e f
 Consulte **[Implantação](#-implanta%C3%A7%C3%A3o)** para saber como implantar o projeto.
 
 ### Mapeamento de Doações de Alimentos no Brasil
+
 Este projeto tem como objetivo mapear áreas em todo o Brasil onde a fome é um problema e facilitar a doação de alimentos para combater essa situação. Seguindo o Objetivo 3 de Desenvolvimento Sustentável, que visa garantir uma vida saudável e promover o bem-estar para todos, estamos focados em reduzir a insegurança alimentar e minimizar o desperdício de alimentos.
 
 ### Funcionalidades
-Mapeamento Geográfico: O site permitirá visualizar áreas no mapa onde a fome é mais prevalente. Usaremos dados de organizações sem fins lucrativos, bancos de alimentos e outras fontes para identificar essas regiões.
 
-### POSSIVEIS GAMEFICAÇÃO
+**Mapeamento Geográfico:** O site permite visualizar áreas no mapa onde a fome é mais prevalente, utilizando dados de organizações sem fins lucrativos, bancos de alimentos e outras fontes para identificar essas regiões.
 
-Para incentivar as empresas a doarem regularmente e de forma consistente, iremos criar uma plataforma de gamificação específica para esse propósito. Aqui estão algumas ideias sobre como implementar isso:
-- Pontuação pelo tipo de alimento doado. 
+### POSSÍVEIS ELEMENTOS DE GAMEFICAÇÃO
+
+Para incentivar as empresas a doarem regularmente e de forma consistente, criamos uma plataforma de gamificação específica para esse propósito. Aqui estão algumas ideias sobre como implementar isso:
+
+## Pontuação pelo tipo de alimento doado. 
     Ex: 1 kg de arroz = 10 pts
         1 kg de feijão = 10 pts
         1 kg de carne = 15 pts
 
-- Divulgação pelo total de pontos
+## Divulgação pelo total de pontos
     Ex: 1000 pts: divulgação em site de 2 dias
         2000 pts: divulgação em site de 4 dias
         5000 pts: divulgação em site e rede sociais
 
-- Obtenção de selo "Empresa Solidária"
+## Obtenção de selo "Empresa Solidária"
     Ex: 06 meses consecutivos contribuindo, caso passe 02 meses consecutivos sem doar pede o selo 
 
 
-Pontos e Badges: As empresas ganhariam pontos e distintivos (badges) com base em suas doações. Quanto mais frequentes e substanciais as doações, maior a pontuação e os distintivos conquistados.
+**Pontos e Distintivos:** As empresas ganharão pontos e distintivos (badges) com base em suas doações. Quanto mais frequentes e substanciais as doações, maior a pontuação e os distintivos conquistados.
 
-### 📋 Pré-requisitos
+## Pré-requisitos para Empresas e ONGs na Plataforma Mãos Unidas
 
-De que coisas você precisa para instalar o software e como instalá-lo?
+### Empresas Doadoras:
 
-```
-Dar exemplos
-```
+1. **Registro na Plataforma:**
+   - As empresas devem se registrar na plataforma, fornecendo informações básicas, como nome, tipo de negócio, localização e detalhes de contato.
 
-### 🔧 Instalação
+2. **Verificação de Legitimidade:**
+   - Verificação da legitimidade da empresa, que pode envolver a apresentação de documentos legais ou certificações comerciais.
 
-Para configurar uma instância local da plataforma, siga nosso guia de instalação. Isso permitirá que você explore as funcionalidades e contribua para o desenvolvimento.
+3. **Compromisso Mínimo de Doação:**
+   - Compromisso de realizar doações regulares, seja em quantidade ou frequência mínima, para garantir a consistência nas contribuições.
 
-## ⚙️ Executando os testes
+4. **Perfil de Doação:**
+   - Criação de um perfil detalhado sobre os tipos de alimentos que a empresa está disposta a doar, incluindo informações sobre validade, quantidade e condições dos alimentos.
 
-Explicar como executar os testes automatizados para este sistema.
+5. **Participação na Gamificação:**
+   - Aceitação e participação no sistema de gamificação, contribuindo para ganhar pontos e distintivos com base nas doações.
 
-### 🔩 Analise os testes de ponta a ponta
+### ONGs Parceiras:
 
-Explique que eles verificam esses testes e porquê.
+1. **Registro na Plataforma:**
+   - ONGs devem se registrar na plataforma, fornecendo informações sobre sua missão, atividades e as comunidades que atendem.
 
-```
-Dar exemplos
-```
+2. **Documentação Legal:**
+   - Submissão de documentos legais que comprovem o status de organização sem fins lucrativos e sua legitimidade.
 
-### ⌨️ E testes de estilo de codificação
+3. **Necessidades Alimentares:**
+   - Especificação das necessidades alimentares específicas da comunidade que atendem para melhor correspondência com as doações disponíveis.
 
-Explique que eles verificam esses testes e porquê.
+4. **Histórico de Atividades:**
+   - Fornecimento de informações sobre as atividades anteriores da ONG, incluindo relatórios de impacto social, para validar sua eficácia.
 
-```
-Dar exemplos
-```
+5. **Participação na Gamificação:**
+   - Aceitação e participação no sistema de gamificação, recebendo pontos e distintivos com base nas doações recebidas.
 
-## 📦 Implantação
+### Observações Gerais:
 
-Adicione notas adicionais sobre como implantar isso em um sistema ativo
+- **Compromisso de Transparência:**
+   - Comprometimento de ambas as partes (empresas e ONGs) em fornecer informações transparentes sobre suas atividades e contribuições.
+
+- **Concordância com Termos e Condições:**
+   - Aceitação dos termos e condições da plataforma, incluindo diretrizes éticas, políticas de privacidade e regras de participação.
+
+- **Canal de Comunicação:**
+   - Disponibilidade para manter canais de comunicação abertos para garantir uma colaboração eficaz e resolver problemas de maneira rápida.
+
+Esses pré-requisitos ajudam a garantir a integridade e eficácia da Plataforma Mãos Unidas, promovendo um ambiente colaborativo e transparente entre empresas doadoras e ONGs beneficiárias.
 
 ## 🛠️ Construído com
 
-Mencione as ferramentas que você usou para criar seu projeto
+Ferramentas que utilizamos para criar nosso projeto.
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - O framework web usado
-* [Maven](https://maven.apache.org/) - Gerente de Dependência
-* [ROME](https://rometools.github.io/rome/) - Usada para gerar RSS
+* Html 
+* CSS
+* Javascript
+* Canvas
+* Vscode
+* Git
+* Github
 
 ## 🖇️ Colaborando
 
@@ -87,12 +107,13 @@ Nós usamos [SemVer](http://semver.org/) para controle de versão. Para as vers�
 
 ## ✒️ Autores
 
-Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início
+* * **Josy Gonçalves** - [Github](https://github.com/JcG8Dev)
+* * **Marcela Bino** - [Github](https://github.com/marcelabino)
+* * **Tiago Barbosa** - [Github](https://github.com/TiagoBarbosa88)
+* * **Wesley Gusmão** - [Github](https://github.com/wesley-gusmao)
+* * **Osmar Filho** - [Github](https://github.com/OPSFilho)
 
-* **Um desenvolvedor** - *Trabalho Inicial* - [umdesenvolvedor](https://github.com/linkParaPerfil)
-* **Fulano De Tal** - *Documentação* - [fulanodetal](https://github.com/linkParaPerfil)
-
-Você também pode ver a lista de todos os [colaboradores](https://github.com/usuario/projeto/colaboradores) que participaram deste projeto.
+Você também pode ver a lista de todos os [colaboradores](https://github.com/TiagoBarbosa88/Projeto-Maos_Unidas/settings/access) que participaram deste projeto.
 
 ## 📄 Licença
 
@@ -101,9 +122,7 @@ Este projeto está sob a licença (sua licença) - veja o arquivo [LICENSE.md](h
 ## 🎁 Expressões de gratidão
 
 * Conte a outras pessoas sobre este projeto 📢;
-* Convide alguém da equipe para uma cerveja 🍺;
-* Um agradecimento publicamente 🫂;
-* etc.
+* Agradecemos a todos que estão nos ajudando 🫂;
 
 ## Feedback
 
