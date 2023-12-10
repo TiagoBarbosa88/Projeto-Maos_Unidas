@@ -3,13 +3,21 @@
   margin: 0;
   text-decoration: none;
   list-style: none;
+  box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  font-family: poppins, sans-serif;
+  font-family: 'Poppins', sans-serif;
   width: 100%;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+a:hover {
+  cursor: pointer;
 }
 
 .container {
@@ -19,9 +27,7 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  height: 100%;
 }
-
 /* Começo do Css do Header */
 
 header {
@@ -66,7 +72,6 @@ header {
 
 
 /* Fim do Css do Header */
-
 .container-banner {
   display: flex;
   flex-direction: column;
@@ -78,6 +83,7 @@ header {
 
 section {
   text-align: center;
+  position: relative;
 }
 
 .banner {
@@ -137,17 +143,15 @@ section > h4 {
 
 
 footer {
+  margin-top: 20px;
   display: flex;
   justify-content: space-around;
-  position: fixed;
   bottom: 0;
   width: 100%;
-  background: #E7E6E6;
-  
+  background: #E7E6E6; 
 }
 
 .limite-largura {
-border: 1px blue solid;
 width: 95%;
 display: flex;
 justify-content: space-evenly;
@@ -155,32 +159,50 @@ justify-content: space-evenly;
 
 .rodape-conteudo {
   width: 45%;
-  
+  margin-top:20px;    
 }
 
-.rodape-logo > img{
-  width: 50%;  
+.rodape-conteudo > h3 {
+  font-weight: 300; 
+}
+
+
+
+.rodape-logo > img {
+  width: 55%;  
   height: 100px;
-  margin: 10px;
-  border: 1px red solid;
 }
 
 .rodape-conteudo {
   display: flex;
   flex-direction: column;
-  margin: 10px;
   text-align: center;
 }
 
+.rodape-midias {
+  padding-top: 20px;
+}
 
-.rodape-icons > ul{
+.rodape-midias > ul {  
   display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 20px;
+  justify-content: space-around;
+}
+
+.rodape-midias img {
+  height: 4rem;
+    
 }
 
 .rodape-badges > ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+
+.rodape-badges img {
+  height: 5rem;
+}
+
+.badge-quality > img {
+  height: 10rem;
 }
 
