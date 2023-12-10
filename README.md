@@ -13,7 +13,6 @@ Consulte **[Implantação](#-implanta%C3%A7%C3%A3o)** para saber como implantar 
 Este projeto tem como objetivo mapear áreas em todo o Brasil onde a fome é um problema e facilitar a doação de alimentos para combater essa situação. Seguindo o Objetivo 3 de Desenvolvimento Sustentável, que visa garantir uma vida saudável e promover o bem-estar para todos, estamos focados em reduzir a insegurança alimentar e minimizar o desperdício de alimentos.
 
 ### Funcionalidades
-
 **Mapeamento Geográfico:** O site permite visualizar áreas no mapa onde a fome é mais prevalente, utilizando dados de organizações sem fins lucrativos, bancos de alimentos e outras fontes para identificar essas regiões.
 
 ### POSSÍVEIS ELEMENTOS DE GAMEFICAÇÃO
@@ -90,7 +89,7 @@ Esses pré-requisitos ajudam a garantir a integridade e eficácia da Plataforma 
 Ferramentas que utilizamos para criar nosso projeto.
 
 * Html 
-* CSS
+* Css
 * Javascript
 * Canvas
 * Vscode
