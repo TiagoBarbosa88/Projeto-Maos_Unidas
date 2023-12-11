@@ -3,29 +3,47 @@
   margin: 0;
   text-decoration: none;
   list-style: none;
+  box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  font-family: poppins, sans-serif;
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
+
+a:hover {
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1400px; /* Defina a largura máxima desejada */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+}
+
 
 /* Começo do Css do Header */
 
 header {
-  background-color: #fff;
-  padding: 15px;
+  padding: 15px 0;
+  margin: 10px;
   text-align: center;
   color: rgb(14, 14, 14);
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  height: 100px;
+  justify-content: space-around;
+  height: 50px;
   width: 100%;
 }
 
 #logo {
-  width: 25%;
+  width: 20%;
   
 }
 
@@ -42,22 +60,143 @@ header {
 }
 
 .menu a {
-  font-size: large;
+  font-size: 18px ;
   font-weight: bolder;
   color: #7CC92A;
 }
 
-.menu #active {
+.menu a:hover {
+  transition: opacity 0.3s;
   color: #EA167B;
 }
 
-.menu #active-2 {
-  color: #7CEF01;
-}
-
-.menu a:hover {
-  opacity: 0.7;
-}
 
 /* Fim do Css do Header */
+.container-banner {
+  display: flex;
+  flex-direction: column;
+  margin: auto; 
+  width: 95%;
+  height: 320px;  
+  position: relative;
+}
+
+section {
+  text-align: center;
+  position: relative;
+}
+
+.banner {
+  width: 100%;
+  height: 85%;  
+}
+
+.banner img {
+  width: 100%; 
+  height: 100%; 
+  border-radius: 5px;    
+}
+
+/* Fim do Header */ 
+
+.container-info { 
+  display: flex;  
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.card-info {
+  text-align: center;
+  margin: 10px;
+  padding: 20px 10px;
+  width: 200px;
+  background-color: #E7E6E6;
+  font-family: poppins, sans-serif;  
+  color: #EA167B;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.card-info span {
+  font-weight: bold;
+}
+
+section > h4 {
+  font-weight: 400;
+  padding: 20px;
+}
+
+.card-info p {
+  color: #000;
+}
+
+
+/* Fim container Banner */ 
+
+
+
+
+
+/* Começo do footer  */
+
+
+
+footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  bottom: 0;
+  width: 100%;
+  background: #E7E6E6; 
+}
+
+.limite-largura {
+width: 95%;
+display: flex;
+justify-content: space-around;
+}
+
+.rodape-conteudo {
+  width: 50%;   
+}
+
+.rodape-info > ul > li{
+  margin-bottom: 5px;
+}
+
+.rodape-logo > img {
+  width: 55%;  
+  height: 120px;
+  margin-bottom: 10px;
+}
+
+.rodape-conteudo {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.rodape-midias > h3 {
+  font-weight: 300; 
+}
+
+.rodape-midias > ul {  
+  display: flex;
+  justify-content: center;
+}
+
+.rodape-midias img {
+  height: 3.5rem;
+}
+
+.rodape-badges > ul {
+  display: flex;
+  justify-content: center; 
+}
+
+.rodape-badges img {
+  height: 5rem;
+}
 
