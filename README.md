@@ -4,11 +4,12 @@ A **Plataforma Mãos Unidas** visa promover a solidariedade e otimizar a distrib
 
 ## 🚀 Começando - Visão Geral
 
-Bem-vindo à nossa iniciativa dedicada a reduzir o desperdício de alimentos e fortalecer a colaboração entre empresas dispostas a doar alimentos e Bem-vindo à nossa iniciativa dedicada a reduzir o desperdício de alimentos e fortalecer a colaboração entre empresas doadoras e organizações não governamentais (ONGs) que necessitam desses recursos. Esta plataforma inovadora visa criar uma rede eficiente para conectar doadores a beneficiários, promovendo ações altruístas e impacto social positivo.
+Bem-vindo à nossa iniciativa dedicada a reduzir o desperdício de alimentos e fortalecer a colaboração entre empresas dispostas a doar alimentos e organizações não governamentais (ONGs) que necessitam desses recursos. Esta plataforma inovadora visa criar uma rede eficiente para conectar doadores a beneficiários, promovendo ações altruístas e impacto social positivo.
 
 Consulte **[Implantação](#-implanta%C3%A7%C3%A3o)** para saber como implantar o projeto.
 
 ### Mapeamento de Doações de Alimentos no Brasil
+
 Este projeto tem como objetivo mapear áreas em todo o Brasil onde a fome é um problema e facilitar a doação de alimentos para combater essa situação. Seguindo o Objetivo 3 de Desenvolvimento Sustentável, que visa garantir uma vida saudável e promover o bem-estar para todos, estamos focados em reduzir a insegurança alimentar e minimizar o desperdício de alimentos.
 
 ### Funcionalidades
@@ -88,7 +89,7 @@ Esses pré-requisitos ajudam a garantir a integridade e eficácia da Plataforma 
 Ferramentas que utilizamos para criar nosso projeto.
 
 * Html 
-* CSS
+* Css
 * Javascript
 * Canvas
 * Vscode
@@ -105,10 +106,10 @@ Nós usamos [SemVer](http://semver.org/) para controle de versão. Para as vers�
 
 ## ✒️ Autores
 
-* **Josy Gonçalvesr** - [Github](https://github.com/JcG8Dev)
+* * **Josy Gonçalves** - [Github](https://github.com/JcG8Dev)
 * * **Marcela Bino** - [Github](https://github.com/marcelabino)
 * * **Tiago Barbosa** - [Github](https://github.com/TiagoBarbosa88)
-* * **Wesley Gusmãor** - [Github](https://github.com/wesley-gusmao)
+* * **Wesley Gusmão** - [Github](https://github.com/wesley-gusmao)
 * * **Osmar Filho** - [Github](https://github.com/OPSFilho)
 
 Você também pode ver a lista de todos os [colaboradores](https://github.com/TiagoBarbosa88/Projeto-Maos_Unidas/settings/access) que participaram deste projeto.

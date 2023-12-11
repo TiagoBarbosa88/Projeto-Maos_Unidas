@@ -2,32 +2,47 @@
   padding: 0;
   margin: 0;
   text-decoration: none;
-  list-style: none;
+  box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  font-family: poppins, sans-serif;
-  width: 100wh;
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
+
+a:hover {
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1400px; /* Defina a largura máxima desejada */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+}
+
 
 /* Começo do Css do Header */
 
 header {
-  background-color: #fff;
-  padding: 15px;
+  padding: 15px 0;
+  margin: 20px 10px;
   text-align: center;
   color: rgb(14, 14, 14);
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  height: 100px;
+  justify-content: space-around;
+  height: 50px;
   width: 100%;
 }
 
 #logo {
-  width: 25%;
+  width: 20%;
   
 }
 
@@ -40,11 +55,12 @@ header {
 .menu li {
   margin: 10px;
   padding: 10px;
-  transition: opacity 0.3s ease 
+  transition: opacity 0.3s ease; 
+  list-style: none;
 }
 
 .menu a {
-  font-size: large;
+  font-size: 18px ;
   font-weight: bolder;
   color: #7CC92A;
 }
@@ -54,15 +70,20 @@ header {
   color: #EA167B;
 }
 
-/* Fim do Css do Header */
 
+/* Fim do Css do Header */
 .container-banner {
   display: flex;
   flex-direction: column;
   margin: auto; 
-  width: 85%;
-  height: 280px;  
+  width: 95%;
+  height: 320px;  
   position: relative;
+}
+
+section {
+  text-align: center;
+  margin-bottom: 15px;
 }
 
 .banner {
@@ -73,39 +94,187 @@ header {
 .banner img {
   width: 100%; 
   height: 100%; 
-  border-radius: 5px;  
+  border-radius: 5px;   
 }
 
-.container-info {
-  position: absolute; 
-  bottom: -60px;
-  left: 50%; 
-  transform: translateX(-50%); 
+/* Fim container Banner */ 
+
+.container-info { 
   display: flex;  
-  justify-content: space-between;
+  justify-content: space-evenly;
   width: 100%;
 }
 
 .card-info {
   text-align: center;
   margin: 10px;
+  padding: 20px 10px;
   width: 200px;
-  background-color: #fff;
-  font-family: poppins, sans-serif;
-  font-weight: 800;
+  background-color: #E7E6E6;
+  font-family: poppins, sans-serif;  
   color: #EA167B;
-  border-radius: 5px;
+  border-radius: 10px;
   text-transform: uppercase;
   font-size: 14px;
 }
 
-.card-info a {
-  color: #3B98D1;
+.card-info span {
+  font-weight: bold;
 }
-.card-info a:hover {
-  transition: opacity 0.3s;
-  color: #7CC92A;
+
+section > h4 {
+  font-weight: 400;
+  padding: 20px;
+}
+
+.card-info p {
+  color: #000;
+}
+/* Fim container Card */ 
+
+.container-video {
+  display: flex;
+  width: 95%;    
+  height: 300px;
+}
+
+.info-left {
+  width: 50%;
+  background-color: #E7E6E6;
+  border-radius: 5px 0 0 5px;
+}
+
+.info-left p {
+  margin: 40px;
+}
+
+.info-right {
+ align-items: center;
+ width: 50%;
+}
+
+.info-right embed {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+} 
+
+/* Fim container video */ 
+
+.container-contador {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.contador-title {
+  color: #EA167B;
+}
+
+/* Fim container Contador */ 
+.info-left h2 {
+  margin: 20px;
+}
+
+.info-left p {
+  margin: 40px;
+}
+
+.container-img {
+  display: flex;
+  width: 95%;    
+  height: 600px;
+}
+
+.info-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: sticky;
+
+} 
+
+/* Começo do container detalhes  */
+
+.container-detalhes h1 {
+  margin: 10px;
+}
+
+.lista {
+  text-align: center;
+  border: 1px red solid;
+  margin-left: 150px;
+}
+
+.lista ol {
+  align-items: start;
+  list-style: decimal inside;
+}
+
+.lista li {
+  text-align: start  ;
 }
 
 
-/* Fim container Banner */ 
+/* Começo do footer  */
+
+footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  bottom: 0;
+  width: 100%;
+  background: #E7E6E6; 
+}
+
+.limite-largura {
+width: 95%;
+display: flex;
+justify-content: space-around;
+}
+
+.rodape-conteudo {
+  width: 50%;   
+}
+
+.rodape-info > ul > li{
+  margin-bottom: 5px;
+  list-style: none;
+}
+
+.rodape-logo > img {
+  width: 55%;  
+  height: 120px;
+  margin-bottom: 10px;
+}
+
+.rodape-conteudo {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.rodape-midias > h3 {
+  font-weight: 300; 
+}
+
+.rodape-midias > ul {  
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.rodape-midias img {
+  height: 3.5rem;
+}
+
+.rodape-badges > ul {
+  list-style: none;
+  display: flex;
+  justify-content: center; 
+}
+
+.rodape-badges img {
+  height: 5rem;
+}
+
