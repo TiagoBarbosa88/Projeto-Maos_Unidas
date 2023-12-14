@@ -7,17 +7,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;1,600&display=swap"
     rel="stylesheet">
   <script src="https://kit.fontawesome.com/7b6cffeae5.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/cadastro-doadores.css">
   <title>Projeto Mãos Unidas</title>
 </head>
-
 <body>
   <header>
     <img id="logo" src="./src/logo-projeto/logo-projeto-social.png" alt="logo mãos unidas">
 
     <div class="menu-container">
       <ul class="menu">
-        <li><a href="index.html">Fome <br>no Brasil</a></li>
+        <li><a href="#fome-brasil">Fome <br>no Brasil</a></li>
         <li><a href="nosso_trabalho.html">Nosso<br>Trabalho</a></li>
         <li><a href="cadastro_doadores.html">Cadastro <br> Empresas</a></li>
         <li><a href="cadastro-ongs.html">Cadastro <br> Ongs</a></li>
@@ -25,7 +24,6 @@
       </ul>
     </div>
   </header>
-  <!------- Fim do Header --------->
   <div class="container">
     <main>
       <section class="container-banner">
@@ -33,12 +31,45 @@
           <img src="./src/imagens-projeto/banner-principal.png" alt="">
         </div>
       </section>
-      <section>
-        <!-- COLOCAR o conteúdo aqui -->
+      <section class="container-principal">
+        <div class="container-esquerda">
+          <img src="src/imagens-projeto/imagem-pag3.png" alt="doação" height="500" width="">
+        </div>
+        
+        <div class="container-direita">
+          <h2>
+            Seja um agente transformador. <br>
+              Preencha os dados abaixo
+          </h2>
+          <div class="formulario">
+            <form action="">
+              <label for="">Nome da organização:</label>
+              <input type="text"> <br>
+              <label for="">Tipo de organização:</label>
+              <input type="text"> <br>
+              <label for="">CNPJ:</label>
+              <input type="text"> <br>
+              <label for="">Telefone:</label>
+              <input type="text"> <br>
+              <label for="">Frequência da doação:</label>
+              <input type="checkbox"> Semanal 
+              <input type="checkbox"> Mensal <br>
+              <label for="">Como conheceu a Mãos Unidas:</label>
+              <input type="text"> <br>
+              <label for="">Redes Sociais:</label>
+              <input type="text"> <br>
+              <p>Deseja receber informações sobre o impacto das doações recebidas e demais campanhas</p>
+              <input type="checkbox"> Sim, por favor. Desejo receber 
+              essas comunicações. <br>
+              <input type="checkbox"> Desejo participar do Ranking de gamificações <br>
+              <input type="button" value="Cadastrar">
+             </form>
+          </div>
+        </div>
       </section>
-    </main>
-    <!------- Fim do MAIN --------->
+    </main>    
   </div> 
+  <!------- Fim do MAIN --------->
   <footer>
     <div class="rodape limite-largura">
       <div class="rodape-conteudo">
