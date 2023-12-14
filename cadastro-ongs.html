@@ -26,65 +26,63 @@
         </div>
       </header>
     <!-- Fim do Header -->
+    <main>
+        <section class="subtitulo">
+            <div class="container-esquerda">
+                <h3>Participe desse projeto que <br>
+                une vidas! <br>
+                Cadastre sua ONG
+                </h3>
+            </div>
 
-    <div class="container">
-        <main>
-            <section class="container-banner">
-                <div class="banner">
-                  <img src="./src/imagens-projeto/banner-principal.png" alt="">
-                </div>
-              </section>
-            <section>
-                <div class="main">
-                    <div class="header">
-                        <img src="./src/imagens-projeto/imagem-pag4.png" alt="Banner mulher organizando alimentos.">
-                    </div>
-                    <h3>Participe desse projeto que une vidas!
-                        Cadastre sua ONG
-                    </h3>
-                    <div class="content">
-                        <form method="get">
-                            
-                                <legend>Informações da ONG</legend>
-                                <label for="name">Nome da ONG:</label>
-                                <input type="text" id="name" name="name">
+            <div class="formulario">
+                <form action="">
+                    <label for="nome">Nome da ONG</label>
+                    <input type="text" name="nome" id="Nome"><br>
 
-                                <label for="text">Missão/Propósito da Organização:</label>
-                                <input type="text" id="text" name="text">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email"><br>
 
-                                <label for="cnpj">CNPJ:</label>
-                                <input type="text" name="cnpj" id="cnpj">
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" id="senha"><br>
 
-                                <label for="responsavel">Nome do Responsável:</label>
-                                <input type="text" id="responsavel" name="responsavel">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" name="telefone" id="telefone"><br>
 
-                                <label for="localidade">Localidade Atendida:</label>
-                                <input type="text" id="localidade" name="localidade">
+                    <label for="cnpj">CNPJ</label>
+                    <input type="number" name="cnpj" id="cnpj"><br>
 
-                                <label for="beneficiarios">Número de Beneficiários:</label>
-                                <input type="text" id="beneficiarios" name="beneficiarios">
+                    <label for="localidade">Localidade Atendida</label>
+                    <input type="text" name="localidade" id="localidade"><br>
 
-                                <label for="redesSociais">Redes Sociais:</label>
-                                <input type="text" id="redesSociais" name="redesSociais">
+                    <label for="rede-sociais">Redes Sociais</label>
+                    <input type="text" name="redes-sociais" id="redes-sociais"><br>
 
-                                <legend>Compromissos e Responsabilidades</legend>
-                                <div class="checkbox-group">
-                                    <label>
-                                        <input type="checkbox" name="compromisso1"> Compromisso em utilizar os alimentos
-                                        para fins previstos.
-                                    </label>
-                                    <label>
-                                        <input type="checkbox" name="compromisso2"> Acordo para fornecer relatórios
-                                        regulares sobre a distribuição de alimentos.
-                                    </label>
-                                </div>
+                </form>
+            </div>
+        </section>
+        <section class="compromissos">
+            <legend>Compromissos e Responsabilidades</legend><br>
+            <input type="radio" name="compromisso">
+            <label for="text">Compromisso em utilizar os alimentos
+            para fins previstos.</label><br>
 
-                            <input type="submit" value="Cadastrar">
-                        </form>
-                    </div>
-                </div>
-            </section>
-        </main>
+            <input type="radio" name="responsabilidade">
+            <label for="text">Acordo para fornecer relatórios
+            regulares sobre a distribuição de alimentos.</label><br>
+        </section>
+        <section class="Cadastrar">
+            <input type="submit" value="Cadastrar">
+        </section>
+
+        <section class="container-banner">
+            <div class="container-direita">
+                <img src="./src/imagens-projeto/imagem-pag4.png" alt="alimentos" height="300" width="">
+            </div>
+        </section>
+            
+    </main>
+
         <!-- Fim do MAIN -->
     </div>
 
