@@ -1,4 +1,4 @@
-function criarHeader() {
+/* function criarHeader() {
   const header = document.createElement('header');
 
   const logo = document.createElement('img');
@@ -38,3 +38,4 @@ function criarHeader() {
 
 // Chame a função para criar o header
 criarHeader();
+ */
