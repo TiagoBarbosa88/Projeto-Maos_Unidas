@@ -26,11 +26,6 @@ a:hover {
   padding: 15px;
 }
 
-main {
-  min-width: 1400px;
-}
-
-
 /* Começo do Css do Header */
 
 header {
@@ -76,6 +71,10 @@ header {
 
 
 /* Fim do Css do Header */
+
+
+/* Começo container Banner */ 
+
 .container-banner {
   display: flex;
   flex-direction: column;
@@ -83,6 +82,10 @@ header {
   width: 95%;
   height: 320px;  
   position: relative;
+}
+
+main {
+  width: 1400px;
 }
 
 section {
@@ -93,7 +96,7 @@ section {
 .banner {
   width: 100%;
   height: 85%;  
-}
+ }
 
 .banner img {
   width: 100%; 
@@ -103,11 +106,98 @@ section {
 
 /* Fim container Banner */ 
 
+/* Começo container informação  */
 
-/* Colocar seus css aqui  */
+.container-informacao {
+  width: 100%;
+  padding: 50px;
+}
+
+.container-informacao h3 {
+  color: #EA167B;
+}
+
+.container-informacao p {
+  background-color: #E7E6E6;
+  padding: 50px;
+  width: 100%;
+}
 
 
 
+/* Começo container img  */
+
+.container-img {
+  display: flex;
+  width: 100%;
+  height: 350px;
+}
+
+.container-left {
+  width: 50%;
+  background-color: #E7E6E6;
+
+}
+
+.container-right {
+  width: 50%;
+
+}
+
+.container-right > img {
+  width: 450px;
+  
+}
+
+
+.container-img2 h3{
+  color: #EA167B;
+}
+
+.container-img2 p{
+  background:#E7E6E6;
+}
+
+.coluna50p-esquerda {
+  width: 50%;
+  float: left;
+}
+
+.coluna50p-direita {
+  width: 50%;
+  float: left;
+}
+
+/* começo div esquerda e direita */
+
+.coluna-esquerda {
+  width: 33%;
+  float: left;
+}
+
+.coluna-esquerda b{
+  color: #EA167B;
+}
+
+.coluna-meio {
+  width: 33%;
+  float: left;
+}
+
+.coluna-meio b{
+  color: #EA167B;
+}
+
+.coluna-direita {
+  width: 33%;
+  float: left;
+}
+
+.coluna-direita b {
+  color: #EA167B;
+}
+
+/* fim div esquerda e direita */
 
 
 /* Começo do footer  */
