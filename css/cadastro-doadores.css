@@ -25,13 +25,17 @@
     margin-right: auto;
     padding: 15px;
   }
+
+  main {
+    min-width: 1400px;
+  }
   
   
   /* Começo do Css do Header */
   
   header {
     padding: 15px 0;
-    margin: 20px 10px;
+    margin: 40px 10px;
     text-align: center;
     color: rgb(14, 14, 14);
     display: flex;
