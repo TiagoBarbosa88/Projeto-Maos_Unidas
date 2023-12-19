@@ -28,7 +28,7 @@ a:hover {
 /* Começo do Css do Header */
 
 header {
-  padding: 15px 0;
+  padding: 15px 10px;
   margin: 40px 10px;
   text-align: center;
   color: rgb(14, 14, 14);
@@ -61,11 +61,13 @@ header {
   font-size: 18px ;
   font-weight: bolder;
   color: #7CC92A;
+  transition: box-shadow 0.3s;
 }
 
 .menu a:hover {
   transition: opacity 0.3s;
   color: #EA167B;
+  text-shadow: 5px 2px 5px rgba(0, 0, 0, 0.2)
 }
 
 
@@ -89,7 +91,7 @@ main {
 
 section {
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 .banner {
