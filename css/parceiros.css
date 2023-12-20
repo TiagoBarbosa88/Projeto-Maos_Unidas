@@ -1,0 +1,198 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  a:hover {
+    cursor: pointer;
+  }
+  
+  .container {
+    max-width: 1400px; /* Defina a largura máxima desejada */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+  }
+  
+  
+  /* Começo do Css do Header */
+  
+  header {
+    padding: 15px 0;
+    margin: 20px 10px;
+    text-align: center;
+    color: rgb(14, 14, 14);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 50px;
+    width: 100%;
+  }
+  
+  #logo {
+    width: 20%;
+    
+  }
+  
+  .menu-container > ul {
+    display: flex;
+    gap: 10px; 
+    
+  }
+  
+  .menu li {
+    margin: 10px;
+    padding: 10px;
+    transition: opacity 0.3s ease; 
+    list-style: none;
+  }
+  
+  .menu a {
+    font-size: 18px ;
+    font-weight: bolder;
+    color: #7CC92A;
+  }
+  
+  .menu a:hover {
+    transition: opacity 0.3s;
+    color: #EA167B;
+  }
+
+/*estilização do banner parceiros*/
+
+ #banner {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 350px;
+    margin-bottom: 20px;
+  }
+
+  .texto h4 {
+    color:#EA167B;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+
+  .texto h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    color:blue;
+  }
+
+  .texto p {
+    color: blue;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .icons {
+    display: block;
+    width: 90%;
+    background-color: #f0f0f0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: bold;
+    margin-bottom: 40px;
+  }
+
+  p {
+    color: blue;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  button {
+    background-color: #7CC92A;
+    color: white;
+    padding: 10px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;  
+  }
+
+  /* Começo do footer  */
+
+footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  bottom: 0;
+  width: 100%;
+  background: #E7E6E6; 
+}
+
+.limite-largura {
+width: 95%;
+display: flex;
+justify-content: space-around;
+}
+
+.rodape-conteudo {
+  width: 50%;   
+}
+
+.rodape-info > ul > li{
+  margin-bottom: 5px;
+  list-style: none;
+}
+
+.rodape-logo > img {
+  width: 55%;  
+  height: 120px;
+  margin-bottom: 10px;
+}
+
+.rodape-conteudo {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.rodape-midias > h3 {
+  font-weight: 300; 
+}
+
+.rodape-midias > ul {  
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.rodape-midias img {
+  height: 3.5rem;
+}
+
+.rodape-badges > ul {
+  list-style: none;
+  display: flex;
+  justify-content: center; 
+}
+
+.rodape-badges img {
+  height: 5rem;
+}
+
+  
