@@ -76,8 +76,8 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 90%;
-    height: 350px;
+    width: 1200px;
+    height: 250px;
     margin-bottom: 20px;
   }
 
@@ -101,12 +101,13 @@
   }
 
   .icons {
-    display: block;
-    width: 90%;
+    display: flex;
+    width: 1200px;
     background-color: #f0f0f0;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 40px;
+     margin-bottom: 40px;
+  }
+  li {
+    list-style: none;
   }
 
   h2 {
@@ -123,13 +124,14 @@
 
   button {
     background-color: #7CC92A;
+    font-weight: bold;
     color: white;
-    padding: 10px 50px;
+    padding: 15px 50px;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+    display: block;
     border-radius: 10px;  
+    border: 20px;
+    margin-left: 450px;
   }
 
   /* Começo do footer  */
