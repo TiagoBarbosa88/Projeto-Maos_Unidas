@@ -106,11 +106,15 @@ Nós usamos [SemVer](http://semver.org/) para controle de versão. Para as vers�
 
 ## ✒️ Autores
 
-* * **Josy Gonçalves** - [Github](https://github.com/JcG8Dev)
-* * **Marcela Bino** - [Github](https://github.com/marcelabino)
-* * **Tiago Barbosa** - [Github](https://github.com/TiagoBarbosa88)
-* * **Wesley Gusmão** - [Github](https://github.com/wesley-gusmao)
-* * **Osmar Filho** - [Github](https://github.com/OPSFilho)
+| [<img src="https://avatars.githubusercontent.com/u/136193498?s=96&v=4" width="100">](https://github.com/JcG8Dev) | [<img src="https://avatars.githubusercontent.com/u/134214698?s=96&v=4" width="100">](https://github.com/marcelabino) | [<img src="https://avatars.githubusercontent.com/u/55719708?s=96&v=4" width="100">](https://github.com/TiagoBarbosa88) | [<img src="https://avatars.githubusercontent.com/u/152104120?s=96&v=4" width="100">](https://github.com/wesley-gusmao) | [<img src="https://avatars.githubusercontent.com/u/152831303?s=60&v=4" width="100">](https://github.com/OPSFilho) |
+|:---:|:---:|:---:|:---:|:---:|
+| [Josy Gonçalve](https://github.com/JcG8Dev) | [Marcela Bino](https://github.com/marcelabino) | [Tiago Barbosa](https://github.com/TiagoBarbosa88) | [Wesley Gusmão](https://github.com/wesley-gusmao) | [Osmar Filho](https://github.com/OPSFilho) |
+
+
+
+
+
+
 
 Você também pode ver a lista de todos os [colaboradores](https://github.com/TiagoBarbosa88/Projeto-Maos_Unidas/settings/access) que participaram deste projeto.
 

@@ -1,103 +1,4 @@
-* {
-  padding: 0;
-  margin: 0;
-  text-decoration: none;
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-a:hover {
-  cursor: pointer;
-}
-
-.container {
-  max-width: 1400px; /* Defina a largura máxima desejada */
-  margin-left: auto;
-  margin-right: auto;
-  padding: 15px;
-}
-
-
-/* Começo do Css do Header */
-
-header {
-  padding: 15px 0;
-  margin: 20px 10px;
-  text-align: center;
-  color: rgb(14, 14, 14);
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  height: 50px;
-  width: 100%;
-}
-
-#logo {
-  width: 20%;
-  
-}
-
-.menu-container > ul {
-  display: flex;
-  gap: 10px; 
-  
-}
-
-.menu li {
-  margin: 10px;
-  padding: 10px;
-  transition: opacity 0.3s ease; 
-  list-style: none;
-}
-
-.menu a {
-  font-size: 18px ;
-  font-weight: bolder;
-  color: #7CC92A;
-}
-
-.menu a:hover {
-  transition: opacity 0.3s;
-  color: #EA167B;
-}
-
-
-/* Fim do Css do Header */
-.container-banner {
-  display: flex;
-  flex-direction: column;
-  margin: auto; 
-  width: 95%;
-  height: 320px;  
-  position: relative;
-}
-
-section {
-  text-align: center;
-  margin-bottom: 15px;
-}
-
-.banner {
-  width: 100%;
-  height: 85%;  
-}
-
-.banner img {
-  width: 100%; 
-  height: 100%; 
-  border-radius: 5px;   
-}
-
-/* Fim container Banner */ 
+@import url(./global.css);
 
 .container-info { 
   display: flex;  
@@ -107,7 +8,6 @@ section {
 
 .card-info {
   text-align: center;
-  margin: 10px;
   padding: 20px 10px;
   width: 200px;
   background-color: #E7E6E6;
@@ -116,6 +16,7 @@ section {
   border-radius: 10px;
   text-transform: uppercase;
   font-size: 14px;
+  box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .card-info span {
@@ -136,6 +37,7 @@ section > h4 {
   display: flex;
   width: 95%;    
   height: 300px;
+  box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .info-left {
@@ -170,10 +72,17 @@ section > h4 {
 display: flex;
 flex-direction: column;
 align-items: center;
+
 }
 
 .contador-title {
   color: #EA167B;
+  margin: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2)
+}
+
+.paragrafo {
+  margin-top: 20px;
 }
 
 /* Fim container Contador */ 
@@ -181,6 +90,7 @@ align-items: center;
   display: flex;
   width: 95%;    
   height: 600px;
+  box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .info-left-img {
@@ -191,6 +101,7 @@ align-items: center;
 
 .info-left-img h2 {
   margin: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2)
 }
 
 .info-left-img p {
