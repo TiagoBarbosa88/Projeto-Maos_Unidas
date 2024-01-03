@@ -75,6 +75,20 @@ align-items: center;
 
 }
 
+.container__contador > .card-info {
+  text-align: center;
+  padding: 20px 10px;
+  width: 200px;
+  background-color: #E7E6E6;
+  font-family: poppins, sans-serif;  
+  color: #EA167B;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-size: 14px;
+  box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.2);
+
+}
+
 .contador-title {
   color: #EA167B;
   margin: 20px;
@@ -132,73 +146,72 @@ align-items: center;
   list-style: decimal inside;
 }
 
-/* .lista li {
-  text-align: start  ;
+@media screen and (max-width: 800px) { 
+
+  .container-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    
+  }
+ 
+  .card-info {
+    width: 90%; 
+    align-items: center;
+    padding: 20px 10px;
+    margin: 10px;
 }
- */
 
+  .container-video {    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: auto;
+    margin: 10px;
+  }
 
+  .info-left, .info-right {
+    width: 100%;
+  }
+
+  .info-right embed {
+    width: 100%;
+    height: auto; 
+    object-fit: contain;
+  }
+
+  .container__contador {
+    width: 100%; 
+    text-align: center;
+
+    .card-info {
+      width: 90%;
+      padding: 20px 10px;
+      margin: 10px;
+    }
+
+  } 
  
 
-/* Começo do footer  */
+  .container-img {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
 
-footer {
-  margin-top: 20px;
-  display: flex;
-  justify-content: space-around;
-  bottom: 0;
-  width: 100%;
-  background: #E7E6E6; 
-}
+    .info-left-img {
+      width: 100%;
+    }
+  }
 
-.limite-largura {
-width: 95%;
-display: flex;
-justify-content: space-around;
-}
+  .container-detalhes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
 
-.rodape-conteudo {
-  width: 50%;   
-}
 
-.rodape-info > ul > li{
-  margin-bottom: 5px;
-  list-style: none;
-}
-
-.rodape-logo > img {
-  width: 55%;  
-  height: 120px;
-  margin-bottom: 10px;
-}
-
-.rodape-conteudo {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  padding-top: 10px;
-}
-
-.rodape-midias > h3 {
-  font-weight: 300; 
-}
-
-.rodape-midias > ul {  
-  list-style: none;
-  display: flex;
-  justify-content: center;
-}
-
-.rodape-midias img {
-  height: 3.5rem;
-}
-
-.rodape-badges > ul {
-  list-style: none;
-  display: flex;
-  justify-content: center; 
-}
-
-.rodape-badges img {
-  height: 5rem;
 }
