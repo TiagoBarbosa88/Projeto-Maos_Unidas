@@ -4,7 +4,7 @@
 
 .container-informacao {
   width: 100%;
-  padding: 50px;
+  padding: 20px;
 }
 
 .container-informacao h3 {
@@ -13,8 +13,11 @@
 
 .container-informacao p {
   background-color: #E7E6E6;
-  padding: 50px;
+  padding: 20px;
   width: 100%;
+  border: 1px red solid;
+  border-radius: 10px;
+  box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -24,7 +27,6 @@
 .container-img {
   display: flex;
   width: 100%;
-  height: 350px;
 }
 
 .container-left {
@@ -64,7 +66,14 @@
 
 /* começo div esquerda e direita */
 
-.coluna-esquerda {
+
+.container-numeros {
+  width: 100% ;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* .coluna-esquerda {
   width: 33%;
   float: left;
 }
@@ -89,6 +98,35 @@
 
 .coluna-direita b {
   color: #EA167B;
-}
+
 
 /* fim div esquerda e direita */
+
+@media screen and (max-width: 800px) { 
+
+  .container-img {
+    border: 1px red solid;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container-left {
+    width: 100%;  
+  }
+
+  .container-right > img {
+    width: 300px;
+    
+  }
+  
+  .container-right {
+    width: 100%;  
+  }
+
+  .container-numeros {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
