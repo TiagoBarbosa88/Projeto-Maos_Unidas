@@ -12,6 +12,8 @@ section h1,h2,h3,p {
 width: 100%;
 background-color: #E7E6E6;
 border-radius: 5px;
+box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+
 }
 
 .container-parceiros div {

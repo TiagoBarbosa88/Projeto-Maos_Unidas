@@ -35,10 +35,16 @@ a:hover {
 }
 
 .container {
-  align-items: center;
+  /* align-items: center; */
   width: 100%;
   max-width: 1400px; /* Defina a largura máxima desejada */
-  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+main section {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Começo do Css do Header */
