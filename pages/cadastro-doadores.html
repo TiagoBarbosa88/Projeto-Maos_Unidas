@@ -15,79 +15,97 @@
   <link rel="icon" type="image/x-icon" href="../src/logo-projeto/logo-maos-unidas-favicon.png">
 
   <link rel="stylesheet" href="../css/cadastro-doadores.css">
+  <script src="../js/script-2.js" defer></script>
   <title>Projeto Mãos Unidas :: Cadastro Doadores</title>
 </head>
 
 <body>
   <header>
-    <img id="logo" src="../src/logo-projeto/logo-projeto-social.png" alt="logo mãos unidas">
+    <div class="limitar-secao">
+      <div>
+        <a href="../index.html">
+          <img id="logo" src="../src/logo-projeto/logo-projeto-social.png" alt="logo mãos unidas">
+        </a>
+      </div>
 
-    <div class="menu-container">
-      <ul class="menu">
-        <li><a href="../index.html">Fome <br>no Brasil</a></li>
-        <li><a href="nosso-trabalho.html">Nosso<br>Trabalho</a></li>
-        <li><a href="cadastro-doadores.html">Cadastro <br> Empresas</a></li>
-        <li><a href="cadastro-ongs.html">Cadastro <br> Ongs</a></li>
-        <li><a href="parceiros.html">Parceiros</a></li>
-      </ul>
+      <div class="menu-container">
+        <ul class="menu">
+          <li><a href="../index.html">Fome no Brasil</a></li>
+          <li><a href="../pages/nosso-trabalho.html">Nosso Trabalho</a></li>
+          <li><a href="../pages/parceiros.html">Parceiros</a></li>
+          <li><a href="../pages/cadastro.html">Cadastro</a></li>
+          <li><a href="../pages/login.html">Login</a></li>
+        </ul>
+      </div>
+      <div>
+        <button onclick="alterarTema()" class="modo-claro">
+          <img class="btn-icone" src="../src/icones-projeto/moon.png" alt="icone" />
+        </button>
+      </div>
     </div>
   </header>
   <div class="container">
     <main>
-      <section class="container-banner">
-        <div class="banner">
-          <img src="../src/imagens-projeto/banner-principal.png" alt="">
+      <section class="container-banner"></section>
+
+      <section class="container-esquerda">
+        <div>
+          <img src="../src/imagens-projeto/imagem-pag3.png" alt="doação" height="600" width="">
         </div>
       </section>
-      <section class="container-principal">
-        <div class="container-esquerda">
-          <img src="../src/imagens-projeto/imagem-pag3.png" alt="doação" height="500" width="">
-        </div>
+      <section class="container-direita">
+        <h2>
+          Seja um agente transformador. <br>
+          Preencha os dados abaixo
+        </h2>
+        <div class="formulario">
+          <form action="">
+            <label for="">Nome da organização:</label>
+            <input type="text"><br>
 
-        <div class="container-direita">
-          <h2>
-            Seja um agente transformador. <br>
-            Preencha os dados abaixo
-          </h2>
-          <div class="formulario">
-            <form action="">
-              <label for="">Nome da organização:</label>
-              <input type="text"> <br>
-              <label for="">Tipo de organização:</label>
-              <input type="text"> <br>
-              <label for="">CNPJ:</label>
-              <input type="text"> <br>
-              <label for="">Telefone:</label>
-              <input type="text"> <br>
-              <label for="">Frequência da doação:</label>
-              <input type="checkbox"> Semanal
-              <input type="checkbox"> Mensal <br>
-              <label for="">Como conheceu a Mãos Unidas:</label>
-              <input type="text"> <br>
-              <label for="">Redes Sociais:</label>
-              <input type="text"> <br>
-              <p>Deseja receber informações sobre o impacto das doações recebidas e demais campanhas</p>
-              <input type="checkbox"> Sim, por favor. Desejo receber
-              essas comunicações. <br>
-              <input type="checkbox"> Desejo participar do Ranking de gamificações <br>
-              <input type="button" value="Cadastrar">
-            </form>
-          </div>
+            <label for="">Tipo de organização:</label>
+            <input type="text"> <br>
+
+            <label for="">CNPJ:</label>
+            <input type="text"> <br>
+
+            <label for="">Telefone:</label>
+            <input type="text"> <br>
+
+            <label for="">Frequência da doação:</label>
+            <input type="checkbox"> Semanal
+            <input type="checkbox"> Mensal <br>
+
+            <label for="">Como conheceu a Mãos Unidas:</label>
+            <input type="text"> <br>
+
+            <label for="">Redes Sociais:</label>
+            <input type="text"> <br>
+
+            <p>Deseja receber informações sobre o impacto das doações recebidas e demais campanhas</p>
+            <input type="checkbox"> Sim, por favor. Desejo receber
+            essas comunicações. <br>
+
+            <input type="checkbox"> Desejo participar do Ranking de gamificações <br>
+
+            <input type="button" value="Cadastrar">
+          </form>
         </div>
+      </section>
       </section>
     </main>
   </div>
   <!------- Fim do MAIN --------->
   <footer>
     <div class="rodape limite-largura">
-      <div class="rodape-conteudo">
+      <div class="rodape-conteudo2">
         <div class="rodape-logo">
           <img src="../src/logo-projeto/logo-projeto-social.png" alt="" srcset="">
         </div>
         <div class="rodape-info">
           <ul>
-            <li>Rua dos Alfeneiros, 04 – Paraty</li>
-            <li>CEP 20200-020 – Rio de Janeiro</li>
+            <!--   <li>Rua dos Alfeneiros, 04 – Paraty</li>
+            <li>CEP 20200-020 – Rio de Janeiro</li> -->
             <li>Inscrição municipal: 987654321</li>
             <li>CNPJ: 12.345.678/9001-23</li>
           </ul>
@@ -108,20 +126,20 @@
             <li><img src="../src/icones-projeto/selo-homem.png" alt=""></li>
             <li><img src="../src/icones-projeto/selo-globo-pessoas.png" alt=""></li>
             <li><img src="../src/icones-projeto/selo-global.png" alt=""></li>
-            <li><img src="../src/icones-projeto/selo-prato.png" alt=""></li>
+            <li><img src="../src/icones-projeto/selo-segu.png" alt=""></li>
           </ul>
           <ul>
             <li><img src="../src/icones-projeto/selo-familia.png" alt=""></li>
             <li><img src="../src/icones-projeto/selo-homem.png" alt=""></li>
+            <li><img src="../src/icones-projeto/selo-prato.png" alt=""></li>
+
             <li class="badge-quality"><img src="../src/icones-projeto/qualidade.png" alt=""></li>
-            <li><img src="../src/icones-projeto/selo-seguranca.png" alt=""></li>
           </ul>
         </div>
       </div>
 
     </div>
   </footer>
-  <script defer src="../js/script.js"></script>
 </body>
 
 </html>
