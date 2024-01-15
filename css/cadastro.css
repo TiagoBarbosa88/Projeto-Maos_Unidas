@@ -3,8 +3,8 @@
 main { 
   width: 100%;
   display: flex;
-  justify-content: space-around;
-  
+  flex-wrap: wrap;
+  justify-content: space-around;  
 }
 
 div {
@@ -46,4 +46,25 @@ div img {
 
 .btn:hover {
   transform: scale(1.05);
+}
+
+@media screen and (max-width: 800px) { 
+
+  main {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  div img {
+    width: 90%;
+    height: auto;
+    border-radius: 5px;
+  }
+
+  .btn {
+    width: 90%;
+    height: auto;
+  }
 }
