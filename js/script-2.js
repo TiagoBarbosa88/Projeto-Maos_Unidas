@@ -10,7 +10,7 @@ function alterarTema() {
   botao.classList.toggle('modo-escuro', !temaEscuro);
 
 
-  botao.innerHTML = `<img class="btn-icone" src="src/icones-projeto/${temaEscuro ? 'moon' : 'sun'}.png" alt="icone" />`;
+  botao.innerHTML = `<img class="btn-icone" src="../src/icones-projeto/${temaEscuro ? 'moon' : 'sun'}.png" alt="icone" />`;
 
   // Inverter o valor
   temaEscuro = !temaEscuro;
