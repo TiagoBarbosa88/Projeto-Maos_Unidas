@@ -98,3 +98,49 @@ body {
 .btn:hover {
   transform: scale(1.05);
 }
+
+/* ----- Estilos dinâmicos ----- */
+
+/* Estilos para indicar erro */
+input.error {
+  border: 2px solid #d9534f;
+  background-color: #f2dede;
+  color: #a94442;
+}
+
+.error {
+  border: 2px solid #d9534f;
+  background-color: #f2dede;
+  color: #a94442;
+}
+
+/* Estilos para indicar sucesso ou correção */
+input.correct {
+  border: 2px solid #5cb85c;
+  background-color: #5cb85c;
+  color: #4cae4c;
+}
+
+.correct {
+  /* border: 2px solid #5cb85c; */
+  background-color: #5cb85c;;
+  color: #4cae4c;
+}
+
+/* Estilos para texto de erro */
+.error-text {
+  display: none;  
+}
+
+#senha-error, #usuario-error{
+  display: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #a94442;
+  margin-top: -20px;
+ }
+
+/* Estilos para tornar o texto de erro visível */
+.visible {
+  display: block;
+}
