@@ -144,3 +144,19 @@ input.correct {
 .visible {
   display: block;
 }
+
+
+@media screen and (max-width: 800px) { 
+  .container {
+    width: 80%;
+    /* border: 1px solid red; */
+  }
+
+  .page {
+    width: 50%;
+    height: 100%;
+    border: 1px solid red;
+
+  }
+
+}

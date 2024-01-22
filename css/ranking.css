@@ -1,0 +1,127 @@
+ @import url(./global.css);
+
+main {
+  width: 100%;
+  /* height: 100%; */
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
+}
+
+.item {
+	margin: 5px;
+  background-color: #E7E6E6;
+	text-align: center;
+	font-size: 1.5em;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  border: 1px #7CC92A solid;
+}
+
+
+ .card img {
+  width: 300px;
+  max-height: 300px;
+  border-radius: 8px;
+}
+
+.posicao {
+  font-size: 24px;
+  font-weight: bold;
+  color: #7CC92A;
+}
+
+.nome {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.pontuacao {
+  color: #EA167B;
+  font-weight: bold;
+}
+
+
+ /* Grid */
+.grid {
+  display: grid;
+}
+
+.posicao-1 {
+  grid-area: posicao-1;
+}
+  
+.posicao-2 {
+  grid-area: posicao-2;
+}
+
+.posicao-3{
+	grid-area: posicao-3;
+}
+
+.posicao-4 {
+	grid-area: posicao-4;
+}
+
+.posicao-5 {
+	grid-area: posicao-5;
+}
+
+.posicao-6 {
+	grid-area: posicao-6;
+}
+
+.grid-template-areas {
+	grid-template-areas:
+		"posicao-1 posicao-2 posicao-4"
+		"posicao-1 posicao-2 posicao-5"
+		"posicao-1 posicao-3 posicao-6"	
+    ;
+}
+
+/* Grid Item */
+
+.grid {
+	width: 70%;
+  /* height: 20%; */
+	margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+h1 {
+	text-align: center;
+	font-size: 2em;
+	font-weight: normal;
+  color: #EA167B;
+  margin-bottom: 20px;
+}
+
+section > div {
+	padding: 10px 0;
+}
+
+section > div > img {
+	display: block;
+	margin: 0 auto;
+	width: 60%;
+} 
+
+
+@media screen and (max-width: 800px) { 
+
+  .grid {
+    display: grid;
+  }
+
+  .grid-template-areas {
+    grid-template-areas:
+      "posicao-1 posicao-1 posicao-1 posicao-1"
+      "posicao-2 posicao-2 posicao-2 posicao-2"
+      "posicao-3 posicao-3 posicao-4 posicao-4"
+      "posicao-5 posicao-5 posicao-6 posicao-6"	
+      ;
+  }
+}
