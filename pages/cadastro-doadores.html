@@ -45,54 +45,93 @@
     </div>
   </header>
   <div class="container">
-    <div class="page">
-      <main>
+     <main> 
+      <section>
+        <h1>
+          Seja um agente transformador. <br>
+          Preencha os dados abaixo
+        </h1>
+      </section>
+        <section class="page">  
           <section class="container-esquerda">
           <div>
             <img id="imagem-doador" src="../src/imagens-projeto/imagem-pag3.png" alt="doação" height="600" width="">
           </div>
-        </section>
-        <section class="container-direita">
-          <h2>
-            Seja um agente transformador. <br>
-            Preencha os dados abaixo
-          </h2>
+          </section>
+         
+          <section class="container-direita">          
           <div class="formDoadores">
-            <form method="POST" >
-              <label for="nome-doador">Nome da organização:</label>
-              <input type="text" id="nome-doador" name="nome-doador"/>
-              <label for="tipo-doador">Tipo de organização:</label>
-              <input type="text" id="tipo-doador" name="tipo-doador"/>
-              <label for="cnpj">CNPJ:</label>
-              <input type="text" id="cnpj" name="cnpj"/>
-              <label for="telefone-doador">Telefone:</label>
-              <input type="text" id="telefone-doador" name="telefone-doador"/>
-             <section>
-               <p>Frequência da doação:</p>
-                  <input type="radio" id="check-semanal" name="check-semanal" value="semanal"/>
-                  <label for="semanal">Semanal</label>
-      
-                  <input type="radio" id="check-mensal" name="check-mensal" value="mensal"/>
-                  <label for="mensal">Mensal</label>
-             </section>
-              <label for="">Como conheceu a Mãos Unidas:</label>
-              <input type="text"> <br>
-              <label for="rede-social-doador">Redes Sociais:</label>
-              <input type="text" id="rede-social-doador" name="rede-social-doador"/>
+            <form method="POST">
+              <div>
+                <label for="nome-doador">Nome da organização:</label>
+                <input type="text" id="nome-doador" name="nome-doador"/>
+              </div>
+
+              <div>
+                <label for="tipo-doador">Tipo de organização:</label>
+                <input type="text" id="tipo-doador" name="tipo-doador"/>
+              </div>
+
+              <div>
+                <label for="cnpj">CNPJ:</label>
+                <input type="number" id="cnpj" name="cnpj"/>
+              </div>
+
+              <div>
+                <label for="telefone-doador">Telefone:</label>
+                <input type="tel" id="telefone-doador" name="telefone-doador"/>
+              </div>       
+             
+                 <section>
+                   <p>Frequência da doação:</p>
+                      <input type="radio" id="check-semanal" name="check-semanal" value="check"/>
+                      <label for="semanal">Semanal</label>
+                      <input type="radio" id="check-mensal" name="check-mensal" value="check"/>
+                      <label for="mensal">Mensal</label>
+                 </section>                           
+
+              <div>
+                <label for="">Como conheceu a Mãos Unidas:</label>
+                <input type="text">
+              </div>
+
+              <div>
+                <label for="rede-social-doador">Redes Sociais:</label>
+                <input type="text" id="rede-social-doador" name="rede-social-doador"/>
+              </div>
+
+              <div>
+                <label for="email">E-mail</label>
+                <input type="emal" id="email-doador" name="email-doador">
+              </div>
+
+              <div>
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha-doador" name="senha-doador">
+              </div>
+
               <p>Deseja receber informações sobre o impacto das doações recebidas e demais campanhas</p>
-              <input type="checkbox" id="aceito-comunicacao" name="aceito-comunicacao"/> <label for="check">
-                Sim, por favor. Desejo receber
-                essas comunicações.
-              </label>
-              <input type="checkbox" id="aceito-ranking" name="aceito-ranking"/> <label for="check">Desejo participar do Ranking de gamificações </label>
-              <button type="button" class="btn" onclick="cadastrarDoador()"> Cadastrar </button>
+              
+                <section>
+                  <input type="checkbox" id="aceito-comunicacao" name="aceito-comunicacao"/> <label for="check">
+                    Sim, por favor. Desejo receber
+                    essas comunicações.
+                  </label>
+                </section>
+                  <section>
+                    <input type="checkbox" id="aceito-ranking" name="aceito-ranking"/> <label for="check">Desejo participar do Ranking de gamificações </label>
+                  </section>           
+              
+              <button type="button" class="btn" onclick="cadastrarDoador()">Cadastrar </button>
+
             </form>
           </div>
-        </section>
+          </section>
+          </section>
         </section>
       </main>
-    </div>
   </div>
+  
   <!------- Fim do MAIN --------->
   <footer>
     <div class="rodape limite-largura">
