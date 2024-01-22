@@ -1,41 +1,34 @@
-/* function criarHeader() {
-  const header = document.createElement('header');
+let temaEscuro = false;
 
-  const logo = document.createElement('img');
-  logo.id = 'logo';
-  logo.src = './src/logo-projeto/logo-projeto-social.png';
-  logo.alt = 'logo mãos unidas';
+function alterarTema() {
+  const corpo = document.body;
+  const botao = document.querySelector('button');
 
-  const menuContainer = document.createElement('div');
-  menuContainer.className = 'menu-container';
+  // Alternar entre temas
+  corpo.classList.toggle('modo-escuro');
+  botao.classList.toggle('modo-claro', temaEscuro);
+  botao.classList.toggle('modo-escuro', !temaEscuro);
 
-  const menuList = document.createElement('ul');
-  menuList.className = 'menu';
 
-  const menuItems = [
-    { text: 'Fome <br>no Brasil', href: '#fome-brasil' },
-    { text: 'Nosso<br>Trabalho', href: './pages/nosso-trabalho.html' },
-    { text: 'Cadastro <br> Empresas', href: './pages/cadastro-doadores.html' },
-    { text: 'Cadastro <br> Ongs', href: './pages/cadastro-ongs.html' },
-    { text: 'Parceiros', href: './pages/parceiros.html' },
-  ];
+  botao.innerHTML = `<img class="btn-icone" src="src/icones-projeto/${temaEscuro ? 'moon' : 'sun'}.png" alt="icone" />`;
 
-  menuItems.forEach(item => {
-    const listItem = document.createElement('li');
-    const link = document.createElement('a');
-    link.href = item.href;
-    link.innerHTML = item.text;
-    listItem.appendChild(link);
-    menuList.appendChild(listItem);
-  });
-
-  menuContainer.appendChild(menuList);
-  header.appendChild(logo);
-  header.appendChild(menuContainer);
-
-  document.body.insertBefore(header, document.body.firstChild);
+  // Inverter o valor
+  temaEscuro = !temaEscuro;
 }
 
-// Chame a função para criar o header
-criarHeader();
- */
+function navegarParaHome() {
+  window.location.href = "../index.html";
+}
+
+function navegarParaCadastro() {
+  window.location.href = "cadastro.html";
+}
+
+function cadastroEmpresas(){
+  window.location.href = 'cadastro-doadores.html'
+}
+
+function cadastroOngs(){
+  window.location.href = 'cadastro-ongs.html'
+}
+

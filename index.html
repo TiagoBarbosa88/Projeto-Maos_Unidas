@@ -14,31 +14,41 @@
     rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="../src/logo-projeto/logo-maos-unidas-favicon.png">
   <link rel="stylesheet" href="../css/pagina-inicial.css">
+  <script src="./js/script.js" defer></script>
+
   <title>Projeto Mãos Unidas :: Página inicial</title>
 </head>
 
 <body>
   <header>
-    <img id="logo" src="./src/logo-projeto/logo-projeto-social.png" alt="logo mãos unidas">
+    <div class="limitar-secao">
+      <div>
+        <a href="./index.html">
+          <img id="logo" src="./src/logo-projeto/logo-projeto-social.png" alt="logo mãos unidas">
+        </a>
+      </div>
 
-    <div class="menu-container">
-      <ul class="menu">
-        <li><a href="#fome-brasil">Fome <br>no Brasil</a></li>
-        <li><a href="./pages/nosso-trabalho.html">Nosso<br>Trabalho</a></li>
-        <li><a href="./pages/cadastro-doadores.html">Cadastro <br> Empresas</a></li>
-        <li><a href="./pages/cadastro-ongs.html">Cadastro <br> Ongs</a></li>
-        <li><a href="./pages/parceiros.html">Parceiros</a></li>
-      </ul>
+      <div class="menu-container">
+        <ul class="menu">
+          <li><a href="#fome-brasil">Fome no Brasil</a></li>
+          <li><a href="./pages/nosso-trabalho.html">Nosso Trabalho</a></li>
+          <li><a href="./pages/parceiros.html">Parceiros</a></li>
+          <li><a href="./pages/cadastro.html">Cadastro</a></li>
+          <li><a href="./pages/login.html">Login</a></li>
+        </ul>        
+      </div>
+      <div>
+        <button onclick="alterarTema()" class="modo-claro">
+          <img class="btn-icone" src="src/icones-projeto/moon.png" alt="icone" />
+        </button>
+      </div>
     </div>
   </header>
   <!------- Fim do Header --------->
   <div class="container">
     <main>
-      <section class="container-banner">
-        <div class="banner">
-          <img src="../src/imagens-projeto/banner-principal.png" alt="">
-        </div>
-      </section>
+      <section class="container-banner"></section>
+      
       <section class="container-card">
         <div class="container-info">
           <div class="card-info">
@@ -119,7 +129,7 @@
             (gamificação)</p>
         </div>
         <div class="info-right">
-          <img src="../src/imagens-projeto/imagem-pag1.png" alt="">
+          <img src="../src/imagens-projeto/imagem-pag11.png" alt="">
         </div>
       </section>
       <section class="container-detalhes">
@@ -160,14 +170,14 @@
   </div>
   <footer>
     <div class="rodape limite-largura">
-      <div class="rodape-conteudo">
+      <div class="rodape-conteudo2">
         <div class="rodape-logo">
           <img src="../src/logo-projeto/logo-projeto-social.png" alt="" srcset="">
         </div>
         <div class="rodape-info">
           <ul>
-            <li>Rua dos Alfeneiros, 04 – Paraty</li>
-            <li>CEP 20200-020 – Rio de Janeiro</li>
+          <!--   <li>Rua dos Alfeneiros, 04 – Paraty</li>
+            <li>CEP 20200-020 – Rio de Janeiro</li> -->
             <li>Inscrição municipal: 987654321</li>
             <li>CNPJ: 12.345.678/9001-23</li>
           </ul>
@@ -188,20 +198,20 @@
             <li><img src="../src/icones-projeto/selo-homem.png" alt=""></li>
             <li><img src="../src/icones-projeto/selo-globo-pessoas.png" alt=""></li>
             <li><img src="../src/icones-projeto/selo-global.png" alt=""></li>
-            <li><img src="../src/icones-projeto/selo-prato.png" alt=""></li>
+            <li><img src="../src/icones-projeto/selo-segu.png" alt=""></li>
           </ul>
           <ul>
             <li><img src="../src/icones-projeto/selo-familia.png" alt=""></li>
             <li><img src="../src/icones-projeto/selo-homem.png" alt=""></li>
+            <li><img src="../src/icones-projeto/selo-prato.png" alt=""></li>
+
             <li class="badge-quality"><img src="../src/icones-projeto/qualidade.png" alt=""></li>
-            <li><img src="../src/icones-projeto/selo-seguranca.png" alt=""></li>
           </ul>
         </div>
       </div>
 
     </div>
   </footer>
-  <script defer src="./js/script.js"></script>
 </body>
 
 </html>

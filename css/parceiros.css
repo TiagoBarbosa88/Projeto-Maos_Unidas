@@ -1,1 +1,87 @@
 @import url(./global.css);
+
+.contador-title > section {
+  padding: auto;
+}
+
+section h1,h2,h3,p {
+  margin: 10px 0;
+}
+
+.container-parceiros {
+width: 100%;
+background-color: #E7E6E6;
+border-radius: 5px;
+box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+
+}
+
+.container-parceiros div {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0 20px;
+}
+
+.container-parceiros div img {
+  width: 15rem;
+}
+
+.container-btn {
+  margin: auto;
+  width: 50%;
+  padding: 20px;  
+}
+
+section h1{
+color: #EA167B;
+}
+
+.btn {
+  padding: 15px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  border-radius: 25px;
+  outline: none;
+
+  background-color: #f72585;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  border: none !important;
+  transition: all linear 160ms;
+  cursor: pointer;
+  margin: 0 !important;
+
+}
+
+.btn-cadastrar {
+  background-color: #7CC92A;;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+
+@media screen and (max-width: 800px) { 
+ .container-title {
+  width: 95%;
+  padding: 20px;
+  font-size: 14px;
+ } 
+.container-parceiros div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container-btn{
+  width: 95%;
+  font-size: 14px;
+}
+
+.btn {
+  font-size: 14px;
+}
+  
+}

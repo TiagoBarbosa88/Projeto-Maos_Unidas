@@ -1,1 +1,11 @@
 @import url(./global.css);
+
+main {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+}
+
+section {
+  margin-right: 30px;
+}

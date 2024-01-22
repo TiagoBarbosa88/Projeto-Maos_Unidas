@@ -1,0 +1,71 @@
+@import url(./global.css);
+
+main { 
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;  
+}
+
+section div {
+  padding: 0 20px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+section div img {
+  width: 400px;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+.btn {
+  padding: 15px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  border-radius: 4px;
+  outline: none;
+  background-color: #f72585;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  border: none !important;
+  transition: all linear 160ms;
+  cursor: pointer;
+  margin: 0 !important;
+}
+
+.btn-cadastrar {
+  background-color: #7CC92A;;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 800px) { 
+
+  main {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  div img {
+    width: 90%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+  }
+
+  .btn {
+    width: 90%;
+    height: auto;
+    font-size: 14px;
+  }
+}

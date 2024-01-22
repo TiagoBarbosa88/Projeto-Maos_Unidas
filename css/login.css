@@ -1,0 +1,146 @@
+ @import url(./global.css);
+ 
+body {
+    margin: 0;
+    padding: 0;
+    color: #023047;
+    height: 100vh;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+#logo {
+  width: auto;
+  height: 200px; 
+}
+
+.formLogin {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 7px;
+  padding: 30px;
+  box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);
+  gap: 5px;  
+}
+
+.formLogin p {
+  display: inline-block;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.formLogin input {
+  padding: 15px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  border-radius: 4px;
+  transition: all linear 160ms;
+  outline: none;
+}
+
+
+.formLogin input:focus {
+  border: 1px solid #f72585;
+}
+
+.formLogin label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.formLogin a {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 13px;
+  color: #555;
+  transition: all linear 160ms;
+}
+
+.formLogin a:hover {
+  color: #f72585;
+}
+
+.btn {
+  padding: 15px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  border-radius: 4px;
+  outline: none;
+
+  background-color: #f72585;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  border: none !important;
+  transition: all linear 160ms;
+  cursor: pointer;
+  margin: 0 !important;
+
+}
+
+.btn-cadastrar {
+  background-color: #7CC92A;;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* ----- Estilos dinâmicos ----- */
+
+/* Estilos para indicar erro */
+input.error {
+  border: 2px solid #d9534f;
+  background-color: #f2dede;
+  color: #a94442;
+}
+
+.error {
+  border: 2px solid #d9534f;
+  background-color: #f2dede;
+  color: #a94442;
+}
+
+/* Estilos para indicar sucesso ou correção */
+input.correct {
+  border: 2px solid #5cb85c;
+  background-color: #5cb85c;
+  color: #4cae4c;
+}
+
+.correct {
+  /* border: 2px solid #5cb85c; */
+  background-color: #5cb85c;;
+  color: #4cae4c;
+}
+
+/* Estilos para texto de erro */
+.error-text {
+  display: none;  
+}
+
+#senha-error, #usuario-error{
+  display: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #a94442;
+  margin-top: -20px;
+ }
+
+/* Estilos para tornar o texto de erro visível */
+.visible {
+  display: block;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Projeto fictício - Conectando empresas e ONGs para combater a fome no Brasil. Faça parte do Projeto Mãos Unidas e faça a diferença!">
+    <meta name="keywords"
+        content="Projeto fictício - Projeto Mãos Unidas, combate à fome, doações, empresas, ONGs, desperdício de alimentos">
+    <meta name="author" content="Tiago Barbosa, Marcela Bino, Wesly Gusmão, Josy Gonçalves, Osmar Filho">
+    <meta name="robots" content="index, follow">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../src/logo-projeto/logo-maos-unidas-favicon.png">
+
+    <link rel="stylesheet" href="../css/login.css">
+    <script src="../js/script-2.js" defer></script>
+
+    <title>Projeto Mãos Unidas :: Login</title>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="page">
+                <form method="POST" class="formLogin">
+                    <a href="../index.html">
+                      <img src="../src/logo-projeto//logo-projeto-social.png" id="logo" alt=""></a>
+                    <p>Digite os seus dados de acesso no campo abaixo.</p>
+                    <label for="login-usuario">E-mail</label>
+                    <input type="email" id="login-usuario" name="login-usuario" placeholder="Exemplo@email.com" autofocus="true" required />
+                    <p class="error-text" id="usuario-error">Usuário inválido</p>
+              
+                    <label for="login-senha">Senha</label>
+                    <input type="password" id="login-senha" name="login-senha" placeholder="Digite sua senha" required />
+                    <p class="error-text" id="senha-error">Senha incorreta</p>
+              
+                    <a href="#">Esqueci minha senha</a>
+                    <button type="button" class="btn" onclick="realizarLogin()">Entrar</button>
+                    <button type="button" class="btn btn-cadastrar" onclick="navegarParaCadastro()">Cadastrar</button>
+                  </form>
+            </div>
+
+
+        </div>
+    </main>
+
+    <!-- Fim do MAIN -->
+    </div>
+</body>
+
+</html>
