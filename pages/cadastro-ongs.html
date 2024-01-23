@@ -48,58 +48,82 @@
   <!-- Fim do Header -->
   <div class="container">
     <main>
-      <section class="container-banner"></section>
-      <section class="subtitulo">
-        <div class="container-esquerda">
-          <h3>Participe desse projeto que <br>
-            une vidas! <br>
-            Cadastre sua ONG
-          </h3>
-        </div>
-  
-        <div class="formulario">
-          <form action="">
-            <label for="nome">Nome da ONG</label>
-            <input type="text" name="nome" id="Nome"><br>
-  
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email"><br>
-  
-            <label for="senha">Senha</label>
-            <input type="password" name="senha" id="senha"><br>
-  
-            <label for="telefone">Telefone</label>
-            <input type="tel" name="telefone" id="telefone"><br>
-  
-            <label for="cnpj">CNPJ</label>
-            <input type="number" name="cnpj" id="cnpj"><br>
-  
-            <label for="localidade">Localidade Atendida</label>
-            <input type="text" name="localidade" id="localidade"><br>
-  
-            <label for="rede-sociais">Redes Sociais</label>
-            <input type="text" name="redes-sociais" id="redes-sociais"><br>
-  
-          </form>
-        </div>
-        <div class="compromissos">
-          <legend>Compromissos e Responsabilidades</legend><br>
-          <input type="radio" name="compromisso">
-          <label for="text">Compromisso em utilizar os alimentos
-            para fins previstos.</label><br>
-  
-          <input type="radio" name="responsabilidade">
-          <label for="text">Acordo para fornecer relatórios
-            regulares sobre a distribuição de alimentos.</label><br>
-        </div>
-        <div class="Cadastrar">
-          <input type="submit" value="Cadastrar">
-        </div>
+      <section class="titulo">
+        <h1>Participe desse projeto que une vidas!</br> 
+        Cadastre sua ONG </h2>
       </section>
-      <section class="container-direita">
-        <div>
-          <img src="../src/imagens-projeto/imagem-pag4.png" alt="alimentos" height="600" width="">
-        </div>
+      <section class="page">
+        <section class="container-direita">
+          <div class="formDoadores">
+            <form action="POST" >
+              <div>
+                <label for="nome">Nome da ONG:</label>
+                <input type="text" name="nome" id="Nome" required />
+              </div>
+
+              <div>
+                <label for="tipo-ong">Tipo de organização:</label>
+                <input type="text" id="tipo-ong" name="tipo-ong" required/>
+              </div>
+
+              <div>
+                <label for="cnpj">CNPJ:</label>
+                <input type="number" name="cnpj" id="cnpj" required/>
+              </div>
+
+              <div>
+                <label for="telefone">Telefone:</label>
+                <input type="tel" name="telefone-ong" id="telefone" required />
+              </div>
+
+              
+
+              <div>
+                <label for="localidade">Localidade Atendida: </label>
+                <input type="text" name="localidade" id="localidade" required />
+              </div>    
+              
+              <div>
+                <label for="">Como conheceu a Mãos Unidas:</label>
+                <input type="text" />
+              </div>
+
+              <section class="compromissos">
+                <p>Compromissos e Responsabilidades</p>
+                <input type="radio" name="compromisso" />
+                <label for="text">Compromisso em utilizar os alimentos para fins previstos.</label>
+
+                <input type="radio" name="responsabilidade">
+                <label for="text">Acordo para fornecer relatórios regulares sobre a distribuição de alimentos.</label>
+              </section>
+
+              
+
+              <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+              </div>
+
+              <div>
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha" id="senha" required>
+              </div>
+
+              <div>
+                <label for="senha">Confirmar senha:</label>
+                <input type="password" id="senha-doador" name="senha-doador" required>
+              </div>
+
+              <button type="button" class="btn" onclick="cadastrarDoador()">Cadastrar </button>
+
+            </form>
+          </div>
+        </section>
+        <section class="container-esquerda">
+          <div>
+            <img src="../src/imagens-projeto/imagem-pag4.png" alt="alimentos" height="600" width="">
+          </div>
+        </section>
       </section>
     </main>
   </div>

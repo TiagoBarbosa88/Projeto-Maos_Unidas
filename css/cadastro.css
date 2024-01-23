@@ -1,22 +1,22 @@
 @import url(./global.css);
 
 main { 
-  width: 100%;
+  width: 90%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;  
 }
 
 section div {
-  padding: 0 20px;
-  margin: 20px;
+  padding: 0 10px;
+  margin: 20px auto;
   display: flex;
   flex-direction: column;
   
 }
 
 section div img {
-  width: 400px;
+  width: 350px;
   height: auto;
   border-radius: 5px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
