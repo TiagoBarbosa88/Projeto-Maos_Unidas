@@ -26,6 +26,10 @@
   width: 55%;
 }
 
+section h1 {
+  color: #EA167B;
+}
+
 section h2 {
   font-size: 16px;
   color: #666;
