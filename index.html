@@ -13,43 +13,38 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;1,600&display=swap"
     rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="../src/logo-projeto/logo-maos-unidas-favicon.png">
+  
+  <!-- Estilos -->
   <link rel="stylesheet" href="../css/pagina-inicial.css">
+  <link rel="stylesheet" href="./css/carrousel.css">
+  <!-- Componentes de Javascript -->
   <script src="./js/script.js" defer></script>
+  <script src="./js/carrousel.js" defer></script>
+  <script src="./componentes/header.js" defer></script>
+  <script src="./componentes/footer.js" defer></script>
 
   <title>Projeto Mãos Unidas :: Página inicial</title>
 </head>
 
 <body>
-  <header>
-    <div class="limitar-secao">
-      <div>
-        <a href="./index.html">
-          <img id="logo" src="./src/logo-projeto/logo-projeto-social.png" alt="logo mãos unidas">
-        </a>
-      </div>
-
-      <div class="menu-container">
-        <ul class="menu">
-          <li><a href="#fome-brasil">Fome no Brasil</a></li>
-          <li><a href="./pages/nosso-trabalho.html">Nosso Trabalho</a></li>
-          <li><a href="./pages/parceiros.html">Parceiros</a></li>
-          <!-- <li><a href="./pages/ranking.html">Ranking</a></li> -->
-          <li><a href="./pages/cadastro.html">Cadastro</a></li>
-          <li><a href="./pages/login.html">Login</a></li>
-        </ul>        
-      </div>
-      <div>
-        <button onclick="alterarTema()" class="modo-claro">
-          <img class="btn-icone" src="src/icones-projeto/moon.png" alt="icone" />
-        </button>
-      </div>
-    </div>
-  </header>
+  <header></header>
   <!------- Fim do Header --------->
   <div class="container">
     <main>
-      <section class="container-banner"></section>
-      
+      <!-- <section class="container-banner"></section> -->
+      <section class="sectionCarrousel">
+        <div class="carroussel">
+          <img class="active" onmouseover="pararContador()" onmouseout="ativarContador()"
+            src="./src/imagens-projeto/banner-principal.png" style="width: 100%; height: auto; z-index: 1;">
+          <img class="active" onmouseover="pararContador()" onmouseout="ativarContador()"
+            src="./src/imagens-projeto/banner-pag5.png" style="width: 100%; height: auto; z-index: 1;" alt="">
+          <img class="active" onmouseover="pararContador()" onmouseout="ativarContador()"
+            src="./src/imagens-projeto/banner-slide-2.png" style="width: 100%; height: auto; z-index: 1;" alt="">
+        </div>
+        <div id="anteriorImagem" onclick="alterarImagem(-1)">&#10094</div>
+        <div id="proximaImagem" onclick="alterarImagem(1)">&#10095</div>
+      </section>
+
       <section class="container-card">
         <div class="container-info">
           <div class="card-info">
@@ -169,50 +164,7 @@
     </main>
     <!------- Fim do MAIN --------->
   </div>
-  <footer>
-    <div class="rodape limite-largura">
-      <div class="rodape-conteudo2">
-        <div class="rodape-logo">
-          <img src="../src/logo-projeto/logo-projeto-social.png" alt="" srcset="">
-        </div>
-        <div class="rodape-info">
-          <ul>
-          <!--   <li>Rua dos Alfeneiros, 04 – Paraty</li>
-            <li>CEP 20200-020 – Rio de Janeiro</li> -->
-            <li>Inscrição municipal: 987654321</li>
-            <li>CNPJ: 12.345.678/9001-23</li>
-          </ul>
-          <p></p>
-        </div>
-      </div>
-      <div class="rodape-conteudo">
-        <div class="rodape-midias">
-          <h3>Acompanhe nossas Redes Sociais</h3>
-          <ul>
-            <li><a href="#"><img src="../src/icones-projeto/facebook.png" alt=""></a></li>
-            <li><a href="#"><img src="../src/icones-projeto/instagram.png" alt=""></a></li>
-            <li><a href="#"><img src="../src/icones-projeto/you-tube.png" alt=""></a></li>
-          </ul>
-        </div>
-        <div class="rodape-badges">
-          <ul>
-            <li><img src="../src/icones-projeto/selo-homem.png" alt=""></li>
-            <li><img src="../src/icones-projeto/selo-globo-pessoas.png" alt=""></li>
-            <li><img src="../src/icones-projeto/selo-global.png" alt=""></li>
-            <li><img src="../src/icones-projeto/selo-segu.png" alt=""></li>
-          </ul>
-          <ul>
-            <li><img src="../src/icones-projeto/selo-familia.png" alt=""></li>
-            <li><img src="../src/icones-projeto/selo-homem.png" alt=""></li>
-            <li><img src="../src/icones-projeto/selo-prato.png" alt=""></li>
-
-            <li class="badge-quality"><img src="../src/icones-projeto/qualidade.png" alt=""></li>
-          </ul>
-        </div>
-      </div>
-
-    </div>
-  </footer>
+  <footer></footer>
 </body>
 
 </html>

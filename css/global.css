@@ -6,6 +6,13 @@
   font-family: 'Poppins', sans-serif;
 }
 
+:root {
+  --color-verde: #7CC92A;
+  --color-rosa:#EA167B;
+  --main-bg-color:#E7E6E6;
+  --text-msg-erro: #e65100;
+}
+
 .limitar-secao {
   width: 100%;
   max-width: 1400px;
@@ -18,6 +25,11 @@ body {
   flex-direction: column;
   justify-content: space-between;  
   align-items: center;
+
+  color: #333; /* Cor principal do texto */
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .modo-claro {
@@ -51,6 +63,7 @@ main section {
 
 header {
   display: flex;
+  
 }
 
 #logo {
@@ -98,29 +111,38 @@ header button {
 }
 
 .menu a {
-  font-size: 18px ;
+  font-size: 18px;
   font-weight: bolder;
   color: #7CC92A;
-  transition: box-shadow 0.3s;
+  transition: color 0.3s, text-shadow 0.3s, background-color 0.3s, padding 0.3s, border-radius 0.3s;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .menu a:hover {
-  transition: opacity 0.3s;
   color: #EA167B;
-  text-shadow: 5px 2px 5px rgba(0, 0, 0, 0.2)
+  text-shadow: 5px 2px 5px rgba(0, 0, 0, 0.2);
+  background-color: #E7E6E6; 
+  padding: 10px;
+  border-radius: 5px;
 }
 
-#login {
-  border: 2px solid #EA167B;
-  padding: 8px;
-  border-radius: 20px;
+.login {
+  background-color: #E7E6E6;
+  padding: 10px;
+  border-radius: 5px;
+  /* border: 1px solid black; */
+  transition: background-color 0.3s, padding 0.3s, border-radius 0.3s, color 0.3s; /* Adicionando a transição na regra padrão */
 }
 
-#login:hover {
-  transition: opacity 0.3s;
+.login:hover {
   color: #EA167B;
-  background-color: #80b547;
+  border: 1px solid #7CC92A;
+  background-color: #7CC92A;
 }
+
+
+
 
 /* Começo container Banner */ 
 .container-banner {
@@ -174,6 +196,9 @@ footer {
   width: 100%;/* 
   height: 20vh; */
   background: #E7E6E6; 
+
+  background-color: #333; /* Fundo escuro para o rodapé */
+  color: #fff; /* Texto branco no rodapé */
 }
 
 .limite-largura {
@@ -248,7 +273,7 @@ justify-content: space-around;
   }
 
   header {
-    display: none;
+    display: block;
   }
 
   .container-banner {
@@ -265,20 +290,43 @@ justify-content: space-around;
   footer {
     width: 100%;
   }
-
+  
   .limite-largura {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
   }
-
-  .rodape-logo > img {
-    width: 280px; 
-    height: 150px; 
+  
+  .rodape-logo {
+    align-self: center; /* Adicionando esta regra para centralizar verticalmente o logo */
   }
-
+  
+  .rodape-logo > img {
+    width: 280px;
+    height: 150px;
+  }
+  
   .rodape-conteudo {
     width: 100%;
   }
+  
+  
+  @media (min-width: 768px) {
+    .limite-largura {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .rodape-logo > img {
+      width: auto;
+      height: 100px;
+    }
+  
+    .rodape-conteudo {
+      width: 48%;
+    }
+  }
+  
+  
 }
