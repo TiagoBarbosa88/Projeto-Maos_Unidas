@@ -16,13 +16,18 @@
 
   <!-- Estilos -->
   <link rel="stylesheet" href="../css/pagina-inicial.css">
-  <link rel="stylesheet" href="./css/carrousel.css">
-  <!-- Componentes de Javascript -->
+  <link rel="stylesheet" href="./css/slide.css">
+
+  <!-- Javascript -->
   <script src="./js/script.js" defer></script>
-  <script src="./js/carrousel.js" defer></script>
+  <script src="./js/slide.js" defer></script>
+
+  <!-- Componentes javascript -->
+  <script src="./componentes/slide-componente.js" defer></script>
   <script src="./componentes/header.js" defer></script>
   <script src="./componentes/footer.js" defer></script>
 
+  <!-- Título -->
   <title>Projeto Mãos Unidas :: Página inicial</title>
 </head>
 
@@ -31,7 +36,10 @@
   <!------- Fim do Header --------->
   <div class="container">
     <main>
-      <section class="container-banner"></section>
+      <!-- Tag do Slide -->
+      <div class="slider"></div>
+
+      <!-- Começo do corpo do site  -->
 
       <section class="container-card">
         <div class="container-info">
@@ -112,7 +120,7 @@
           <p>Participe e ganhe destaque no nosso hall da fama!
             (gamificação)</p>
         </div>
-        <div class="info-right">
+        <div class="info-right corpo-img">
           <img src="../src/imagens-projeto/imagem-pag11.png" alt="">
         </div>
       </section>
@@ -152,6 +160,7 @@
     </main>
     <!------- Fim do MAIN --------->
   </div>
+  <!-- Tag do FOOTER -->
   <footer></footer>
 </body>
 

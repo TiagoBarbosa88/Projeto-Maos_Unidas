@@ -9,7 +9,7 @@ section h1,h2,h3,p {
 }
 
 .container-parceiros {
-width: 100%;
+width: 80%;
 background-color: #E7E6E6;
 border-radius: 5px;
 box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
@@ -23,7 +23,15 @@ box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
 }
 
 .container-parceiros div img {
-  width: 15rem;
+  width: 12em;
+  opacity: 0.4;
+  padding: 10px;
+}
+
+.container-parceiros div img:hover {
+  transition: 0.3s;
+  transform: scale(1.03);
+  opacity: 1;
 }
 
 .container-btn {
@@ -36,31 +44,34 @@ section h1{
 color: #EA167B;
 }
 
-.btn {
+.btn-cadastrar {
+  width: 100%;
   padding: 15px;
   border: 1px solid #ccc;
   margin-bottom: 20px;
   margin-top: 5px;
-  border-radius: 25px;
+  border-radius: 4px;
   outline: none;
-
-  background-color: #f72585;
+  background: #d436a4;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #6e1144, #9a357c);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #cb0a74, #a73785); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: #fff;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 600;
   border: none !important;
   transition: all linear 160ms;
   cursor: pointer;
   margin: 0 !important;
-
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
 }
 
-.btn-cadastrar {
-  background-color: #7CC92A;
-}
-
-.btn:hover {
-  transform: scale(1.05);
+.btn-cadastrar:hover {
+  transform: scale(1.03);
+  transition: 0.3s;
+  background: #f953c6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #b91d73, #f953c6);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #b12d76, #f953c6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
 }
 
 

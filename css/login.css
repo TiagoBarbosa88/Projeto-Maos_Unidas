@@ -1,25 +1,19 @@
  @import url(./global.css);
- 
-/* body {
-    margin: 0;
-    padding: 0;
-    color: #023047;
-    height: 100vh;
-}
- */
+
 .page {
   display: flex;
   flex-direction: column;
   align-items: center;
   align-content: center;
   justify-content: center;
-  width: 100%;
+  width: 100%;  
   height: 100%;
+  margin: 50px auto;
 }
 
 #logo {
   width: auto;
-  height: 200px; 
+  height: 130px; 
 }
 
 .formLogin {
@@ -75,12 +69,13 @@
 .btn {
   padding: 15px;
   border: 1px solid #ccc;
-  margin-bottom: 20px;
-  margin-top: 5px;
   border-radius: 4px;
   outline: none;
-
-  background-color: #f72585;
+  background: #d436a4;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #6e1144, #9a357c);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #cb0a74, #a73785); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* background-color: #f72585; */
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
   color: #fff;
   font-size: 14px;
   font-weight: 600;
@@ -91,13 +86,41 @@
 
 }
 
-.btn-cadastrar {
-  background-color: #7CC92A;;
+.btn:hover {
+  transform: scale(1.03);
+  transition: 0.3s;
+  background: #f953c6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #b91d73, #f953c6);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #b12d76, #f953c6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
 }
 
-.btn:hover {
-  transform: scale(1.05);
+.btn-cadastrar {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  margin: 10px 0;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  border: none !important;
+  transition: all linear 160ms;
+  cursor: pointer;
+  margin: 0 !important;
+  background: #11998e;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #1ccf61, #115d56);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #1dbc5a, #096059); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
 }
+
+.btn-cadastrar:hover {
+  transform: scale(1.03);
+  transition: 0.3s;
+  background: #11998e;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}  
 
 /* ----- Estilos dinâmicos ----- */
 

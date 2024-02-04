@@ -7,9 +7,7 @@ footer.innerHTML = `
     <img src="../src/logo-projeto/logo-projeto-social.png" alt="" srcset="">
   </div>
   <div class="rodape-info">
-    <ul>
-    <!--   <li>Rua dos Alfeneiros, 04 – Paraty</li>
-      <li>CEP 20200-020 – Rio de Janeiro</li> -->
+    <ul>    
       <li>Inscrição municipal: 987654321</li>
       <li>CNPJ: 12.345.678/9001-23</li>
     </ul>

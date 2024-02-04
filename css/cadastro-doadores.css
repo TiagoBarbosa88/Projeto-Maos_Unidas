@@ -13,6 +13,17 @@
   width: 40%;
 }
 
+.corpo-img {
+  padding: 10px;
+  background-color: transparent;
+}
+
+.corpo-img :hover {
+  transform: scale(1.01);
+  transition: 0.3s
+}
+
+
 .container-esquerda img {
   height: auto;
   width: 100%;
