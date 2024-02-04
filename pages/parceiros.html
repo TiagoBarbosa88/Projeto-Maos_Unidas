@@ -15,8 +15,15 @@
   <link rel="icon" type="image/x-icon" href="../src/logo-projeto/logo-maos-unidas-favicon.png">
   <!-- Estilos -->
   <link rel="stylesheet" href="../css/parceiros.css">
-  <!-- Javascritps -->
-  <script src="../js/script-2.js" defer></script>
+  <link rel="stylesheet" href="../css/pagina-inicial.css">
+  <link rel="stylesheet" href="../css/slide.css">
+
+  <!-- Javascript -->
+  <script src="../js/script.js" defer></script>
+  <script src="../js/slide.js" defer></script>
+
+  <!-- Componentes javascript -->
+  <script src="../componentes/slide-componente.js" defer></script>
   <script src="../componentes/header.js" defer></script>
   <script src="../componentes/footer.js" defer></script>
 
@@ -54,8 +61,10 @@
   <div class="container">
 
     <main>
-      <section class="container-banner"></section>
+      <!-- Tag do Slide -->
+      <div class="slider"></div>
 
+      <!-- Começo do corpo do site  -->
       <section class="container-title">
         <!-- tag de paragrafo texto-->
         <h1>Empresas participantes do Projeto</h1>
@@ -85,60 +94,17 @@
         <h1>ENVOLVA-SE COM A NOSSA CAUSA</h2>
           <h3>Transforme sua empresa em um Investidor Social para que possamos juntos, auxiliar cada vez mais pessoas
             que se encontram em situação de vulnerabilidade e insegurança alimentar.</h3>
-          <div class="btn btn-cadastrar">
-            <button type="button" class="btn btn-cadastrar" onclick="cadastroOngs()">Quero ser um Investidor
+          <div>
+            <button type="button" class="btn-cadastrar" onclick="cadastroOngs()">Quero ser um Investidor
               Social</button>
           </div>
-
       </section>
 
     </main>
     <!------- Fim do MAIN --------->
   </div>
-  <footer>
-    <div class="rodape limite-largura">
-      <div class="rodape-conteudo2">
-        <div class="rodape-logo">
-          <img src="../src/logo-projeto/logo-projeto-social.png" alt="" srcset="">
-        </div>
-        <div class="rodape-info">
-          <ul>
-            <!--   <li>Rua dos Alfeneiros, 04 – Paraty</li>
-            <li>CEP 20200-020 – Rio de Janeiro</li> -->
-            <li>Inscrição municipal: 987654321</li>
-            <li>CNPJ: 12.345.678/9001-23</li>
-          </ul>
-          <p></p>
-        </div>
-      </div>
-      <div class="rodape-conteudo">
-        <div class="rodape-midias">
-          <h3>Acompanhe nossas Redes Sociais</h3>
-          <ul>
-            <li><a href="#"><img src="../src/icones-projeto/facebook.png" alt=""></a></li>
-            <li><a href="#"><img src="../src/icones-projeto/instagram.png" alt=""></a></li>
-            <li><a href="#"><img src="../src/icones-projeto/you-tube.png" alt=""></a></li>
-          </ul>
-        </div>
-        <div class="rodape-badges">
-          <ul>
-            <li><img src="../src/icones-projeto/selo-homem.png" alt=""></li>
-            <li><img src="../src/icones-projeto/selo-globo-pessoas.png" alt=""></li>
-            <li><img src="../src/icones-projeto/selo-global.png" alt=""></li>
-            <li><img src="../src/icones-projeto/selo-segu.png" alt=""></li>
-          </ul>
-          <ul>
-            <li><img src="../src/icones-projeto/selo-familia.png" alt=""></li>
-            <li><img src="../src/icones-projeto/selo-homem.png" alt=""></li>
-            <li><img src="../src/icones-projeto/selo-prato.png" alt=""></li>
-
-            <li class="badge-quality"><img src="../src/icones-projeto/qualidade.png" alt=""></li>
-          </ul>
-        </div>
-      </div>
-
-    </div>
-  </footer>
+  <!-- Tag do FOOTER -->
+  <footer></footer>
 </body>
 
 </html>

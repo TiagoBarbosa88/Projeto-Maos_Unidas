@@ -1,15 +1,80 @@
 @import url(./global.css);
+@import url(./cadastro-doadores.css);
 
 .page {
   display: flex;
-  margin: 0 20px;
-  padding: 0 20px;
-  justify-content: space-around;
-  width: 100%;
-  height: 100%;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  margin-bottom: 5em;
 }
 
-/* não funcionou */
-#mensagem-inicial {        
-    text-align: left;
-}  
+.formDoar {
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  width: 400px;
+}
+
+.formDoar h2 {
+  color: #333;
+  text-align: center;
+  font-size: 1.3em;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+}
+
+.formDoar div {
+  margin-bottom: 15px;
+}
+
+.formDoar label {
+  display: block;
+  font-size: 0.9em;
+  margin-bottom: 5px;
+  text-align: start;
+}
+
+.formDoar select,
+.formDoar input[type="number"],
+.formDoar input[type="date"],
+.formDoar textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.formDoar textarea {
+  resize: vertical;
+}
+
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1em;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+.confirmar-doacao {
+  background: #f953c6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #b91d73, #f953c6);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #b91d73, #f953c6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.confirmar-doacao:hover {
+  background: #d436a4;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #6e1144, #9a357c);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #970a57, #a73785); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}

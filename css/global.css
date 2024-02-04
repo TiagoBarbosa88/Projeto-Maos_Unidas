@@ -7,7 +7,7 @@
 }
 
 :root {
-  --color-verde: #7CC92A;
+  --color-verde: #438146;
   --color-rosa:#EA167B;
   --main-bg-color:#E7E6E6;
   --text-msg-erro: #e65100;
@@ -47,7 +47,6 @@ a:hover {
 }
 
 .container {
-  /* align-items: center; */
   width: 100%;
   max-width: 1400px; /* Defina a largura máxima desejada */
   margin-right: auto;
@@ -81,11 +80,6 @@ header div {
 
 header button {
   display: flex;
-  /* align-items: center; */
-  /* border: 2px solid #EA167B; */
-  /* font-weight: 600; */
-  /* border-radius: 25px; */
-  /* padding: 10px 15px; */
   cursor: pointer;
   border: none;
 }
@@ -117,72 +111,61 @@ header button {
   transition: color 0.3s, text-shadow 0.3s, background-color 0.3s, padding 0.3s, border-radius 0.3s;
   padding: 10px;
   border-radius: 5px;
+  position: relative;
 }
 
 .menu a:hover {
-  color: #EA167B;
-  text-shadow: 5px 2px 5px rgba(0, 0, 0, 0.2);
-  background-color: #E7E6E6; 
+  text-shadow: 5px 2px 5px rgba(0, 0, 0, 0.3);
   padding: 10px;
   border-radius: 5px;
+  position: relative;
 }
 
-.login {
-  background-color: #E7E6E6;
-  padding: 10px;
-  border-radius: 5px;
-  /* border: 1px solid black; */
-  transition: background-color 0.3s, padding 0.3s, border-radius 0.3s, color 0.3s; /* Adicionando a transição na regra padrão */
+.menu a:hover::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #EA167B;
+  animation: expand 0.5s ease-in-out; /* Adiciona uma animação suave */
 }
 
-.login:hover {
-  color: #EA167B;
-  border: 1px solid #7CC92A;
-  background-color: #7CC92A;
+@keyframes expand {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
 }
-
-
-
-
-/* Começo container Banner */ 
-.container-banner {
-  margin-top: 10px;
-  height: 464px;
-  border-radius: 10px;
-  display: flex;
-  background-image: url('/src/imagens-projeto/banner-principal.png');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
-}
-
-body.pagina-parceiros .container-banner {
-  background-image: url('/src/imagens-projeto/banner-pag5.png');
-}
-
-body.pagina-nosso_trabalho .container-banner {
-  background-image: url('/src/imagens-projeto/banner-slide-1.png');
-}
-
 
 section {
   text-align: center;
   margin-bottom: 30px;
 }
 
-.banner {
-  width: 100%;
-  height: 85%;
+
+/* Começo container slide */ 
+
+.slider {
+  width: 100%;  
+  margin-bottom: 20px;
+ }
+/* Fim container slide */ 
+
+/* Animação imagens */
+.corpo-img {
+  padding: 10px;
+  background-color: transparent;
 }
 
-.banner img {
-  width: 100%; 
-  height: 100%; 
-  border-radius: 5px;   
+.corpo-img :hover {
+  transform: scale(1.02);
+  transition: 0.3s
 }
-
-/* Fim container Banner */ 
 
 
 /* Começo do footer  */
@@ -264,7 +247,7 @@ justify-content: space-around;
 
 
 
-@media screen and (max-width: 800px) { 
+/* @media screen and (max-width: 800px) { 
   body {
     display: flex;
     flex-direction: column;
@@ -273,7 +256,7 @@ justify-content: space-around;
   }
 
   header {
-    display: block;
+    display: none;
   }
 
   .container-banner {
@@ -287,6 +270,10 @@ justify-content: space-around;
     padding: 15px;
   }
 
+  .slider {
+    display: none;
+  }
+
   footer {
     width: 100%;
   }
@@ -294,39 +281,67 @@ justify-content: space-around;
   .limite-largura {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
   }
   
   .rodape-logo {
-    align-self: center; /* Adicionando esta regra para centralizar verticalmente o logo */
+  margin: 0 auto;    
   }
   
   .rodape-logo > img {
-    width: 280px;
-    height: 150px;
-  }
+  width: 300px;
+  height: auto;
+  border: 1px solid red;
+  padding: 15px;
+  } 
   
   .rodape-conteudo {
     width: 100%;
+  }  
+  
+} */
+
+@media screen and (max-width: 800px) {
+  body {
+    font-size: 14px;
+  } 
+
+  header, .slider {
+    display: none;
   }
-  
-  
-  @media (min-width: 768px) {
-    .limite-largura {
-      flex-direction: row;
-      justify-content: space-between;
-    }
-  
-    .rodape-logo > img {
-      width: auto;
-      height: 100px;
-    }
-  
-    .rodape-conteudo {
-      width: 48%;
-    }
+
+  .container {
+    width: 90%;
+    padding: 15px;
   }
-  
-  
+
+ .footer { 
+  width: 100%; 
+}
+
+.limite-largura { 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+  padding: 10px; 
+  margin: 10px;
+}
+
+.rodape-logo { 
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  margin-bottom: 10px;
+  }
+
+.rodape-logo > img { 
+  width: 300px; 
+  height: auto; 
+  margin: 0 auto; 
+}
+
+.rodape-conteudo { 
+  width: 100%; 
+  margin: 10px; 
+ }
 }
