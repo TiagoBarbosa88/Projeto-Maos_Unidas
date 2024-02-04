@@ -25,13 +25,13 @@ body {
   flex-direction: column;
   justify-content: space-between;  
   align-items: center;
-
   color: #333; /* Cor principal do texto */
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
   font-weight: 400;
 }
 
+/* Modo escuto */
 .modo-claro {
   background-color: #fff;
   color: #000;
@@ -41,6 +41,16 @@ body {
   background-color: #3b3b3b;
   color: #fff;  
 }
+
+.modo-escuro .info-left, .info-left-img {
+  color: #000;
+}
+
+.modo-escuro form {
+  color: #000;
+}
+
+/* Fim do modo Escuro */
 
 a:hover {
   cursor: pointer;
