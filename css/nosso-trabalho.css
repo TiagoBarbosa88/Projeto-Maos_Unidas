@@ -41,15 +41,16 @@
 
 /* Começo container img  */
 
-.container-img {
+.container-imagem {
   display: flex;
-  width: 100%;
-  height: auto; 
+  width: 90%;
+  height: auto;
 }
 
 .container-left {
   width:50%;
-  font-size: 22px;
+  height: auto;
+  font-size: 20px;
   background-color: #E7E6E6;
   box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
@@ -63,7 +64,7 @@
 }
 
 .container-right > img {
-  width: 250px;
+  width:200px;
   height: auto;  
 }
 
@@ -123,7 +124,7 @@
 
 @media screen and (max-width: 800px) { 
  
-  .container-img {
+  .container-imagem {
     display: flex;
     flex-direction: column;
   }
