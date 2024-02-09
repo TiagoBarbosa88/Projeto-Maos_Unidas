@@ -11,7 +11,7 @@ header.innerHTML = `
 <div class="menu-container">
   <ul class="menu">    
     <li><a href="../pages/nosso-trabalho.html">Nosso Trabalho</a></li>
-    <li><a href="../pages/ranking.html">Ranking</a></li>
+    <li><a href="../pages/ranking.html">Destaques</a></li>
     <li><a href="../pages/parceiros.html">Parceiros</a></li>  
     <li><a href="../pages/cadastro.html">Cadastro</a></li>
     <li><a href="../pages/login.html" class="login">Login</a></li>

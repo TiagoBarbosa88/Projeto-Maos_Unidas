@@ -21,6 +21,7 @@
   <!-- Javascript -->
   <script src="../js/script.js" defer></script>
   <script src="../js/slide.js" defer></script>
+  <script src="../js/ranking.js" defer></script>
 
   <!-- Componentes javascript -->
   <script src="../componentes/slide-componente.js" defer></script>
@@ -36,56 +37,16 @@
   <!------- Fim do Header --------->
   <div class="container">
     <main>
-      <!-- Tag do Slide -->
-      <div class="slider"></div>
-
-      <!-- Começo do corpo do site  -->
-      <h1>Ranking empresas doadoras</h1>
-      <section class="grid grid-template-areas">
-        <!-- <div class="item logo">logo</div> -->
-        <div class="item posicao-1">
-          <span class="posicao">Posição 1</span>
-          <img src="../src/imagens-parceiros/parceiro-1.png" alt="Logo Empresa 1">
-          <p class="nome">Empresa 1</p>
-          <p class="pontuacao">1000 pontos</p>
-        </div>
-
-        <div class="item posicao-2">
-          <span class="posicao">Posição 2</span>
-          <img src="../src/imagens-parceiros/parceiro-2.png" alt="Logo Empresa 1">
-          <p class="nome">Empresa 2</p>
-          <p class="pontuacao">950 pontos</p>
-        </div>
-
-        <div class="item posicao-3">
-          <span class="posicao">Posição 3</span>
-          <img src="../src/imagens-parceiros/parceiro-3.png" alt="Logo Empresa 1">
-          <p class="nome">Empresa 3</p>
-          <p class="pontuacao">930 pontos</p>
-        </div>
-
-        <div class="item posicao-4">
-          <span class="posicao">Posição 4</span>
-          <img src="../src/imagens-parceiros/parceiro-4.png" alt="Logo Empresa 1">
-          <p class="nome">Empresa 4</p>
-          <p class="pontuacao">900 pontos</p>
-        </div>
-
-        <div class="item posicao-5">
-          <span class="posicao">Posição 5</span>
-          <img src="../src/imagens-parceiros/parceiro-5.png" alt="Logo Empresa 1">
-          <p class="nome">Empresa 6</p>
-          <p class="pontuacao">880 pontos</p>
-        </div>
-
-        <div class="item posicao-6">
-          <span class="posicao">Posição 6</span>
-          <img src="../src/imagens-parceiros/parceiro-6.png" alt="Logo Empresa 1">
-          <p class="nome">Empresa 6</p>
-          <p class="pontuacao">850 pontos</p>
-        </div>
-      </section>
+      <div class="podium">
+        <ul class="destaques" id="destaques-list"></ul>
+      </div>
     </main>
+
+    <section>
+      <h1>O ranking é atualizado semanalmente</h1>
+      <!-- Tag do componente RANKING -->
+      <ul data-aos="fade-right" id="empresas-list"></ul>
+    </section>
     <!-- Fim Main -->
   </div>
 
