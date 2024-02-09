@@ -1,6 +1,3 @@
-/*@import url(./global.css);
-@import url(./cadastro-doadores.css);*/
-
 @import url(./global.css);
 
 .page {
@@ -29,17 +26,11 @@
   width: 55%;
 }
 
-section h1 {
+section h1, p {
     color: #EA167B;
 }
 
-section h2 {
-  font-size: 16px;
-  color: #666;
-  margin: 10px 10px;
-}
-
-.formDoadores {
+.formOngs {
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -50,24 +41,24 @@ section h2 {
   gap: 5px;
 }
 
-.formDoadores div {
+.formOngs div {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
 }
 
-.formDoadores label,
+.formOngs label,
 p {
   font-size: 14px;
   font-weight: 600;
   text-align: start;
 }
 
-.formDoadores section {
+.formOngs section {
   text-align: start;
 }
 
-.formDoadores input {
+.formOngs input {
   padding: 10px;
   font-size: 12px;
   border: 1px solid #ccc;

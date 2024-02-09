@@ -23,22 +23,25 @@
   <script src="../componentes/footer.js" defer></script>
 
   <!-- Título -->
-  <title>Projeto Mãos Unidas :: Cadastro Ongs</title>
+  <title>Projeto Mãos Unidas: Cadastro Ongs</title>
 </head>
 
 <body>
-  <header></header>
-  <!-- Fim do Header -->
+
+  <!-- Título da Página -->
   <div class="container">
     <main>
       <section class="titulo">
         <h1>Participe desse projeto que une vidas!</br> 
         Cadastre sua ONG </h1>
       </section>
+      
+  <!-- Formulário -->
       <section class="page">
         <section class="container-direita">
-          <div class="formDoadores">
+          <div class="formOngs">
             <form action="POST">
+
               <div>
                 <label for="nome">Nome da ONG:</label>
                 <input type="text" name="nome" id="Nome" required />
@@ -51,15 +54,13 @@
 
               <div>
                 <label for="cnpj">CNPJ:</label>
-                <input type="number" name="cnpj" id="cnpj" required />
+                <input type="text" name="cnpj" id="cnpj" required pattern="[0-9]+" />
               </div>
 
               <div>
                 <label for="telefone">Telefone:</label>
-                <input type="tel" name="telefone-ong" id="telefone" required />
+                <input type="tel" name="telefone-ong" id="telefone" required pattern="[0-9]+" />
               </div>
-
-
 
               <div>
                 <label for="localidade">Localidade Atendida: </label>
@@ -70,15 +71,6 @@
                 <label for="">Como conheceu a Mãos Unidas:</label>
                 <input type="text" />
               </div>
-
-              <section class="compromissos">
-                <p>Compromissos e Responsabilidades</p>
-                <input type="radio" name="compromisso" />
-                <label for="text">Compromisso em utilizar os alimentos para fins previstos.</label><br>
-
-                <input type="radio" name="responsabilidade">
-                <label for="text">Acordo para fornecer relatórios regulares sobre a distribuição de alimentos.</label>
-              </section>
 
               <div>
                 <label for="email">Email:</label>
@@ -95,11 +87,20 @@
                 <input type="password" id="senha-doador" name="senha-doador" required>
               </div>
 
+              <!-- Compromissos e Responsabilidades-->
+              <section class="compromissos">
+                <p>Compromissos e Responsabilidades</p>
+                <input type="radio" name="compromisso" />
+                <label for="text">Compromisso em utilizar os alimentos para fins previstos.</label><br>
+                <input type="radio" name="responsabilidade">
+                <label for="text">Acordo para fornecer relatórios regulares sobre a distribuição de alimentos.</label>
+              </section>
+              <!--Botão Cadastrar-->
               <button type="button" class="btn" onclick="cadastrarDoador()">Cadastrar </button>
-
             </form>
           </div>
         </section>
+        <!--Imagem a esquerda-->
         <section class="container-esquerda">
           <div class="corpo-img">
             <img src="../src/imagens-projeto/imagem-pag4.png" alt="alimentos" height="600" width="">
