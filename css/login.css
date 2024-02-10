@@ -66,6 +66,10 @@
   color: #f72585;
 }
 
+div button {
+  width: 100%;
+}
+
 .btn {
   padding: 15px;
   border: 1px solid #ccc;

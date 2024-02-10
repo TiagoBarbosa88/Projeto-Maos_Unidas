@@ -48,25 +48,21 @@ function realizarLogin() {
   const senha = inputSenha.value;
 
   // Lógica para usuário
-  if (isValidUsuario(usuario, usuarios)) {
-    inputUsuario.classList.add('correct');
-  } else {
-    inputUsuario.classList.add('error');
-    usuarioError.classList.add('visible');
-    usuarioError.style.display = 'block';
-  }
+  const usuarioValido = isValidUsuario(usuario, usuarios);
+  inputUsuario.classList.add(usuarioValido ? 'correct' : 'error');
+  usuarioError.classList.add(usuarioValido ? 'visible' : 'hidden');
 
   // Lógica para senha
-  if (isValidSenha(usuario, senha, usuarios)) {
-    inputSenha.classList.add('correct');
-    senhaError.classList.remove('visible');
+  const senhaValida = isValidSenha(usuario, senha, usuarios);
+  inputSenha.classList.add(senhaValida ? 'correct' : 'error');
+  senhaError.classList.add(senhaValida ? 'hidden' : 'visible');
+
+  // Se o usuário e a senha forem válidos, redirecione para a página inicial
+  if (usuarioValido && senhaValida) {
     window.location.href = "/index.html";
-  } else {
-    inputSenha.classList.add('error');
-    senhaError.classList.add('visible');
-    senhaError.style.display = 'block';
   }
 }
+
 
 
 function isValidUsuario(usuario, usuarios) {
@@ -81,3 +77,4 @@ function isValidSenha(usuario, senha, usuarios) {
 function navegarParaCadastro() {
   window.location.href = "cadastro.html";
 }
+

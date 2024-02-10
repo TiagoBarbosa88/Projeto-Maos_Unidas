@@ -1,14 +1,14 @@
 .slider {  
   margin: 0 auto;
-  width: 65%;
+  width: 80%;
   height: 400px;
   overflow: hidden;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 
 .slides {
   width: 400%;
-  height: 400px;
+  height: 25rem;
   display: flex;
 }
 
@@ -27,8 +27,8 @@
 
 .slide img {
   width: auto;
-  height: 400px;
-  border-radius: 10px;
+  height: 25rem;
+  border-radius: 0.62rem;
 }
 
 
@@ -36,7 +36,7 @@
 .manual-navigation {
   position: absolute;
   width: 800px;
-  margin-top: -40px;
+  margin-top: -2.5rem;
   display: flex;
   justify-content: center;
 }

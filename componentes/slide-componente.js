@@ -11,16 +11,16 @@ slider.innerHTML = `
 
       <!-- Imagens do slide -->
       <div class="slide first">
-        <img src="/src/imagens-projeto/banner-principal.png" alt="banner-principal">
+        <img src="/src/imagens-projeto/novo_banner1.jpg" alt="banner-principal">
       </div>
       <div class="slide">
-        <img src="/src/imagens-projeto/banner-pag5.png" alt="slide-2">
+        <img src="/src/imagens-projeto/novo_banner2.jpg" alt="slide-2">
       </div>
       <div class="slide">
-        <img src="/src/imagens-projeto/imagem-pag2.png" alt="slide-3">
+        <img src="/src/imagens-projeto/novo_banner3.jpg" alt="slide-3">
       </div>
       <div class="slide">
-        <img src="/src/imagens-projeto/banner-slide-2.png" alt="slide-4">
+        <img src="/src/imagens-projeto/novo_banner4.jpg" alt="slide-4">
       </div>
       <!-- Fim imagens slide -->
 

@@ -31,6 +31,25 @@ body {
   font-weight: 400;
 }
 
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.3rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.3rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.3rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
 /* Modo escuto */
 .modo-claro {
   background-color: #fff;
@@ -48,6 +67,13 @@ body {
 
 .modo-escuro form {
   color: #000;
+  background-color: #E7E6E6; 
+
+}
+
+.modo-escuro .formDoar {
+  background-color: #E7E6E6; 
+
 }
 
 /* Fim do modo Escuro */
@@ -255,60 +281,17 @@ justify-content: space-around;
   height: 2.5rem;
 }
 
+/* Efeitos scroll suave */
+
+.slider, .card1, .card2, .card3, .card4, .card4, .container-h1, .container-video, .info-left, .info-right, .container-contador, .container-img, .contador-title, .lista
+
+.texto-1, .texto2, .efeito-right, .efeito-left, .step-1, .step-2, .step-3
+{
+  visibility: hidden;
+}
 
 
-/* @media screen and (max-width: 800px) { 
-  body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 14px;
-  }
-
-  header {
-    display: none;
-  }
-
-  .container-banner {
-    display: none;
-  }
-
-  .container {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 15px;
-  }
-
-  .slider {
-    display: none;
-  }
-
-  footer {
-    width: 100%;
-  }
-  
-  .limite-largura {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .rodape-logo {
-  margin: 0 auto;    
-  }
-  
-  .rodape-logo > img {
-  width: 300px;
-  height: auto;
-  border: 1px solid red;
-  padding: 15px;
-  } 
-  
-  .rodape-conteudo {
-    width: 100%;
-  }  
-  
-} */
+/* Medias Queries */
 
 @media screen and (max-width: 800px) {
   body {
