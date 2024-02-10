@@ -146,6 +146,8 @@ align-items: center;
   list-style: decimal inside;
 }
 
+
+
 @media screen and (max-width: 800px) { 
 
   .container-info {

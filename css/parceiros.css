@@ -1,11 +1,7 @@
 @import url(./global.css);
 
-.contador-title > section {
-  padding: auto;
-}
-
-section h1,h2,h3,p {
-  margin: 10px 0;
+.container-title {
+  padding: 0 5rem;
 }
 
 .container-parceiros {
@@ -28,16 +24,17 @@ box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
   padding: 10px;
 }
 
+
 .container-parceiros div img:hover {
-  transition: 0.3s;
-  transform: scale(1.03);
-  opacity: 1;
+  transition: 0.3s !important;
+  transform: scale(1.03) !important;
+  opacity: 1 !important;
 }
 
 .container-btn {
   margin: auto;
   width: 50%;
-  padding: 20px;  
+  padding: 1rem;    
 }
 
 section h1{
@@ -72,6 +69,14 @@ color: #EA167B;
   background: -webkit-linear-gradient(to right, #b91d73, #f953c6);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #b12d76, #f953c6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   
+}
+
+.step-1 {
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  background-color: black;
+  width: 50%;
+  border-radius: 1rem;
 }
 
 

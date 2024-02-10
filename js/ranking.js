@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   data.forEach((empresa, index) => {
     const posicao = index + 1;
+    const card = index + 1;
 
     const liElement = document.createElement('li');
     liElement.innerHTML = `
@@ -20,6 +21,8 @@ document.addEventListener('DOMContentLoaded', function () {
       <p data-name>${empresa.competition_username}</p>
       <span data-revenue class="revenue">${empresa.pontuacao} KGs</span>
     `;
+
+    // console.log(`class="posicao-top ${'step-'+card}"`)
 
     ulElement.appendChild(liElement);
 

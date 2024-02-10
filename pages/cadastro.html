@@ -18,7 +18,10 @@
   <link rel="stylesheet" href="../css/cadastro.css">
 
   <!-- Javascritps -->
-  <script src="../js/script-2.js" defer></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="../js/script.js" defer></script>
+
+  <!-- Javascript componentes -->
   <script src="../componentes/header.js" defer></script>
   <script src="../componentes/footer.js" defer></script>
 
@@ -33,22 +36,22 @@
   <div class="container">
     <main>
       <section class="container-esq">
-        <div class="corpo-img">
+        <div class="corpo-img efeito-right">
           <a href="./cadastro-doadores.html">
             <img src="../src/imagens-projeto/imagem-pag3.png" alt="Cadastro Empresas">
           </a>
         </div>
-        <div>
+        <div class="step-1">
           <button type="button" class="btn" onclick="cadastroEmpresas()">Cadastrar Empresas</button>
         </div>
       </section>
       <section class="container-dir">
-        <div class="corpo-img">
+        <div class="corpo-img efeito-left">
           <a href="./cadastro-ongs.html">
             <img src="../src/imagens-projeto/imagem-pag4.png" alt="Cadastro de ONGs">
           </a>
         </div>
-        <div>
+        <div class="step-2">
           <button type="button" class="btn-cadastrar" onclick="cadastroOngs()">Cadastrar ONGs</button>
         </div>
       </section>
