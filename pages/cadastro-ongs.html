@@ -26,9 +26,7 @@
   <!-- Título -->
   <title>Projeto Mãos Unidas: Cadastro Ongs</title>
 </head>
-
 <body>
-
   <!-- Título da Página -->
   <div class="container">
     <main>
@@ -36,58 +34,67 @@
         <h1>Participe desse projeto que une vidas!</br> 
         Cadastre sua ONG </h1>
       </section>
-      
+    </main>
+  </div>
   <!-- Formulário -->
       <section class="page">
         <section class="container-direita">
           <div class="formOngs">
-            <form action="POST">
+            <form action="">
 
               <div>
                 <label for="nome">Nome da ONG:</label>
-                <input type="text" name="nome" id="nome" required />
+                <input type="text" name="nome" id="nome" required>
+                <p id="nome-helper" class="helper-text"></p>
               </div>
 
               <div>
                 <label for="tipo-ong">Tipo de organização:</label>
-                <input type="text" id="tipo-ong" name="tipo-ong" required />
+                <input type="text" id="tipo-ong" name="tipo-ong" required>
+                <p id="tipo-ong-helper" class="helper-text"></p>
               </div>
 
               <div>
                 <label for="cnpj">CNPJ:</label>
-                <input type="text" name="cnpj" id="cnpj" required pattern="[0-9]+" />
+                <input type="text" name="cnpj" id="cnpj" required pattern="[0-14]+">
+                <p id="cnpj-helper" class="helper-text"></p>
               </div>
 
               <div>
                 <label for="telefone">Telefone:</label>
-                <input type="tel" name="telefone-ong" id="telefone" required pattern="[0-9]+" />
+                <input type="tel" name="telefone-ong" id="telefone" required pattern="[0-9]+">
+                <p id="telefone-helper" class="helper-text"></p>
               </div>
 
               <div>
                 <label for="localidade">Localidade Atendida: </label>
-                <input type="text" name="localidade" id="localidade" required />
+                <input type="text" name="localidade" id="localidade" required>
+                <p id="localidade-helper" class="helper-text"></p>
+              </div>
+
+              <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+                <p id="email-helper" class="helper-text"></p>
+              </div>
+
+              <div>
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha" id="senha" required>
+                <p id="senha-helper" class="helper-text"></p>
+              </div>
+
+              <div>
+                <label for="confirma-senha">Confirmar senha:</label>
+                <input type="password" id="confirma-senha" name="confirma-senha" required>
+                <p id="confirma-senha-helper" class="helper-text"></p>
               </div>
 
               <div>
                 <label for="">Como conheceu a Mãos Unidas:</label>
                 <input type="text" />
               </div>
-
-              <div>
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email" required>
-              </div>
-
-              <div>
-                <label for="senha">Senha:</label>
-                <input type="password" name="senha" id="senha" required>
-              </div>
-
-              <div>
-                <label for="senha">Confirmar senha:</label>
-                <input type="password" id="senha-doador" name="senha-doador" required>
-              </div>
-
+            </form>
               <!-- Compromissos e Responsabilidades-->
               <section class="compromissos">
                 <p>Compromissos e Responsabilidades</p>
@@ -97,10 +104,9 @@
                 <label for="text">Acordo para fornecer relatórios regulares sobre a distribuição de alimentos.</label>
               </section>
               <!--Botão Cadastrar-->
-              <button type="button" class="btn" onclick="cadastrarDoador()">Cadastrar </button>
-            </form>
-          </div>
-        </section>
+
+              <button type="submit" class="btn">Cadastrar </button>
+              </section>
         <!--Imagem a esquerda-->
         <section class="container-esquerda">
           <div class="corpo-img">
