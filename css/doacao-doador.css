@@ -11,9 +11,9 @@
 
 .formDoar {
   /* background-color: #f7f7f7; */
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  padding: 20px;
+  border-radius: 0.62rem;
+  box-shadow: 0 0 0.62rem rgba(0, 0, 0, 0.5);
+  padding: 1.25rem;
   width: 400px;
 }
 
@@ -21,12 +21,12 @@
   color: #333;
   text-align: center;
   font-size: 1.3em;
-  margin-bottom: 20px;
-  padding: 10px 20px;
+  margin-bottom: 1.25rem;
+  padding: 0.62rem 1.25rem;
 }
 
 .formDoar div {
-  margin-bottom: 15px;
+  margin-bottom: 0.93rem;
 }
 
 .formDoar label {
@@ -42,7 +42,7 @@
 .formDoar input[type="date"],
 .formDoar textarea {
   width: 100%;
-  padding: 10px;
+  padding: 0.62rem;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 1em;
@@ -56,7 +56,7 @@
   background-color: #4CAF50;
   color: white;
   border: none;
-  padding: 10px;
+  padding: 0.62rem;
   border-radius: 5px;
   cursor: pointer;
   width: 100%;

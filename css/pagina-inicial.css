@@ -8,12 +8,12 @@
 
 .card-info {
   text-align: center;
-  padding: 20px 10px;
-  width: 200px;
+  padding: 1.25rem 0.62rem;
+  width: 12.5rem;
   background-color: #E7E6E6;
   font-family: poppins, sans-serif;  
   color: #EA167B;
-  border-radius: 10px;
+  border-radius: 0.62rem;
   text-transform: uppercase;
   font-size: 14px;
   box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.2);
@@ -25,7 +25,7 @@
 
 section > h4 {
   font-weight: 400;
-  padding: 20px;
+  padding: 1.25rem;
 }
 
 .card-info p {
@@ -36,7 +36,7 @@ section > h4 {
 .container-video {
   display: flex;
   width: 95%;    
-  height: 300px;
+  height: 18.75rem;
   box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -51,7 +51,7 @@ section > h4 {
 }
 
 .info-left p {
-  margin: 40px;
+  margin: 2.5rem;
 }
 
 .info-right {
@@ -77,12 +77,12 @@ align-items: center;
 
 .container__contador > .card-info {
   text-align: center;
-  padding: 20px 10px;
-  width: 200px;
+  padding: 1.25rem 0.62rem;
+  width: 12.5rem;
   background-color: #E7E6E6;
   font-family: poppins, sans-serif;  
   color: #EA167B;
-  border-radius: 10px;
+  border-radius: 0.62rem;
   text-transform: uppercase;
   font-size: 14px;
   box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.2);
@@ -91,19 +91,19 @@ align-items: center;
 
 .contador-title {
   color: #EA167B;
-  margin: 20px;
+  margin: 1.25rem;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2)
 }
 
 .paragrafo {
-  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 
 /* Fim container Contador */ 
 .container-img {
   display: flex;
   width: 95%;    
-  height: 600px;
+  height: 37.5rem;
   box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -114,12 +114,12 @@ align-items: center;
 }
 
 .info-left-img h2 {
-  margin: 20px;
+  margin: 1.25rem;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2)
 }
 
 .info-left-img p {
-  margin: 40px;
+  margin: 2.5rem;
 }
 
 
@@ -133,12 +133,12 @@ align-items: center;
 /* Começo do container detalhes  */
 
 .container-detalhes h1 {
-  margin: 10px;
+  margin: 0.62rem;
 }
 
 .lista {
   text-align: center;/* 
-  margin-left: 150px; */
+  margin-left: 13.12rem; */
 }
 
 .lista ol {
@@ -162,8 +162,8 @@ align-items: center;
   .card-info {
     width: 90%; 
     align-items: center;
-    padding: 20px 10px;
-    margin: 10px;
+    padding: 1.25rem 0.62rem;
+    margin: 0.62rem;
 }
 
   .container-video {    
@@ -172,7 +172,7 @@ align-items: center;
     align-items: center;
     width: 90%;
     height: auto;
-    margin: 10px;
+    margin: 0.62rem;
   }
 
   .info-left, .info-right {
@@ -191,8 +191,8 @@ align-items: center;
 
     .card-info {
       width: 90%;
-      padding: 20px 10px;
-      margin: 10px;
+      padding: 1.25rem 0.62rem;
+      margin: 0.62rem;
     }
 
   } 

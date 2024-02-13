@@ -54,7 +54,7 @@ main li:nth-child(1) {
   transform: translatex(-50%);
   width: 8.5rem;
   height: 8.5rem;
-  z-index: 200;
+  z-index: 2;
   margin: unset;
 }
 
@@ -159,7 +159,7 @@ section li span:last-child {
   width: min(30%, 20rem);
 }
 
-@media (min-width: 600px) {
+@media (min-width: 37.5rem) {
   section ul {
     width: 90%;
   }

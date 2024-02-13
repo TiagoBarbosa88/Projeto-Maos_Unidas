@@ -4,8 +4,8 @@
 
 .container-informacao {
   width: 100%;
-  padding: 20px;
-  margin: 20px auto;
+  padding: 1.25rem;
+  margin: 1.25rem auto;
   display: flex;
   flex-direction: column;
   /* align-items: center; */
@@ -18,21 +18,21 @@
 .seta {
   display: flex;
   /* align-items: center; */
-  margin: 20px auto;
+  margin: 1.25rem auto;
 }
 
 .seta span{
   color: #7CC92A;
-  font-size: 35px;
+  font-size: 2.18rem;
 }
 
 .container-informacao p {
   background-color: #E7E6E6;
-  padding: 20px;
+  padding: 1.25rem;
   width: 80%;
-  font-size: 20px;
-  border-radius: 10px;
-  margin: 20px auto;
+  font-size: 1.25rem;
+  border-radius: 0.62rem;
+  margin: 1.25rem auto;
   box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.2);
 
 }
@@ -50,36 +50,36 @@
 .container-left {
   width:50%;
   height: auto;
-  font-size: 20px;
+  font-size: 1.25rem;
   background-color: #E7E6E6;
   box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-  padding: 30px;
+  border-radius: 0.62rem;
+  padding: 1.87rem;
 }
 
 .container-right {
   width: 50%;
-  padding: 20px;
+  padding: 1.25rem;
 
 }
 
 .container-right > img {
-  width:200px;
+  width:12.5rem;
   height: auto;  
 }
 
 .container-informacao-2 h2{
   color: #EA167B;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 .container-informacao-2 p {
   background-color: #E7E6E6;
-  padding: 20px;
+  padding: 1.25rem;
   width: 80%;
-  font-size: 20px;
-  border-radius: 10px;
-  margin: 20px auto;
+  font-size: 1.25rem;
+  border-radius: 0.62rem;
+  margin: 1.25rem auto;
   box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -92,8 +92,8 @@
 
 .step {
   border: solid;
-  padding: 10px;
-  margin: 10px;
+  padding: 0.62rem;
+  margin: 0.62rem;
   width: 30%; 
   text-align: center;
   display: flex;
@@ -105,17 +105,17 @@
 
 .step h3 {
   color: #EA167B;
-  margin: 15px auto;
+  margin: 0.93rem auto;
 }
 
 .step p {
-  font-size: 16px;
+  font-size: 1rem;
 }
 .number {
   background-color: blue;
   color: white;
   border-radius: 50%;
-  padding: 15px;
+  padding: 0.93rem;
   font-weight: bold;
   font-size: 24px;
   text-align: center;
@@ -131,11 +131,11 @@
 
   .container-right {
     width: 90%;
-    font-size: 18px;
+    font-size: 1.12rem;
   }
   .container-left {
     width: 90%;
-    font-size: 18px;
+    font-size: 1.12rem;
   }
 
   .container-step {

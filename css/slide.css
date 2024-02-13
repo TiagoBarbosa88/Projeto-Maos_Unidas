@@ -45,14 +45,14 @@
 .manual-btn {
   border: 2px solid #EA167B;
   padding: 5px;
-  border-radius: 10px;
+  border-radius: 0.62rem;
   cursor: pointer;
   transition: 0.5s;
 
 } 
 
 .manual-btn:not(:last-child){
-  margin-right: 40px;
+  margin-right: 2.5rem;
 }
 
 .manual-btn:hover {
@@ -78,7 +78,7 @@
 .navigation-auto div{
   border: 2px solid rgb(114, 228, 160);
   padding: 5px;
-  border-radius: 10px;
+  border-radius: 0.62rem;
   cursor: pointer;
   transition: 0.5s;
 }
@@ -86,13 +86,13 @@
 .navigation-auto{
   position: absolute;
   width: 800px;
-  margin-top: 360px;
+  margin-top: 22.5rem;
   display: flex;
   justify-content: center;
 }
 
 .navigation-auto div:not(:last-child){
-  margin-right: 40px;
+  margin-right: 2.5rem;
 }
 
 #radio1:checked ~ .navigation-auto .auto-btn1 {

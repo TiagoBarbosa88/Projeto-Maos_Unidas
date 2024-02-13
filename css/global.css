@@ -6,48 +6,22 @@
   font-family: 'Poppins', sans-serif;
 }
 
-:root {
-  --color-verde: #438146;
-  --color-rosa:#EA167B;
-  --main-bg-color:#E7E6E6;
-  --text-msg-erro: #e65100;
-}
-
-.limitar-secao {
-  width: 100%;
-  max-width: 1400px;
-  margin: 0 auto;  
-}
-
 body {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;  
   align-items: center;
-  color: #333; /* Cor principal do texto */
+  /* color: #333;  */
   font-family: 'Poppins', sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
 }
 
-h1 {
-  font-size: 1.8rem;
-  margin-bottom: 0.3rem;
-}
-
-h2 {
-  font-size: 1.4rem;
-  margin-bottom: 0.3rem;
-}
-
-h3 {
-  font-size: 1.25rem;
-  margin-bottom: 0.3rem;
-}
-
-p {
-  font-size: 1rem;
+.nav-bar {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;  
 }
 
 /* Modo escuto */
@@ -67,13 +41,6 @@ p {
 
 .modo-escuro form {
   color: #000;
-  background-color: #E7E6E6; 
-
-}
-
-.modo-escuro .formDoar {
-  background-color: #E7E6E6; 
-
 }
 
 /* Fim do modo Escuro */
@@ -87,6 +54,10 @@ a:hover {
   max-width: 1400px; /* Defina a largura máxima desejada */
   margin-right: auto;
   margin-left: auto;
+}
+
+main {
+  transition: transform 0.3s ease; /* Adiciona uma transição suave para a animação */
 }
 
 main section {
@@ -103,12 +74,12 @@ header {
 
 #logo {
   width: auto;
-  height: 100px;   
+  height: 6.25rem;   
 }
 
 header div {
   height: 15vh;
-  padding-right: 20px;
+  padding-right: 1.25rem;
   display: flex;
   justify-content: space-between;
   align-items: center; 
@@ -122,37 +93,37 @@ header button {
 
 
 .btn-icone {
-  width: 30px;
-  height: 30px;
-  margin: 10px;
+  width: 1.87rem;
+  height: 1.87rem;
+  margin: 0.62rem;
 }
 
-.menu-container > ul {
+.nav-list > ul {
   display: flex;
-  gap: 10px; 
+  gap: 0.62rem; 
   
 }
 
 .menu li {
-  margin: 10px;
-  padding: 10px;
+  margin: 0.62rem;
+  padding: 0.62rem;
   transition: opacity 0.3s ease; 
   list-style: none;
 }
 
 .menu a {
-  font-size: 18px;
+  font-size: 1.12rem;
   font-weight: bolder;
   color: #7CC92A;
   transition: color 0.3s, text-shadow 0.3s, background-color 0.3s, padding 0.3s, border-radius 0.3s;
-  padding: 10px;
+  padding: 0.62rem;
   border-radius: 5px;
   position: relative;
 }
 
 .menu a:hover {
   text-shadow: 5px 2px 5px rgba(0, 0, 0, 0.3);
-  padding: 10px;
+  padding: 0.62rem;
   border-radius: 5px;
   position: relative;
 }
@@ -178,9 +149,25 @@ header button {
   }
 }
 
+.logo-pequeno {
+  display: none;
+}
+
+/* Menu hamburguer */
+
+.mobile-menu-icon {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+/* Fim menu Hamburguer */
+
 section {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 1.87rem;
 }
 
 
@@ -188,13 +175,15 @@ section {
 
 .slider {
   width: 100%;  
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
  }
+
+
 /* Fim container slide */ 
 
 /* Animação imagens */
 .corpo-img {
-  padding: 10px;
+  padding: 0.62rem;
   background-color: transparent;
 }
 
@@ -207,15 +196,12 @@ section {
 /* Começo do footer  */
 
 footer {
-  /* margin: 20px 0 20px; */
-  padding: 10px 0 ;
+  padding: 0.62rem 0 ;
   display: flex;
   justify-content: space-around;
   bottom: 0;
-  width: 100%;/* 
-  height: 20vh; */
+  width: 100%;
   background: #E7E6E6; 
-
   background-color: #333; /* Fundo escuro para o rodapé */
   color: #fff; /* Texto branco no rodapé */
 }
@@ -230,10 +216,7 @@ justify-content: space-around;
 .rodape-conteudo2 {
   width: 50%;
   text-align: center;
-  /* display: flex;   
-  justify-content: space-around;
-  gap: 50px; */
-  /* border: 1px blue solid; */
+
 }
 
 .rodape-info > ul > li{
@@ -243,9 +226,8 @@ justify-content: space-around;
 
 .rodape-logo > img {
   width: auto;
-  height: 100px;  
-  margin-top: 10px;
-  /* margin-bottom: 10px; */
+  height: 6.25rem;  
+  margin-top: 0.62rem;
 }
 
 .rodape-conteudo {
@@ -254,7 +236,7 @@ justify-content: space-around;
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  padding-top: 10px;
+  padding-top: 0.62rem;
 }
 
 .rodape-midias > h3 {
@@ -281,30 +263,108 @@ justify-content: space-around;
   height: 2.5rem;
 }
 
-/* Efeitos scroll suave */
-
-.slider, .card1, .card2, .card3, .card4, .card4, .container-h1, .container-video, .info-left, .info-right, .container-contador, .container-img, .contador-title, .lista
-
-.texto-1, .texto2, .efeito-right, .efeito-left, .step-1, .step-2, .step-3
-{
-  visibility: hidden;
-}
-
-
-/* Medias Queries */
 
 @media screen and (max-width: 800px) {
   body {
     font-size: 14px;
   } 
 
-  header, .slider {
+  .slider {
     display: none;
   }
 
-  .container {
+  header {
+    width: 100%;    
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    /* justify-content: center; */
+    position: relative; /* Adiciona posicionamento relativo */
+  }
+
+  .nav-bar {
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem ; 
+}
+  
+  
+  .nav-item, .logo-grande {
+      display: none;
+  }
+
+  .logo-pequeno img {
+    width: 3rem;
+  }
+
+  .mobile-menu-icon, .logo-pequeno {
+    display: block;
+}
+
+  .mobile-menu-icon button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      margin-top: 2rem;
+      z-index: 11;
+      position: relative;
+    }    
+
+  .mobile-menu ul {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      padding-bottom: 0.4rem;
+      background-color: #585858;
+      z-index: 10;
+      transition: transform 0.3s ease; /* Adiciona uma transição suave para a abertura e fechamento do menu */
+  }
+
+  .mobile-menu .nav-item {
+      display: block;
+      padding-top: 1rem;
+  }
+
+/*   .mobile-menu {
+    display: none;
+    position: absolute; 
+    top: 100%; 
+    left: 0;
+    width: 100%; 
+    z-index: 10;
+    transition: transform 0.3s ease;
+    transform: translateY(-100%);
+  } */
+
+  .mobile-menu {
+    display: none;
+    position: fixed; /* Alterado para 'fixed' para manter o menu fixo na tela */
+    top: 0; /* Posiciona o menu no topo da tela */
+    left: 0; /* Posiciona o menu no canto esquerdo da tela */
+    width: 100%; /* Define a largura do menu como 100% da largura da tela */
+    /* height: 100vh; */ /* Define a altura do menu como 100% da altura da tela */
+    background-color: #585858;
+    z-index: 10;
+    transition: transform 0.3s ease;
+    transform: translateY(-100%); /* Inicialmente oculta o menu acima da tela */
+}
+  
+  .mobile-menu.open {
+    display: block;
+    transform: translateY(0);
+  }
+
+  .modo-claro {
+    display: none;
+    transform: translateX(0); /* Move o menu para a posição normal quando aberto */
+  }
+  
+ .container {
     width: 90%;
-    padding: 15px;
+    padding: 1rem;
   }
 
  .footer { 
@@ -316,25 +376,25 @@ justify-content: space-around;
   flex-direction: column; 
   align-items: center; 
   justify-content: center; 
-  padding: 10px; 
-  margin: 10px;
+  padding: 0.62rem; 
+  margin: 0.62rem;
 }
 
 .rodape-logo { 
   display: flex;
   align-items: center;
   justify-content: center; 
-  margin-bottom: 10px;
+  margin-bottom: 0.62rem;
   }
 
 .rodape-logo > img { 
-  width: 300px; 
+  width: 18.75rem; 
   height: auto; 
   margin: 0 auto; 
 }
 
 .rodape-conteudo { 
   width: 100%; 
-  margin: 10px; 
+  margin: 0.62rem; 
  }
 }

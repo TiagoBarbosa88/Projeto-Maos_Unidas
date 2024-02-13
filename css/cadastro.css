@@ -8,31 +8,31 @@ main {
 }
 
 section div {
-  padding: 0 10px;
-  margin: 20px auto;
+  padding: 0 0.62rem;
+  margin: 1.25rem auto;
   display: flex;
   flex-direction: column;
   
 }
 
 section div img {
-  width: 300px;
+  width: 18.75rem;
   height: auto;
   border-radius: 5px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
 }
 
 .btn {
-  padding: 15px;
+  padding: 0.93rem;
   border: 1px solid #ccc;
-  margin: 20px;
+  margin: 1.25rem;
   border-radius: 4px;
   outline: none;
   background: #d436a4;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #6e1144, #9a357c);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #cb0a74, #a73785); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
   color: #fff;
-  font-size: 18px;
+  font-size: 1.12rem;
   font-weight: 600;
   border: none !important;
   transition: all linear 160ms;
@@ -52,12 +52,12 @@ section div img {
 .btn-cadastrar {
   background: #11998e;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #1ccf61, #115d56);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #1dbc5a, #096059); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    padding: 15px;
-  margin: 20px;
+  background: linear-gradient(to right, #1dbc5a, #096059); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    padding: 0.93rem;
+  margin: 1.25rem;
   border-radius: 4px;
   outline: none;
   color: #fff;
-  font-size: 18px;
+  font-size: 1.12rem;
   font-weight: 600;
   border: none !important;
   transition: all linear 160ms;
@@ -81,18 +81,5 @@ section div img {
     display: flex;
     flex-direction: column;
     text-align: center;
-  }
-
-  div img {
-    width: 90%;
-    height: auto;
-    border-radius: 5px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
-  }
-
-  .btn {
-    width: 90%;
-    height: auto;
-    font-size: 14px;
   }
 }
