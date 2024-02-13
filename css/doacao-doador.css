@@ -32,7 +32,7 @@
 .formDoar label {
   display: block;
   font-size: 0.9em;
-  margin-bottom: 5px;
+  margin-bottom: 0.3rem;
   text-align: start;
   font-weight: bold;
 }
@@ -44,7 +44,7 @@
   width: 100%;
   padding: 0.62rem;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 0.3rem;
   font-size: 1em;
 }
 
@@ -57,7 +57,7 @@
   color: white;
   border: none;
   padding: 0.62rem;
-  border-radius: 5px;
+  border-radius: 0.3rem;
   cursor: pointer;
   width: 100%;
   font-size: 1em;

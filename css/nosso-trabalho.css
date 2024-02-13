@@ -33,7 +33,7 @@
   font-size: 1.25rem;
   border-radius: 0.62rem;
   margin: 1.25rem auto;
-  box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0.3rem 0.13rem 0.3rem rgba(0, 0, 0, 0.2);
 
 }
 
@@ -52,7 +52,7 @@
   height: auto;
   font-size: 1.25rem;
   background-color: #E7E6E6;
-  box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0.3rem 0.13rem 0.3rem rgba(0, 0, 0, 0.2);
   border-radius: 0.62rem;
   padding: 1.87rem;
 }
@@ -80,7 +80,7 @@
   font-size: 1.25rem;
   border-radius: 0.62rem;
   margin: 1.25rem auto;
-  box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0.3rem 0.13rem 0.3rem rgba(0, 0, 0, 0.2);
 }
 
 .container-step {
@@ -109,7 +109,7 @@
 }
 
 .step p {
-  font-size: 1rem;
+  font-size: 0.87rem;
 }
 .number {
   background-color: blue;
@@ -122,7 +122,7 @@
   width: 15%;
 }
 
-@media screen and (max-width: 800px) { 
+@media screen and (max-width: 50rem) { 
  
   .container-imagem {
     display: flex;
@@ -145,7 +145,7 @@
 
   .step {
     width: 90%;
-    font-size: 14px;
+    font-size: 0.87rem;
 
   }
 }

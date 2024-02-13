@@ -15,8 +15,8 @@
   color: #EA167B;
   border-radius: 0.62rem;
   text-transform: uppercase;
-  font-size: 14px;
-  box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.2);
+  font-size: 0.87rem;
+  box-shadow: 0.3rem 0.13rem 0.3rem rgba(0, 0, 0, 0.2);
 }
 
 .card-info span {
@@ -37,13 +37,13 @@ section > h4 {
   display: flex;
   width: 95%;    
   height: 18.75rem;
-  box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0.3rem 0.13rem 0.3rem rgba(0, 0, 0, 0.2);
 }
 
 .info-left {
   width: 50%;
   background-color: #E7E6E6;
-  border-radius: 5px 0 0 5px;
+  border-radius: 0.3rem 0 0 0.3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -63,7 +63,7 @@ section > h4 {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  border-radius: 0 5px 5px 0;
+  border-radius: 0 0.3rem 0.3rem 0;
 } 
 
 /* Fim container video */ 
@@ -84,15 +84,15 @@ align-items: center;
   color: #EA167B;
   border-radius: 0.62rem;
   text-transform: uppercase;
-  font-size: 14px;
-  box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.2);
+  font-size: 0.87rem;
+  box-shadow: 0.3rem 0.13rem 0.3rem rgba(0, 0, 0, 0.2);
 
 }
 
 .contador-title {
   color: #EA167B;
   margin: 1.25rem;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2)
+  text-shadow: 0.13rem 0.13rem 0.3rem rgba(0, 0, 0, 0.2)
 }
 
 .paragrafo {
@@ -104,18 +104,18 @@ align-items: center;
   display: flex;
   width: 95%;    
   height: 37.5rem;
-  box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0.3rem 0.13rem 0.3rem rgba(0, 0, 0, 0.2);
 }
 
 .info-left-img {
   width: 75%;
   background-color: #E7E6E6;
-  border-radius: 5px 0 0 5px;
+  border-radius: 0.3rem 0 0 0.3rem;
 }
 
 .info-left-img h2 {
   margin: 1.25rem;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2)
+  text-shadow: 0.13rem 0.13rem 0.3rem rgba(0, 0, 0, 0.2)
 }
 
 .info-left-img p {
@@ -127,7 +127,7 @@ align-items: center;
   width: 100%;
   height: 100%;
   /* object-fit: sticky;  */ 
-  border-radius: 0 5px 5px 0;
+  border-radius: 0 0.3rem 0.3rem 0;
 } 
 
 /* Começo do container detalhes  */
@@ -148,7 +148,7 @@ align-items: center;
 
 
 
-@media screen and (max-width: 800px) { 
+@media screen and (max-width: 50rem) { 
 
   .container-info {
     width: 100%;

@@ -28,7 +28,7 @@
   height: auto;
   width: 100%;
   border-radius: 0.62rem;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.4);
 }
 
 .container-direita {
@@ -37,49 +37,49 @@
   width: 55%;
 }
 
-section h1 {
+section h1, p {
   color: #EA167B;
 }
 
 section h2 {
-  font-size: 1rem;
+  font-size: 0.87rem;
   color: #666;
   margin: 0.62rem 0.62rem;
 }
 
-.formDoadores {
+.formCadastro {
   display: flex;
   width: 100%;
   flex-direction: column;
   background-color: #fff;
-  border-radius: 7px;
+  border-radius: 0.5rem;
   padding: 1.87rem;
   box-shadow: 0.62rem 0.62rem 2.5rem rgba(0, 0, 0, 0.4);
-  gap: 5px;
+  gap: 0.3rem;
 }
 
-.formDoadores div {
+.formCadastro div {
   display: flex;
   flex-direction: column;
   margin-bottom: 0.62rem;
 }
 
-.formDoadores label,
+.formCadastro label,
 p {
-  font-size: 14px;
+  font-size: 0.87rem;
   font-weight: 600;
   text-align: start;
 }
 
-.formDoadores section {
+.formCadastro section {
   text-align: start;
 }
 
-.formDoadores input {
+.formCadastro input {
   padding: 0.62rem;
-  font-size: 12px;
+  font-size: 10.13rem;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 0.5rem;
   transition: all linear 160ms;
   outline: none;
 }
@@ -88,12 +88,12 @@ p {
   padding: 0.93rem;
   border: 1px solid #ccc;
   margin-bottom: 1.25rem;
-  margin-top: 5px;
-  border-radius: 4px;
+  margin-top: 0.3rem;
+  border-radius: 0.5rem;
   outline: none;
   background-color: #7CC92A;
   color: #fff;
-  font-size: 14px;
+  font-size: 0.87rem;
   font-weight: 600;
   transition: all linear 160ms;
   cursor: pointer;
@@ -101,24 +101,48 @@ p {
 }
 
 .btn:hover {
-  transform: scale(1.05);
+  transform: scale(1.05);  
 }
 
-@media screen and (max-width: 800px) {
+/* ---------- Estilos dinâmicos ---------- */
+
+.formCadastro input:focus {
+  border: 0.13rem solid #EA167B; /* Cor de destaque */
+  box-shadow: 0 0 0.5rem rgba(234, 22, 123, 0.5); /* Sombra suave */
+  transition: all 0.3s ease-in-out; /* Transição suave */
+}
+
+input.error {
+  border: solid 0.13rem #992020;
+  background-color: #CCBBBB;
+  color: #662020;
+}
+
+input.correct {
+  background-color: #BBCCBB;
+  border: solid 0.13rem #7CC92A;
+  color: #107010;
+}
+
+.visible {
+  display: block;
+}
+
+@media screen and (max-width: 50rem) {
 
   .titulo {
     width: 80%;
-    font-size: 14px;
+    font-size: 0.87rem;
   }
   .page {
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: column;
   }
 
   .container-esquerda,
   .container-direita {
-    width: 90%;
+    width: 100%;
     margin-right: auto;
     margin-left: auto;
   }

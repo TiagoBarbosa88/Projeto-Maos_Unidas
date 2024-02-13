@@ -48,21 +48,25 @@ function realizarLogin() {
   const senha = inputSenha.value;
 
   // Lógica para usuário
-  const usuarioValido = isValidUsuario(usuario, usuarios);
-  inputUsuario.classList.add(usuarioValido ? 'correct' : 'error');
-  usuarioError.classList.add(usuarioValido ? 'visible' : 'hidden');
+  if (isValidUsuario(usuario, usuarios)) {
+    inputUsuario.classList.add('correct');
+  } else {
+    inputUsuario.classList.add('error');
+    usuarioError.classList.add('visible');
+    usuarioError.style.display = 'block';
+  }
 
   // Lógica para senha
-  const senhaValida = isValidSenha(usuario, senha, usuarios);
-  inputSenha.classList.add(senhaValida ? 'correct' : 'error');
-  senhaError.classList.add(senhaValida ? 'hidden' : 'visible');
-
-  // Se o usuário e a senha forem válidos, redirecione para a página inicial
-  if (usuarioValido && senhaValida) {
+  if (isValidSenha(usuario, senha, usuarios)) {
+    inputSenha.classList.add('correct');
+    senhaError.classList.remove('visible');
     window.location.href = "/index.html";
+  } else {
+    inputSenha.classList.add('error');
+    senhaError.classList.add('visible');
+    senhaError.style.display = 'block';
   }
 }
-
 
 
 function isValidUsuario(usuario, usuarios) {
@@ -78,3 +82,10 @@ function navegarParaCadastro() {
   window.location.href = "cadastro.html";
 }
 
+
+/* Efeitos scroll suave nosso-trabalho */
+window.scrollSuave = ScrollReveal({ reset: true });
+
+scrollSuave.reveal('.efeito-topo', { duration: 1000, delay: 500, origin: 'top', distance: '3.12rem' });
+scrollSuave.reveal('.step-1', { duration: 1000, delay: 500, distance: '3.12rem' });
+scrollSuave.reveal('.step-2', { duration: 1000, delay: 1000, distance: '3.12rem' });

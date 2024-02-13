@@ -6,51 +6,51 @@
   align-items: center;
   align-content: center;
   justify-content: center;
-  width: 100%;  
-  height: 100%;
+  width: 80%;  
+  height: auto;
   margin: 3.12rem auto;
 }
 
 #logo {
   width: auto;
-  height: 11.87rem; 
+  height: 8rem; 
 }
 
 .formLogin {
   display: flex;
   flex-direction: column;
   background-color: #fff;
-  border-radius: 7px;
+  border-radius: 0.5rem;
   padding: 1.87rem;
   box-shadow: 0.62rem 0.62rem 2.5rem rgba(0, 0, 0, 0.4);
-  gap: 5px;  
+  gap: 0.3rem;  
 }
 
 .formLogin p {
   display: inline-block;
-  font-size: 14px;
+  font-size: 0.87rem;
   color: #666;
   margin-bottom: 1.56rem;
 }
 
 .formLogin input {
   padding: 0.93rem;
-  font-size: 14px;
-  border: 1px solid #ccc;
+  font-size: 0.87rem;
+  border: 0.06rem solid #ccc;
   margin-bottom: 1.25rem;
-  margin-top: 5px;
-  border-radius: 4px;
+  margin-top: 0.3rem;
+  border-radius: 0.5rem;
   transition: all linear 160ms;
   outline: none;
 }
 
 
 .formLogin input:focus {
-  border: 1px solid #f72585;
+  border: 0.06rem solid #f72585;
 }
 
 .formLogin label {
-  font-size: 14px;
+  font-size: 0.87rem;
   font-weight: 600;
 }
 
@@ -72,16 +72,16 @@ div button {
 
 .btn {
   padding: 0.93rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  border: 0.06rem solid #ccc;
+  border-radius: 0.5rem;
   outline: none;
   background: #d436a4;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #6e1144, #9a357c);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #cb0a74, #a73785); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   /* background-color: #f72585; */
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.4);
   color: #fff;
-  font-size: 14px;
+  font-size: 0.87rem;
   font-weight: 600;
   border: none !important;
   transition: all linear 160ms;
@@ -101,13 +101,13 @@ div button {
 
 .btn-cadastrar {
   padding: 0.93rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  border: 0.06rem solid #ccc;
+  border-radius: 0.5rem;
   outline: none;
   margin: 0.62rem 0;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.4);
   color: #fff;
-  font-size: 14px;
+  font-size: 0.87rem;
   font-weight: 600;
   border: none !important;
   transition: all linear 160ms;
@@ -130,26 +130,26 @@ div button {
 
 /* Estilos para indicar erro */
 input.error {
-  border: 2px solid #d9534f;
+  border: 0.13rem solid #d9534f;
   background-color: #f2dede;
   color: #a94442;
 }
 
 .error {
-  border: 2px solid #d9534f;
+  border: 0.13rem solid #d9534f;
   background-color: #f2dede;
   color: #a94442;
 }
 
 /* Estilos para indicar sucesso ou correção */
 input.correct {
-  border: 2px solid #5cb85c;
+  border: 0.13rem solid #5cb85c;
   background-color: #5cb85c;
   color: #4cae4c;
 }
 
 .correct {
-  /* border: 2px solid #5cb85c; */
+  /* border: 0.13rem solid #5cb85c; */
   background-color: #5cb85c;;
   color: #4cae4c;
 }
@@ -173,17 +173,20 @@ input.correct {
 }
 
 
-@media screen and (max-width: 800px) { 
+@media screen and (max-width: 50rem) { 
   .container {
-    width: 70%;
-    /* border: 1px solid red; */
+    width: 100%;
+    /* border: 0.06rem solid red; */
   }
 
   .page {
-    width: 40%;
-    height: 100%;
-    border: 1px solid red;
+    width: 70%;
+    height: auto;
+  }
 
+  #logo {
+    width: auto;
+    height: 5.5rem; 
   }
 
 }

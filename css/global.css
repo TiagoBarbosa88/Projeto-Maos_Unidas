@@ -14,7 +14,7 @@ body {
   align-items: center;
   /* color: #333;  */
   font-family: 'Poppins', sans-serif;
-  font-size: 1rem;
+  font-size: 0.87rem;
   font-weight: 400;
 }
 
@@ -117,14 +117,14 @@ header button {
   color: #7CC92A;
   transition: color 0.3s, text-shadow 0.3s, background-color 0.3s, padding 0.3s, border-radius 0.3s;
   padding: 0.62rem;
-  border-radius: 5px;
+  border-radius: 0.3rem;
   position: relative;
 }
 
 .menu a:hover {
-  text-shadow: 5px 2px 5px rgba(0, 0, 0, 0.3);
+  text-shadow: 0.3rem 0.13rem 0.3rem rgba(0, 0, 0, 0.3);
   padding: 0.62rem;
-  border-radius: 5px;
+  border-radius: 0.3rem;
   position: relative;
 }
 
@@ -135,7 +135,7 @@ header button {
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 2px;
+  height: 0.13rem;
   background-color: #EA167B;
   animation: expand 0.5s ease-in-out; /* Adiciona uma animação suave */
 }
@@ -264,9 +264,9 @@ justify-content: space-around;
 }
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 50rem) {
   body {
-    font-size: 14px;
+    font-size: 0.87rem;
   } 
 
   .slider {

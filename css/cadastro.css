@@ -18,15 +18,15 @@ section div {
 section div img {
   width: 18.75rem;
   height: auto;
-  border-radius: 5px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+  border-radius: 0.3rem;
+  box-shadow: 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.4);
 }
 
 .btn {
   padding: 0.93rem;
   border: 1px solid #ccc;
   margin: 1.25rem;
-  border-radius: 4px;
+  border-radius: 0.5rem;
   outline: none;
   background: #d436a4;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #6e1144, #9a357c);  /* Chrome 10-25, Safari 5.1-6 */
@@ -54,7 +54,7 @@ section div img {
   background: -webkit-linear-gradient(to right, #1ccf61, #115d56);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #1dbc5a, #096059); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    padding: 0.93rem;
   margin: 1.25rem;
-  border-radius: 4px;
+  border-radius: 0.5rem;
   outline: none;
   color: #fff;
   font-size: 1.12rem;
@@ -74,7 +74,7 @@ section div img {
 } 
 
 
-@media screen and (max-width: 800px) { 
+@media screen and (max-width: 50rem) { 
 
   main {
     width: 90%;

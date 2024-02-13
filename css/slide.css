@@ -35,7 +35,7 @@
 
 .manual-navigation {
   position: absolute;
-  width: 800px;
+  width: 50rem;
   margin-top: -2.5rem;
   display: flex;
   justify-content: center;
@@ -43,8 +43,8 @@
 
 
 .manual-btn {
-  border: 2px solid #EA167B;
-  padding: 5px;
+  border: 0.13rem solid #EA167B;
+  padding: 0.3rem;
   border-radius: 0.62rem;
   cursor: pointer;
   transition: 0.5s;
@@ -76,8 +76,8 @@
 }
 
 .navigation-auto div{
-  border: 2px solid rgb(114, 228, 160);
-  padding: 5px;
+  border: 0.13rem solid rgb(114, 228, 160);
+  padding: 0.3rem;
   border-radius: 0.62rem;
   cursor: pointer;
   transition: 0.5s;
@@ -85,7 +85,7 @@
 
 .navigation-auto{
   position: absolute;
-  width: 800px;
+  width: 50rem;
   margin-top: 22.5rem;
   display: flex;
   justify-content: center;

@@ -2,8 +2,8 @@
 
 .page {
   display: flex;
-  margin: 0 20px;
-  padding: 0 20px;
+  margin: 0 1.25rem;
+  padding: 0 1.25rem;
   justify-content: space-around;
   width: 100%;
   height: 100%;
@@ -13,11 +13,22 @@
   width: 40%;
 }
 
+.corpo-img {
+  padding: 0.62rem;
+  background-color: transparent;
+}
+
+.corpo-img :hover {
+  transform: scale(1.01);
+  transition: 0.3s
+}
+
+
 .container-esquerda img {
   height: auto;
   width: 100%;
-  border-radius: 10px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+  border-radius: 0.62rem;
+  box-shadow: 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.4);
 }
 
 .container-direita {
@@ -27,57 +38,62 @@
 }
 
 section h1, p {
-    color: #EA167B;
+  color: #EA167B;
 }
 
-.formOngs {
+section h2 {
+  font-size: 0.87rem;
+  color: #666;
+  margin: 0.62rem 0.62rem;
+}
+
+.formCadastro {
   display: flex;
   width: 100%;
   flex-direction: column;
   background-color: #fff;
-  border-radius: 7px;
-  padding: 30px;
-  box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);
-  gap: 5px;
+  border-radius: 0.5rem;
+  padding: 1.87rem;
+  box-shadow: 0.62rem 0.62rem 2.5rem rgba(0, 0, 0, 0.4);
+  gap: 0.3rem;
 }
 
-.formOngs div {
+.formCadastro div {
   display: flex;
   flex-direction: column;
-  margin-bottom: 10px;
+  margin-bottom: 0.62rem;
 }
 
-.formOngs label,
+.formCadastro label,
 p {
-  font-size: 14px;
+  font-size: 0.87rem;
   font-weight: 600;
   text-align: start;
 }
 
-.formOngs section {
+.formCadastro section {
   text-align: start;
 }
 
-.formOngs input {
-  padding: 10px;
-  font-size: 12px;
+.formCadastro input {
+  padding: 0.62rem;
+  font-size: 10.13rem;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 0.5rem;
   transition: all linear 160ms;
   outline: none;
 }
 
-
 .btn {
-  padding: 15px;
+  padding: 0.93rem;
   border: 1px solid #ccc;
-  margin-bottom: 20px;
-  margin-top: 5px;
-  border-radius: 4px;
+  margin-bottom: 1.25rem;
+  margin-top: 0.3rem;
+  border-radius: 0.5rem;
   outline: none;
   background-color: #7CC92A;
   color: #fff;
-  font-size: 14px;
+  font-size: 0.87rem;
   font-weight: 600;
   transition: all linear 160ms;
   cursor: pointer;
@@ -85,48 +101,56 @@ p {
 }
 
 .btn:hover {
-  transform: scale(1.05);
+  transform: scale(1.05);  
 }
 
-@media screen and (max-width: 800px) {
+/* ---------- Estilos dinâmicos ---------- */
+
+.formCadastro input:focus {
+  border: 0.13rem solid #EA167B; /* Cor de destaque */
+  box-shadow: 0 0 0.5rem rgba(234, 22, 123, 0.5); /* Sombra suave */
+  transition: all 0.3s ease-in-out; /* Transição suave */
+}
+
+.helper-text {
+  display: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #a94442;  
+ }
+
+input.error {
+  border: 0.13rem solid #d9534f;
+  background-color: #f2dede;
+  color: #a94442;
+}
+
+input.correct {
+  border: 0.13rem solid #5cb85c;
+  background-color: #5cb85c;
+  color: #4cae4c;
+}
+
+.visible {
+  display: block;
+}
+
+@media screen and (max-width: 50rem) {
 
   .titulo {
     width: 80%;
-    font-size: 14px;
+    font-size: 0.87rem;
   }
   .page {
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: column;
   }
 
   .container-esquerda,
   .container-direita {
-    width: 90%;
+    width: 100%;
     margin-right: auto;
     margin-left: auto;
   }
-}
-
-.formOngs input:focus {
-  border: 2px solid #EA167B; /* Cor de destaque */
-  box-shadow: 0 0 8px rgba(234, 22, 123, 0.5); /* Sombra suave */
-  transition: all 0.3s ease-in-out; /* Transição suave */
-}
-
-/* ---------- Estilos dinâmicos ---------- */
-input.error {
-  border: solid 2px #992020;
-  background-color: #CCBBBB;
-  color: #662020;
-}
-
-input.correct {
-  background-color: #BBCCBB;
-  border: solid 2px #7CC92A;
-  color: #107010;
-}
-
-.visible {
-  display: block;
 }

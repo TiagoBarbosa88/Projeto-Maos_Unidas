@@ -74,7 +74,7 @@ let cnpjHelper = document.getElementById("cnpj-helper");
 togglePopup(cnpjInput, cnpjLabel);
 
 // Função para permitir apenas entrada numérica
-cnpjInput.addEventListener("input", function(e) {
+cnpjInput.addEventListener("input", function (e) {
     // Remove caracteres não numéricos
     let valor = e.target.value.replace(/\D/g, '');
     e.target.value = valor;
@@ -160,7 +160,7 @@ let senhaHelper = document.getElementById("senha-helper");
 senhaInput.addEventListener("blur", () => {
     let valor = senhaInput.value.trim();
 
-    if(valor === ""){
+    if (valor === "") {
         estilizarInputIncorreto(senhaInput, senhaHelper, "O campo senha não pode estar vazio");
     } else {
         estilizarInputCorreto(senhaInput, senhaHelper);
@@ -174,7 +174,7 @@ let confirmaSenhaHelper = document.getElementById("confirma-senha-helper");
 confirmaSenhaInput.addEventListener("blur", () => {
     let valorConfirmaSenha = confirmaSenhaInput.value.trim();
 
-    if(valorConfirmaSenha !== senhaInput.value.trim()){
+    if (valorConfirmaSenha !== senhaInput.value.trim()) {
         estilizarInputIncorreto(confirmaSenhaInput, confirmaSenhaHelper, "As senhas precisam ser iguais");
     } else if (valorConfirmaSenha === "") {
         estilizarInputIncorreto(confirmaSenhaInput, confirmaSenhaHelper, "O campo de confirmação de senha não pode estar vazio");
@@ -184,11 +184,11 @@ confirmaSenhaInput.addEventListener("blur", () => {
 });
 
 // ---------- NAVEGAÇÃO DO FORMULÁRIO COM ENTER ---------- //
-document.querySelectorAll('.formOngs input').forEach(input => {
-    input.addEventListener('keydown', function(e) {
+document.querySelectorAll('.formCadastro input').forEach(input => {
+    input.addEventListener('keydown', function (e) {
         if (e.key === 'Enter') {
             e.preventDefault(); // Impede o comportamento padrão do Enter
-            const inputs = Array.from(document.querySelectorAll('.formOngs input'));
+            const inputs = Array.from(document.querySelectorAll('.formCadastro input'));
             const index = inputs.indexOf(this);
             if (index < inputs.length - 1) {
                 inputs[index + 1].focus(); // Move para o próximo campo
@@ -210,19 +210,19 @@ let inputsCorretos = {         // Criando objetos
     email: false,
     senha: false,
     confirmaSenha: false
-}
+};
 
 btnSubmit.addEventListener("submit", (e) => {
-    if(inputsCorretos.nome == false || 
+    if (inputsCorretos.nome == false ||
         inputsCorretos.tipoOng == false ||
         inputsCorretos.cnpj == false ||
         inputsCorretos.telefone == false ||
-        inputsCorretos.localidade == false || 
+        inputsCorretos.localidade == false ||
         inputsCorretos.email == false ||
         inputsCorretos.senha == false ||
-        inputsCorretos.confirmaSenha == false){
-        e.preventDefault()
+        inputsCorretos.confirmaSenha == false) {
+        e.preventDefault();
     } else {
-        alert("Formulário enviado com Sucesso!")
+        alert("Formulário enviado com Sucesso!");
     }
 });

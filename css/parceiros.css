@@ -7,8 +7,8 @@
 .container-parceiros {
 width: 80%;
 background-color: #E7E6E6;
-border-radius: 5px;
-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+border-radius: 0.3rem;
+box-shadow: 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.4);
 
 }
 
@@ -46,20 +46,20 @@ color: #EA167B;
   padding: 0.93rem;
   border: 1px solid #ccc;
   margin-bottom: 1.25rem;
-  margin-top: 5px;
-  border-radius: 4px;
+  margin-top: 0.3rem;
+  border-radius: 0.5rem;
   outline: none;
   background: #d436a4;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #6e1144, #9a357c);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #cb0a74, #a73785); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: #fff;
-  font-size: 14px;
+  font-size: 0.87rem;
   font-weight: 600;
   border: none !important;
   transition: all linear 160ms;
   cursor: pointer;
   margin: 0 !important;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.4);
 }
 
 .btn-cadastrar:hover {
@@ -80,11 +80,11 @@ color: #EA167B;
 }
 
 
-@media screen and (max-width: 800px) { 
+@media screen and (max-width: 50rem) { 
  .container-title {
   width: 95%;
   padding: 1.25rem;
-  font-size: 14px;
+  font-size: 0.87rem;
  } 
 .container-parceiros div{
   display: flex;
@@ -93,11 +93,11 @@ color: #EA167B;
 }
 .container-btn{
   width: 95%;
-  font-size: 14px;
+  font-size: 0.87rem;
 }
 
 .btn {
-  font-size: 14px;
+  font-size: 0.87rem;
 }
   
 }
