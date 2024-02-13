@@ -37,6 +37,10 @@
   width: 55%;
 }
 
+section h1 {
+  color: #EA167B;
+}
+
 section h2 {
   font-size: 1rem;
   color: #666;
