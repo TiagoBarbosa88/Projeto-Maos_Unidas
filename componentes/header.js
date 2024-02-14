@@ -14,6 +14,7 @@ header.innerHTML = `
       <li><a href="../pages/nosso-trabalho.html" class='nav-item'>Nosso Trabalho</a></li>
       <li><a href="../pages/ranking.html" class='nav-item'>Destaques</a></li>
       <li><a href="../pages/parceiros.html" class='nav-item'>Parceiros</a></li>  
+      <li><a href="../pages/sobre.html" class='nav-item'>Sobre</a></li> 
       <li><a href="../pages/cadastro.html" class='nav-item'>Cadastro</a></li>
       <li><a href="../pages/login.html" class="login nav-item">Login</a></li>
     </ul>        
@@ -33,6 +34,7 @@ header.innerHTML = `
     <li><a href="../pages/nosso-trabalho.html" class='nav-item'>Nosso Trabalho</a></li>
     <li><a href="../pages/ranking.html" class='nav-item'>Destaques</a></li>
     <li><a href="../pages/parceiros.html" class='nav-item'>Parceiros</a></li>  
+    <li><a href="../pages/sobre.html" class='nav-item'>Sobre</a></li>
     <li><a href="../pages/cadastro.html" class='nav-item'>Cadastro</a></li>
     <li><a href="../pages/login.html" class="login nav-item">Login</a></li>
   </ul> 

@@ -72,6 +72,8 @@ scrollSuave.reveal('.efeito-bottom', { duration: 1000, delay: 500, origin: 'bott
 scrollSuave.reveal('.step-1', { duration: 1000, delay: 500, distance: '3.12rem' });
 scrollSuave.reveal('.step-2', { duration: 1000, delay: 1000, distance: '3.12rem' });
 scrollSuave.reveal('.step-3', { duration: 1000, delay: 1500, distance: '3.12rem' });
+scrollSuave.reveal('.step-4', { duration: 1000, delay: 1800, distance: '3.12rem' });
+scrollSuave.reveal('.step-5', { duration: 1000, delay: 2100, distance: '3.12rem' });
 
 
 
