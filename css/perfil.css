@@ -1,0 +1,65 @@
+@import url(./global.css);
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  flex: 1;
+}
+
+section {
+  flex: 1;
+}
+
+header, footer {
+  flex: 0 0 auto;
+  color: #fff;
+  padding: 20px;
+}
+
+aside {
+  width: 15rem;
+  background-color: #f0f0f0;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  position: absolute; /* Posiciona o aside em relação ao corpo da página */
+  top: 0; /* Alinha o topo do aside com o topo do corpo da página */
+  bottom: 0; /* Alinha o final do aside com o final do corpo da página */
+  left: 0; /* Alinha o aside na lateral esquerda da página */
+}
+
+aside > div {
+  padding: 1.25rem;
+}
+
+aside img {
+  width: 6.5rem;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  border: 1px solid #333;
+}
+
+aside ul {
+  list-style: none;
+  padding: 0;
+}
+
+aside ul a {
+  text-decoration: none;
+  color: #333;
+}
+
+aside ul li {
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+}
+
+aside ul li:hover {
+  background-color: #ddd;
+}
