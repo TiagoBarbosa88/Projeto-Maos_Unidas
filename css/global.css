@@ -307,16 +307,7 @@ justify-content: space-around;
     align-items: center; 
     /* justify-content: center; */
     position: relative; /* Adiciona posicionamento relativo */
-  }
-
-  .nav-bar {
-    /* width: 100%; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 1rem ; 
-}
-  
+  }  
   
   .nav-item, .logo-grande {
       display: none;
@@ -326,6 +317,14 @@ justify-content: space-around;
     width: 3rem;
   }
 
+  .mobile-menu {
+    width: 100%;
+    background-color: #E7E6E6;
+    display: flex;
+    justify-content: center;
+    align-items: center;      
+  }
+
   .mobile-menu-icon, .logo-pequeno {
     display: block;
 }
@@ -333,10 +332,11 @@ justify-content: space-around;
   .mobile-menu-icon button {
       background-color: transparent;
       border: none;
-      cursor: pointer;
-      margin-top: 2rem;
+      cursor: pointer;      
       z-index: 11;
-      position: relative;
+      position: absolute;
+      margin-left: -11rem;
+      padding: -11rem;
     }    
 
   .mobile-menu ul {

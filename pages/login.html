@@ -37,21 +37,27 @@
             <div class="page">
                 <form method="POST" class="formLogin">
                     <a href="../index.html">
-                        <img src="../src/logo-projeto//logo-projeto-social.png" id="logo" alt=""
-                            class="efeito-topo"></a>
+                        <img src="../src/logo-projeto//logo-projeto-social.png" id="logo" alt="" class="efeito-topo">
+                    </a>
                     <p>Digite os seus dados de acesso no campo abaixo.</p>
                     <label for="login-usuario">E-mail</label>
                     <input type="email" id="login-usuario" name="login-usuario" placeholder="Exemplo@email.com"
                         autofocus="true" required />
                     <p class="error-text" id="usuario-error">Usuário inválido</p>
-
+    
                     <label for="login-senha">Senha</label>
                     <input type="password" id="login-senha" name="login-senha" placeholder="Digite sua senha"
                         required />
                     <p class="error-text" id="senha-error">Senha incorreta</p>
-
+    
                     <a href="#">Esqueci minha senha</a>
-
+    
+                    <!-- Botão para login de empresa -->
+                    <button type="submit" class="btn-empresa" onclick="realizarLoginEmpresa()">Login Empresa</button>
+    
+                    <!-- Botão para login de ONG -->
+                    <button type="submit" class="btn-ong" onclick="realizarLoginONG()">Login ONG</button>
+    
                     <div class="step-1">
                         <button type="submit" class="btn" onclick="realizarLogin()">Entrar</button>
                     </div>
@@ -62,6 +68,7 @@
             </div>
         </main>
     </div>
+    
     <!------- Fim do MAIN --------->
 </body>
 
