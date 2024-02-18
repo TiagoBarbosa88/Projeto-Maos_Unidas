@@ -20,6 +20,7 @@
   <script src="../js/script-2.js" defer></script>
   <script src="../componentes/header.js" defer></script>
   <script src="../componentes/footer.js" defer></script>
+  <script src="../componentes/menu-perfil.js" defer></script>
 
   <!-- Título -->
   <title>Projeto Mãos Unidas :: Doação</title>
@@ -31,55 +32,60 @@
 
   <div class="container">
     <main>
-      <section>
-        <h1 id="mensagem-inicial">Bem-vindo, <span id="nome-doador">nome-doador</span></h1>
-      </section>
+      <aside></aside>     
 
-      <section class="page">
-        <div class="formDoar">
-          <form method="post">
-            <h2>Cadastrar suas doações</h2>
+      <article class="page">
+        <section class="content__titulo">          
+            <h1 id="mensagem-inicial">Bem-vindo, <span id="nome-doador">nome-doador</span></h1>          
+        </section>
+        <section>
+          <div class="formDoar">
+            <form method="post">
+              <h1>Cadastrar suas doações</h1>
+  
+              <!-- Campo que vai especificar o alimento -->
+              <div>
+                <label for="alimento">Selecione a doação:</label>
+                <select id="alimento" name="alimento" required>
+                  <option value="alimentos">Alimentos</option>
+                  <option value="carne">Carnes</option>
+                  <option value="legumes">Legumes</option>
+                  <option value="frutas">Frutas</option>
+                  <option value="arroz">Outros</option>
+                </select>
+              </div>
+  
+              <!-- Campo que vai especificar a quantidade -->
+              <div>
+                <label for="quantidade-doada">Quantidade (em kg): </label>
+                <input type="number" id="quantidade-doada" name="quantidade-doada" min="1" step="0.1" required>
+              </div>
+  
+              <!-- Outras sugestões de inputs -->
+  
+              <!-- Campo para data de validade -->
+              <div>
+                <label for="data-validade">Data de Validade (opcional): </label>
+                <input type="date" id="data-validade" name="data-validade">
+              </div>
+  
+              <!-- Campo para observações -->
+              <div>
+                <label for="observacoes">Observações: </label>
+                <textarea id="observacoes" name="observacoes" rows="4" cols="50"></textarea>
+              </div>
+  
+              <!-- Botão para adicionar ao estoque -->
+              <button type="button" class="btn" onclick="adicionarAoEstoque()">Adicionar ao estoque</button>
+  
+              <!-- Mostrar em um visor o que será adicionado no estoque -->
+  
+              <!-- Botão de confirmar doação -->
+            <!--   <button type="button" class="btn confirmar-doacao" onclick="confirmarDoacao()">Confirmar doação</button> -->
+            </form>
+          </div>
 
-            <!-- Campo que vai especificar o alimento -->
-            <div>
-              <label for="alimento">Selecione a doação:</label>
-              <select id="alimento" name="alimento" required>
-                <option value="alimentos">Alimentos</option>
-                <option value="carne">Carnes</option>
-                <option value="legumes">Legumes</option>
-                <option value="arroz">Outros</option>
-              </select>
-            </div>
-
-            <!-- Campo que vai especificar a quantidade -->
-            <div>
-              <label for="quantidade-doada">Quantidade (em kg): </label>
-              <input type="number" id="quantidade-doada" name="quantidade-doada" min="1" step="0.1" required>
-            </div>
-
-            <!-- Outras sugestões de inputs -->
-
-            <!-- Campo para data de validade -->
-            <div>
-              <label for="data-validade">Data de Validade (opcional): </label>
-              <input type="date" id="data-validade" name="data-validade">
-            </div>
-
-            <!-- Campo para observações -->
-            <div>
-              <label for="observacoes">Observações: </label>
-              <textarea id="observacoes" name="observacoes" rows="4" cols="50"></textarea>
-            </div>
-
-            <!-- Botão para adicionar ao estoque -->
-            <button type="button" class="btn" onclick="adicionarAoEstoque()">Adicionar ao estoque</button>
-
-            <!-- Mostrar em um visor o que será adicionado no estoque -->
-
-            <!-- Botão de confirmar doação -->
-            <button type="button" class="btn confirmar-doacao" onclick="confirmarDoacao()">Confirmar doação</button>
-          </form>
-        </div>
+        </section>
       </section>
     </main>
 

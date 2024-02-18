@@ -1,23 +1,29 @@
 @import url(./global.css);
 @import url(./cadastro-doadores.css);
+@import url(./perfil.css);
 
 .page {
+  width: 100%;
+  margin-left:3rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100%;
-  margin-bottom: 5em;
 }
 
-.formDoar {
-  /* background-color: #f7f7f7; */
+
+.content__titulo {
+  font-size: 1.3rem;
+}
+
+.formDoar {  
   border-radius: 0.62rem;
   box-shadow: 0 0 0.62rem rgba(0, 0, 0, 0.5);
-  padding: 1.25rem;
+  padding: 0 1.25rem;
   width: 400px;
 }
 
-.formDoar h2 {
+.formDoar h1 {
   color: #333;
   text-align: center;
   font-size: 1.3em;

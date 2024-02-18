@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
   data.forEach((empresa, index) => {
     const posicao = index + 1;
-    const card = index + 1;
 
     const liElement = document.createElement('li');
     liElement.innerHTML = `

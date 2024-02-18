@@ -1,4 +1,6 @@
 @import url(./global.css);
+@import url(./doacao-doador.css);
+
 body {
   display: flex;
   flex-direction: column;
@@ -10,27 +12,31 @@ body {
 main {
   display: flex;
   flex: 1;
+  height: fit-content;
+  position: relative; /* Adiciona posicionamento relativo */
 }
 
 section {
   flex: 1;
 }
 
-header, footer {
-  flex: 0 0 auto;
-  color: #fff;
-  padding: 20px;
+/* header, footer {
+  flex: 0 0 auto; 
 }
+ */
+
 
 aside {
-  width: 15rem;
-  background-color: #f0f0f0;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: fixed;
+  width: 18rem;
+  height: auto;
+  /* background-color: #f0f0f0; */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
   z-index: 999;
-  position: absolute; /* Posiciona o aside em relação ao corpo da página */
-  top: 0; /* Alinha o topo do aside com o topo do corpo da página */
-  bottom: 0; /* Alinha o final do aside com o final do corpo da página */
-  left: 0; /* Alinha o aside na lateral esquerda da página */
+  margin-right: auto; /* Alinha à esquerda */
+  left: 0;
+  border-radius: 0.5rem;
 }
 
 aside > div {
@@ -38,10 +44,10 @@ aside > div {
 }
 
 aside img {
-  width: 6.5rem;
+  width: 9rem;
   height: auto;
   border-radius: 50%;
-  margin-bottom: 10px;
+  margin-bottom: 0.5rem;
   border: 1px solid #333;
 }
 
