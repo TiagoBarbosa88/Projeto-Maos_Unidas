@@ -120,6 +120,13 @@ input.correct {
   color: #107010;
 }
 
+.helper-text {
+  display: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #a94442;  
+ }
+
 .visible {
   display: block;
 }
