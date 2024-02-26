@@ -26,7 +26,7 @@ function estilizarInputIncorreto(input, helper, mensagem) {
     input.classList.remove("correct"); // Remove estilização de correto, se houver
 }
 
-// --------------- VALIDAÇÃO DO NOME ---------------//
+// --------------- VALIDAÇÃO DO CAMPO NOME ---------------//
 let nomeInput = document.getElementById("nome");
 let nomeLabel = document.querySelector('label[for="nome"]');
 let nomeHelper = document.getElementById("nome-helper");
@@ -46,7 +46,7 @@ nomeInput.addEventListener("blur", () => {
     }
 });
 
-// --------------- VALIDAÇÃO TIPO DE ORGANIZAÇÃO ---------------//
+// --------------- VALIDAÇÃO DO CAMPO TIPO DE ORGANIZAÇÃO ---------------//
 let tipoInput = document.getElementById("tipo-ong");
 let tipoLabel = document.querySelector('label[for="tipo-ong"]');
 let tipoHelper = document.getElementById("tipo-ong-helper");
@@ -153,7 +153,7 @@ emailInput.addEventListener("blur", () => {
     }
 });
 
-// ---------- VALIDAÇÃO DE SENHA ---------- //
+// ---------- VALIDAÇÃO DO CAMPO DE SENHA ---------- //
 let senhaInput = document.getElementById("senha");
 let senhaHelper = document.getElementById("senha-helper");
 
@@ -167,7 +167,7 @@ senhaInput.addEventListener("blur", () => {
     }
 });
 
-// ---------- VALIDAÇÃO DE CONFIRMA SENHA ---------- //
+// ---------- VALIDAÇÃO DO CAMPO CONFIRMA SENHA ---------- //
 let confirmaSenhaInput = document.getElementById("confirma-senha");
 let confirmaSenhaHelper = document.getElementById("confirma-senha-helper");
 
@@ -197,32 +197,4 @@ document.querySelectorAll('.formOngs input').forEach(input => {
             }
         }
     });
-});
-
-// ---------- EVITAR ENVIO DO FORMULÁRIO ---------- //
-let btnSubmit = document.querySelector('button[type="submit"]');
-let inputsCorretos = {         // Criando objetos
-    nome: false,
-    tipoOng: false,
-    cnpj: false,
-    telefone: false,
-    localidade: false,
-    email: false,
-    senha: false,
-    confirmaSenha: false
-}
-
-btnSubmit.addEventListener("submit", (e) => {
-    if(inputsCorretos.nome == false || 
-        inputsCorretos.tipoOng == false ||
-        inputsCorretos.cnpj == false ||
-        inputsCorretos.telefone == false ||
-        inputsCorretos.localidade == false || 
-        inputsCorretos.email == false ||
-        inputsCorretos.senha == false ||
-        inputsCorretos.confirmaSenha == false){
-        e.preventDefault()
-    } else {
-        alert("Formulário enviado com Sucesso!")
-    }
 });

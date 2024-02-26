@@ -217,3 +217,16 @@ align-items: center;
 
 
 }
+
+.container-step {
+  display: flex;
+  justify-content: space-between; /* Isso coloca um espaço igual entre cada elemento */
+  align-items: center; /* Isso alinha os elementos verticalmente no centro */
+  flex-wrap: wrap; /* Isso permite que os elementos se ajustem em linhas adicionais conforme necessário, para responsividade */
+}
+
+.step {
+  flex: 1; /* Isso faz com que cada card ocupe espaço igual dentro do container */
+  margin: 0 10px; /* Isso adiciona um pequeno espaço entre os cards. Ajuste conforme necessário. */
+  /* Você pode querer definir um width máximo para .step se você achar que eles ficam muito largos em telas grandes */
+}
