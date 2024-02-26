@@ -115,6 +115,10 @@ h1 {
   color: #EA167B;
 }
 
+h2 {
+  color: #EA167B;
+}
+
 .top-5 ul {
   display: flex;
   flex-direction: column;

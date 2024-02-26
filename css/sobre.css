@@ -3,6 +3,9 @@ section {
   margin-right: auto;
 }
 
+h1, h2 {
+  color: #EA167B;
+}
 .container-card div {
   padding: 1rem;
   margin: 0 auto;
