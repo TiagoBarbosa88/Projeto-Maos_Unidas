@@ -30,7 +30,8 @@ function criarCard(doacao) {
 
   const button = document.createElement('button');
   button.classList.add('btn-aceitar');
-  button.textContent = 'Aceitar';
+  button.textContent = 'Acompanhar';
+  // button.textContent = tipoPerfil === 'empresa' ? 'Acompanhar' : 'Aceitar';
 
   card.appendChild(document.createElement('h2')).textContent = 'Doação';
   card.appendChild(info);
@@ -48,5 +49,6 @@ function adicionarCards() {
   });
 }
 
+// const tipoPerfil = 'empresa'; // ou 'ong'
 // Chamar a função para adicionar os cards à página
 adicionarCards();
