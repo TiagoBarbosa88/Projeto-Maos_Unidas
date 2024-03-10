@@ -112,3 +112,17 @@ VALUES
 select * from Organizacao;
 select * from Doacao;
 select * from RankingDeGamificacao;
+
+SELECT 
+    Empresa.Nome AS Nome_Empresa, 
+    ONG.Nome AS Nome_ONG, 
+    Doacao.Data, 
+    Doacao.Descricao, 
+    Doacao.Quantidade, 
+    Doacao.Status
+FROM 
+    Doacao
+INNER JOIN 
+    Organizacao AS Empresa ON Doacao.EmpresaID = Empresa.OrganizacaoID
+INNER JOIN 
+    Organizacao AS ONG ON Doacao.ONGID = ONG.OrganizacaoID;
