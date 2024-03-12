@@ -117,6 +117,17 @@ select * from Organizacao;
 select * from Doacao;
 select * from RankingDeGamificacao;
 
+SELECT * FROM organizacao WHERE OrganizacaoID = 2
+
+SELECT * FROM Organizacao WHERE Tipo = 'Empresa'
+SELECT * FROM Organizacao WHERE Tipo = 'Empresa' ID 2;
+SELECT * FROM Organizacao WHERE Tipo = 'Empresa' AND Nome = 'Empresa B';
+SELECT * FROM Organizacao WHERE Tipo = 'Empresa' AND OrganizacaoID = 10;
+
+SELECT * FROM Organizacao WHERE Tipo = 'ONG'
+SELECT * FROM Organizacao WHERE Tipo = 'ONG' LIMIT 2;
+SELECT * FROM Organizacao WHERE Tipo = 'ONG' AND Nome = 'ONG U';
+SELECT * FROM Organizacao WHERE Tipo = 'ONG' AND OrganizacaoID = 25;
 
 SELECT 
     Empresa.Nome AS Nome_Empresa, 

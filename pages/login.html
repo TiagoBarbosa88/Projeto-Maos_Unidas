@@ -20,12 +20,13 @@
     <!-- Javascritps -->
     <script src="https://kit.fontawesome.com/7b6cffeae5.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="../js/script-2.js" defer></script>
-    <!-- <script src="../js/login.js" defer></script> -->
+    <!-- <script src="../js/script-2.js" defer></script> -->
+    <script src="../js/login.js" defer></script>
+    <script src="../js/usuarios.js" defer></script>
 
     <!-- Javascript componentes -->
-    <script src="../componentes/header.js" defer></script>
-    <script src="../componentes/footer.js" defer></script>
+    <!-- <script src="../componentes/header.js" defer></script>
+    <script src="../componentes/footer.js" defer></script> -->
 
     <!-- Título -->
 
@@ -44,16 +45,17 @@
                     <p>Digite os seus dados de acesso no campo abaixo.</p>
                     <!-- input radio -->    
                     <section class="input-radio"> 
-                        <label>
-                          <input type="radio" name="opcao" value="opcao1" />
-                          EMPRESA
+                        <label for="opcao-empresa">
+                            <input type="radio" id="opcao-empresa" name="opcao" value="opcao1" />
+                            EMPRESA
                         </label>
-                        <label>
-                          <input type="radio" name="opcao" value="opcao2" />
-                          ONG
+                        <label for="opcao-ong">
+                            <input type="radio" id="opcao-ong" name="opcao" value="opcao2" />
+                            ONG
                         </label>
                         <p id="doacao-helper" class="helper-text"></p>
-                      </section>
+                    </section>
+                    
                     <!-- fim input radio -->
                     <label for="login-usuario">E-mail</label>
                     <input type="email" id="login-usuario" name="login-usuario" placeholder="Exemplo@email.com"
@@ -70,7 +72,7 @@
                     
     
                     <div class="step-1">
-                        <button type="submit" class="btn" onclick="realizarLogin()">Entrar</button>
+                        <button type="submit" class="btn">Entrar</button>
                     </div>
                     <div class="step-2">
                         <button type="submit" class="btn-cadastrar" onclick="navegarParaCadastro()">Cadastrar</button>
