@@ -17,7 +17,8 @@ CREATE TABLE Doacao (
     Descricao TEXT,
     Quantidade NUMERIC(10, 2) NOT NULL CHECK (Quantidade > 0),
     Status VARCHAR(50) NOT NULL
-);
+    CHECK (EmpresaID != ONGID)
+    );
 
 CREATE TABLE RankingDeGamificacao (
     EmpresaID INT PRIMARY KEY REFERENCES Organizacao(OrganizacaoID),
@@ -71,29 +72,32 @@ VALUES
     ('ONG I', 'ONG', '7727277727', '111222333', 'Belém', 'Rua 31', 'ongI@example.com'),
     ('ONG H', 'ONG', '8828288828', '444555666', 'Florianópolis', 'Rua 32', 'ongH@example.com'),
     ('ONG G', 'ONG', '9909292929', '777888999', 'Natal', 'Rua 33', 'ongG@example.com');
+    
 
 INSERT INTO Doacao (EmpresaID, ONGID, Data, Descricao, Quantidade, Status)
 VALUES 
-    (06, 06, '2024-03-15', 'Doação de Carne', 25, 'Em andamento'),
-    (07, 07, '2024-03-16', 'Doação de Arroz', 35, 'Concluída'),
-    (08, 08, '2024-03-17', 'Doação de Feijão', 45, 'Em andamento'),
-    (09, 09, '2024-03-18', 'Doação de Legumes', 55, 'Em andamento'),
-    (10, 10, '2024-03-19', 'Doação de Frutas', 65, 'Em andamento'),
-    (11, 11, '2024-03-20', 'Doação de Carne', 30, 'Concluída'),
-    (12, 12, '2024-03-21', 'Doação de Arroz', 40, 'Em andamento'),
-    (13, 13, '2024-03-22', 'Doação de Feijão', 50, 'Em andamento'),
-    (14, 14, '2024-03-23', 'Doação de Legumes', 60, 'Em andamento'),
-    (15, 15, '2024-03-24', 'Doação de Frutas', 70, 'Em andamento'),
-    (16, 16, '2024-03-25', 'Doação de Carne', 35, 'Concluída'),
-    (17, 17, '2024-03-26', 'Doação de Arroz', 45, 'Em andamento'),
-    (18, 18, '2024-03-27', 'Doação de Feijão', 55, 'Em andamento'),
-    (19, 19, '2024-03-28', 'Doação de Legumes', 65, 'Em andamento'),
-    (20, 20, '2024-03-29', 'Doação de Frutas', 75, 'Em andamento'),
-    (21, 21, '2024-03-30', 'Doação de Carne', 40, 'Concluída'),
-    (02, 02, '2024-03-31', 'Doação de Arroz', 50, 'Em andamento'),
-    (03, 03, '2024-04-01', 'Doação de Feijão', 60, 'Em andamento'),
-    (04, 04, '2024-04-02', 'Doação de Legumes', 70, 'Em andamento'),
-    (05, 05, '2024-04-03', 'Doação de Frutas', 80, 'Em andamento');
+    (1, 22, '2024-03-15', 'Doação de Carne', 25, 'Em andamento'),
+    (2, 23, '2024-03-16', 'Doação de Arroz', 35, 'Concluída'),
+    (3, 24, '2024-03-17', 'Doação de Feijão', 45, 'Em andamento'),
+    (4, 25, '2024-03-18', 'Doação de Legumes', 55, 'Em andamento'),
+    (5, 26, '2024-03-19', 'Doação de Frutas', 65, 'Em andamento'),
+    (6, 27, '2024-03-20', 'Doação de Carne', 30, 'Concluída'),
+    (7, 28, '2024-03-21', 'Doação de Arroz', 40, 'Em andamento'),
+    (8, 29, '2024-03-22', 'Doação de Feijão', 50, 'Em andamento'),
+    (9, 30, '2024-03-23', 'Doação de Legumes', 60, 'Em andamento'),
+    (10, 31, '2024-03-24', 'Doação de Frutas', 70, 'Em andamento'),
+    (11, 32, '2024-03-25', 'Doação de Carne', 35, 'Concluída'),
+    (12, 33, '2024-03-26', 'Doação de Arroz', 45, 'Em andamento'),
+    (13, 34, '2024-03-27', 'Doação de Feijão', 55, 'Em andamento'),
+    (14, 35, '2024-03-28', 'Doação de Legumes', 65, 'Em andamento'),
+    (15, 36, '2024-03-29', 'Doação de Frutas', 75, 'Em andamento'),
+    (16, 37, '2024-03-30', 'Doação de Carne', 40, 'Concluída'),
+    (17, 38, '2024-03-31', 'Doação de Arroz', 50, 'Em andamento'),
+    (18, 39, '2024-04-01', 'Doação de Feijão', 60, 'Em andamento'),
+    (19, 40, '2024-04-02', 'Doação de Legumes', 70, 'Em andamento'),
+    (20, 41, '2024-04-03', 'Doação de Frutas', 80, 'Em andamento');
+
+
 
 INSERT INTO RankingDeGamificacao 
 (EmpresaID, Pontuacao, PosicaoNoRanking) 
@@ -113,9 +117,13 @@ select * from Organizacao;
 select * from Doacao;
 select * from RankingDeGamificacao;
 
+
 SELECT 
     Empresa.Nome AS Nome_Empresa, 
-    ONG.Nome AS Nome_ONG, 
+    CASE 
+        WHEN ONG.Tipo = 'ONG' THEN ONG.Nome
+        ELSE 'ONG'
+    END AS Nome_ONG, 
     Doacao.Data, 
     Doacao.Descricao, 
     Doacao.Quantidade, 
