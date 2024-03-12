@@ -129,6 +129,12 @@ SELECT * FROM Organizacao WHERE Tipo = 'ONG' LIMIT 2;
 SELECT * FROM Organizacao WHERE Tipo = 'ONG' AND Nome = 'ONG U';
 SELECT * FROM Organizacao WHERE Tipo = 'ONG' AND OrganizacaoID = 25;
 
+SELECT COUNT(*) AS NumeroEmpresas FROM Organizacao WHERE Tipo = 'Empresa';
+
+SELECT COUNT(*) AS NumeroONGs FROM Organizacao WHERE Tipo = 'ONG';
+
+SELECT * FROM Doacoes WHERE Status = 'Concluida';
+
 SELECT 
     Empresa.Nome AS Nome_Empresa, 
     CASE 
