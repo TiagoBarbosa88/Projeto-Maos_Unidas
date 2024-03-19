@@ -31,16 +31,15 @@
   border-radius: 0.62rem;
 }
 
-
-
 .manual-navigation {
   position: absolute;
   width: 50rem;
   margin-top: -2.5rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
   justify-content: center;
 }
-
 
 .manual-btn {
   border: 0.13rem solid #EA167B;
@@ -48,7 +47,6 @@
   border-radius: 0.62rem;
   cursor: pointer;
   transition: 0.5s;
-
 } 
 
 .manual-btn:not(:last-child){
@@ -89,6 +87,8 @@
   margin-top: 22.5rem;
   display: flex;
   justify-content: center;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .navigation-auto div:not(:last-child){
