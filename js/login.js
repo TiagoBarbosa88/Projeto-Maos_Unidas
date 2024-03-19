@@ -104,7 +104,7 @@ function navegarParaCadastro() {
 window.scrollSuave = ScrollReveal({ reset: true });
 
 scrollSuave.reveal('.efeito-topo', { duration: 1000, delay: 500, origin: 'top', distance: '3.12rem' });
-scrollSuave.reveal('.step-1', { duration: 1000, delay: 500, distance: '3.12rem' });
-scrollSuave.reveal('.step-2', { duration: 1000, delay: 1000, distance: '3.12rem' });
+// scrollSuave.reveal('.step-1', { duration: 1000, delay: 500, distance: '3.12rem' });
+// scrollSuave.reveal('.step-2', { duration: 1000, delay: 1000, distance: '3.12rem' });
 
 
