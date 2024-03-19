@@ -297,7 +297,7 @@ justify-content: space-around;
   } 
 
   .slider {
-    display: none;
+    display: block;
   }
 
   header {
