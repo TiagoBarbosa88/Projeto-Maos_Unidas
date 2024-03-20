@@ -110,3 +110,58 @@
 #radio4:checked ~ .navigation-auto .auto-btn4 {
   background-color: #EA167B;
 }
+
+@media screen and (max-width: 50rem) {
+  .slider {  
+    margin: 0 auto;
+    width: 80%;
+    height: auto; /* Alterado para altura automática */
+    max-height: 28rem; /* Aumentando um pouco a altura */
+    overflow: hidden;
+    margin-bottom: 2rem;
+  }
+  
+  .slides {
+    width: 400%; /* Mantido */
+    height: auto; /* Alterado para altura automática */
+    max-height: 28rem; /* Aumentando um pouco a altura */
+    display: flex;
+  }
+  
+  .slide {
+    width: 25%; /* Mantido */
+    height: auto; /* Alterado para altura automática */
+    max-height: 28rem; /* Aumentando um pouco a altura */
+    position: relative;
+  }
+  
+  .slide img {
+    width: 110%; /* Aumentando um pouco a largura */
+    height: auto; /* Mantendo altura automática */
+    max-height: 28rem; /* Aumentando um pouco a altura */
+    border-radius: 0.62rem;
+  }
+  
+  .manual-navigation {
+    position: absolute;
+    width: 100%; /* Alterado para largura de 100% */
+    margin-top: 23rem; /* Ajustando margem superior */
+    left: 0; /* Ajustado para a esquerda */
+    right: 0; /* Ajustado para a direita */
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navigation-auto {
+    position: absolute;
+    width: 100%; /* Alterado para largura de 100% */
+    margin-top: 25rem; /* Ajustando margem superior */
+    left: 0; /* Ajustado para a esquerda */
+    right: 0; /* Ajustado para a direita */
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
+
